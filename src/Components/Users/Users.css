@@ -1,0 +1,68 @@
+/* Purpose: Styling for login and registration pages */
+.auth-container {
+  background-image: url(src/Images/CICLogin.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.header-login {
+  color: #7f62b7;
+  font-size: 50px;
+  text-align: center;
+}
+
+.input-login{
+  text-align: center;
+}
+
+.input-button{
+text-align: center;
+}
+
+.header-register {
+  color: #7f62b7;
+  font-size: 50px;
+  text-align: center;
+}
+
+.auth-fieldset {
+  margin: 10px;
+  border: none;
+}
+
+.auth-button {
+  background-color: #ff66c4;
+  border-radius: 10px;
+
+}
+
+.register-link {
+  color: #ff66c4;
+}
+
+.auth-form-input {
+  height: 30px;
+  padding: 5px;
+  border-radius: 10px;
+  
+}
+
+.auth-form {
+  height: 175px;
+  width: 300px;
+  padding: 6px;
+  border-radius: 30px;
+  background-color: #ffdf2b;
+}
+
+.login-card {
+  align-items: center;
+}
+
+.auth-form-register {
+  height: 200px;
+  width: 300px;
+  padding: 6px;
+  border-radius: 30px;
+  background-color: #ffdf2b;
+}

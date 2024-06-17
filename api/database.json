@@ -1,0 +1,1079 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "npcId": 1,
+      "email": "hotchocolatelover@mail.com",
+      "userName": "Donna"
+    },
+    {
+      "id": 2,
+      "npcId": 6,
+      "email": "turtle@mail.com",
+      "userName": "Amanda"
+    },
+    {
+      "id": 3,
+      "npcId": 13,
+      "email": "seashell@mail.com",
+      "userName": "Grant"
+    },
+    {
+      "email": "mouse@email.com",
+      "username": "Mickey",
+      "id": 4
+    },
+    {
+      "email": "mail@mail.com",
+      "username": "james",
+      "id": 5
+    }
+  ],
+  "reminders": [
+    {
+      "id": 1,
+      "userId": 1,
+      "npcId": 76,
+      "title": "Sunflower",
+      "synopsis": "Valentina needs a sunflower",
+      "dueDate": "Summer 21",
+      "completed": false
+    },
+    {
+      "id": 2,
+      "userId": 2,
+      "npcId": 76,
+      "title": "Title",
+      "synopsis": "info needed",
+      "dueDate": "Spring 2",
+      "completed": false
+    },
+    {
+      "id": 3,
+      "userId": 3,
+      "npcId": 60,
+      "title": "Things needed",
+      "synopsis": "gather things",
+      "dueDate": "Fall 5",
+      "completed": true
+    },
+    {
+      "id": 4,
+      "userId": 2,
+      "npcId": 78,
+      "title": "Stuff",
+      "synopsis": "get fish",
+      "dueDate": "Winter 1",
+      "completed": true
+    }
+  ],
+  "messages": [
+    {
+      "id": 1,
+      "userId": 1,
+      "text": "Hi!"
+    },
+    {
+      "id": 2,
+      "userId": 2,
+      "text": "Hi!"
+    },
+    {
+      "id": 3,
+      "userId": 3,
+      "text": "Hi!"
+    },
+    {
+      "id": 4,
+      "userId": 1,
+      "text": "Hi!"
+    }
+  ],
+  "days": [
+    {
+      "id": 1,
+      "seasonId": 1,
+      "dayOfSeason": 1
+    },
+    {
+      "id": 2,
+      "seasonId": 1,
+      "dayOfSeason": 2
+    },
+    {
+      "id": 3,
+      "seasonId": 1,
+      "dayOfSeason": 3
+    },
+    {
+      "id": 4,
+      "seasonId": 1,
+      "dayOfSeason": 4
+    },
+    {
+      "id": 5,
+      "seasonId": 1,
+      "dayOfSeason": 5
+    },
+    {
+      "id": 6,
+      "seasonId": 1,
+      "dayOfSeason": 6
+    },
+    {
+      "id": 7,
+      "seasonId": 1,
+      "dayOfSeason": 7
+    },
+    {
+      "id": 8,
+      "seasonId": 1,
+      "dayOfSeason": 8
+    },
+    {
+      "id": 9,
+      "seasonId": 1,
+      "dayOfSeason": 9
+    },
+    {
+      "id": 10,
+      "seasonId": 1,
+      "dayOfSeason": 10
+    },
+    {
+      "id": 11,
+      "seasonId": 1,
+      "dayOfSeason": 11
+    },
+    {
+      "id": 12,
+      "seasonId": 1,
+      "dayOfSeason": 12
+    },
+    {
+      "id": 13,
+      "seasonId": 1,
+      "dayOfSeason": 13
+    },
+    {
+      "id": 14,
+      "seasonId": 1,
+      "dayOfSeason": 14
+    },
+    {
+      "id": 15,
+      "seasonId": 1,
+      "dayOfSeason": 15
+    },
+    {
+      "id": 16,
+      "seasonId": 1,
+      "dayOfSeason": 16
+    },
+    {
+      "id": 17,
+      "seasonId": 1,
+      "dayOfSeason": 17
+    },
+    {
+      "id": 18,
+      "seasonId": 1,
+      "dayOfSeason": 18
+    },
+    {
+      "id": 19,
+      "seasonId": 1,
+      "dayOfSeason": 19
+    },
+    {
+      "id": 20,
+      "seasonId": 1,
+      "dayOfSeason": 20
+    },
+    {
+      "id": 21,
+      "seasonId": 1,
+      "dayOfSeason": 21
+    },
+    {
+      "id": 22,
+      "seasonId": 1,
+      "dayOfSeason": 22
+    },
+    {
+      "id": 23,
+      "seasonId": 1,
+      "dayOfSeason": 23
+    },
+    {
+      "id": 24,
+      "seasonId": 1,
+      "dayOfSeason": 24
+    },
+    {
+      "id": 25,
+      "seasonId": 1,
+      "dayOfSeason": 25
+    },
+    {
+      "id": 26,
+      "seasonId": 1,
+      "dayOfSeason": 26
+    },
+    {
+      "id": 27,
+      "seasonId": 1,
+      "dayOfSeason": 27
+    },
+    {
+      "id": 28,
+      "seasonId": 1,
+      "dayOfSeason": 28
+    },
+    {
+      "id": 29,
+      "seasonId": 2,
+      "dayOfSeason": 1
+    },
+    {
+      "id": 30,
+      "seasonId": 2,
+      "dayOfSeason": 2
+    },
+    {
+      "id": 31,
+      "seasonId": 2,
+      "dayOfSeason": 3
+    },
+    {
+      "id": 32,
+      "seasonId": 2,
+      "dayOfSeason": 4
+    },
+    {
+      "id": 33,
+      "seasonId": 2,
+      "dayOfSeason": 5
+    },
+    {
+      "id": 34,
+      "seasonId": 2,
+      "dayOfSeason": 6
+    },
+    {
+      "id": 35,
+      "seasonId": 2,
+      "dayOfSeason": 7
+    },
+    {
+      "id": 36,
+      "seasonId": 2,
+      "dayOfSeason": 8
+    },
+    {
+      "id": 37,
+      "seasonId": 2,
+      "dayOfSeason": 9
+    },
+    {
+      "id": 38,
+      "seasonId": 2,
+      "dayOfSeason": 10
+    },
+    {
+      "id": 39,
+      "seasonId": 2,
+      "dayOfSeason": 11
+    },
+    {
+      "id": 40,
+      "seasonId": 2,
+      "dayOfSeason": 12
+    },
+    {
+      "id": 41,
+      "seasonId": 2,
+      "dayOfSeason": 13
+    },
+    {
+      "id": 42,
+      "seasonId": 2,
+      "dayOfSeason": 14
+    },
+    {
+      "id": 43,
+      "seasonId": 2,
+      "dayOfSeason": 15
+    },
+    {
+      "id": 44,
+      "seasonId": 2,
+      "dayOfSeason": 16
+    },
+    {
+      "id": 45,
+      "seasonId": 2,
+      "dayOfSeason": 17
+    },
+    {
+      "id": 46,
+      "seasonId": 2,
+      "dayOfSeason": 18
+    },
+    {
+      "id": 47,
+      "seasonId": 2,
+      "dayOfSeason": 19
+    },
+    {
+      "id": 48,
+      "seasonId": 2,
+      "dayOfSeason": 20
+    },
+    {
+      "id": 49,
+      "seasonId": 2,
+      "dayOfSeason": 21
+    },
+    {
+      "id": 50,
+      "seasonId": 2,
+      "dayOfSeason": 22
+    },
+    {
+      "id": 51,
+      "seasonId": 2,
+      "dayOfSeason": 23
+    },
+    {
+      "id": 52,
+      "seasonId": 2,
+      "dayOfSeason": 24
+    },
+    {
+      "id": 53,
+      "seasonId": 2,
+      "dayOfSeason": 25
+    },
+    {
+      "id": 54,
+      "seasonId": 2,
+      "dayOfSeason": 26
+    },
+    {
+      "id": 55,
+      "seasonId": 2,
+      "dayOfSeason": 27
+    },
+    {
+      "id": 56,
+      "seasonId": 2,
+      "dayOfSeason": 28
+    },
+    {
+      "id": 57,
+      "seasonId": 3,
+      "dayOfSeason": 1
+    },
+    {
+      "id": 58,
+      "seasonId": 3,
+      "dayOfSeason": 2
+    },
+    {
+      "id": 59,
+      "seasonId": 3,
+      "dayOfSeason": 3
+    },
+    {
+      "id": 60,
+      "seasonId": 3,
+      "dayOfSeason": 4
+    },
+    {
+      "id": 61,
+      "seasonId": 3,
+      "dayOfSeason": 5
+    },
+    {
+      "id": 62,
+      "seasonId": 3,
+      "dayOfSeason": 6
+    },
+    {
+      "id": 63,
+      "seasonId": 3,
+      "dayOfSeason": 7
+    },
+    {
+      "id": 64,
+      "seasonId": 3,
+      "dayOfSeason": 8
+    },
+    {
+      "id": 65,
+      "seasonId": 3,
+      "dayOfSeason": 9
+    },
+    {
+      "id": 66,
+      "seasonId": 3,
+      "dayOfSeason": 10
+    },
+    {
+      "id": 67,
+      "seasonId": 3,
+      "dayOfSeason": 11
+    },
+    {
+      "id": 68,
+      "seasonId": 3,
+      "dayOfSeason": 12
+    },
+    {
+      "id": 69,
+      "seasonId": 3,
+      "dayOfSeason": 13
+    },
+    {
+      "id": 70,
+      "seasonId": 3,
+      "dayOfSeason": 14
+    },
+    {
+      "id": 71,
+      "seasonId": 3,
+      "dayOfSeason": 15
+    },
+    {
+      "id": 72,
+      "seasonId": 3,
+      "dayOfSeason": 16
+    },
+    {
+      "id": 73,
+      "seasonId": 3,
+      "dayOfSeason": 17
+    },
+    {
+      "id": 74,
+      "seasonId": 3,
+      "dayOfSeason": 18
+    },
+    {
+      "id": 75,
+      "seasonId": 3,
+      "dayOfSeason": 19
+    },
+    {
+      "id": 76,
+      "seasonId": 3,
+      "dayOfSeason": 20
+    },
+    {
+      "id": 77,
+      "seasonId": 3,
+      "dayOfSeason": 21
+    },
+    {
+      "id": 78,
+      "seasonId": 3,
+      "dayOfSeason": 22
+    },
+    {
+      "id": 79,
+      "seasonId": 3,
+      "dayOfSeason": 23
+    },
+    {
+      "id": 80,
+      "seasonId": 3,
+      "dayOfSeason": 24
+    },
+    {
+      "id": 81,
+      "seasonId": 3,
+      "dayOfSeason": 25
+    },
+    {
+      "id": 82,
+      "seasonId": 3,
+      "dayOfSeason": 26
+    },
+    {
+      "id": 83,
+      "seasonId": 3,
+      "dayOfSeason": 27
+    },
+    {
+      "id": 84,
+      "seasonId": 3,
+      "dayOfSeason": 28
+    },
+    {
+      "id": 85,
+      "seasonId": 4,
+      "dayOfSeason": 1
+    },
+    {
+      "id": 86,
+      "seasonId": 4,
+      "dayOfSeason": 2
+    },
+    {
+      "id": 87,
+      "seasonId": 4,
+      "dayOfSeason": 3
+    },
+    {
+      "id": 88,
+      "seasonId": 4,
+      "dayOfSeason": 4
+    },
+    {
+      "id": 89,
+      "seasonId": 4,
+      "dayOfSeason": 5
+    },
+    {
+      "id": 90,
+      "seasonId": 4,
+      "dayOfSeason": 6
+    },
+    {
+      "id": 91,
+      "seasonId": 4,
+      "dayOfSeason": 7
+    },
+    {
+      "id": 92,
+      "seasonId": 4,
+      "dayOfSeason": 8
+    },
+    {
+      "id": 93,
+      "seasonId": 4,
+      "dayOfSeason": 9
+    },
+    {
+      "id": 94,
+      "seasonId": 4,
+      "dayOfSeason": 10
+    },
+    {
+      "id": 95,
+      "seasonId": 4,
+      "dayOfSeason": 11
+    },
+    {
+      "id": 96,
+      "seasonId": 4,
+      "dayOfSeason": 12
+    },
+    {
+      "id": 97,
+      "seasonId": 4,
+      "dayOfSeason": 13
+    },
+    {
+      "id": 98,
+      "seasonId": 4,
+      "dayOfSeason": 14
+    },
+    {
+      "id": 99,
+      "seasonId": 4,
+      "dayOfSeason": 15
+    },
+    {
+      "id": 100,
+      "seasonId": 4,
+      "dayOfSeason": 16
+    },
+    {
+      "id": 101,
+      "seasonId": 4,
+      "dayOfSeason": 17
+    },
+    {
+      "id": 102,
+      "seasonId": 4,
+      "dayOfSeason": 18
+    },
+    {
+      "id": 103,
+      "seasonId": 4,
+      "dayOfSeason": 19
+    },
+    {
+      "id": 104,
+      "seasonId": 4,
+      "dayOfSeason": 20
+    },
+    {
+      "id": 105,
+      "seasonId": 4,
+      "dayOfSeason": 21
+    },
+    {
+      "id": 106,
+      "seasonId": 4,
+      "dayOfSeason": 22
+    },
+    {
+      "id": 107,
+      "seasonId": 4,
+      "dayOfSeason": 23
+    },
+    {
+      "id": 108,
+      "seasonId": 4,
+      "dayOfSeason": 24
+    },
+    {
+      "id": 109,
+      "seasonId": 4,
+      "dayOfSeason": 25
+    },
+    {
+      "id": 110,
+      "seasonId": 4,
+      "dayOfSeason": 26
+    },
+    {
+      "id": 111,
+      "seasonId": 4,
+      "dayOfSeason": 27
+    },
+    {
+      "id": 112,
+      "seasonId": 4,
+      "dayOfSeason": 28
+    }
+  ],
+  "season": [
+    {
+      "id": 1,
+      "name": "Spring"
+    },
+    {
+      "id": 1,
+      "name": "Summer"
+    },
+    {
+      "id": 1,
+      "name": "Fall"
+    },
+    {
+      "id": 1,
+      "name": "Winter"
+    }
+  ],
+  "npc": [
+    {
+      "id": 1,
+      "character": "Aaliyah",
+      "url": "https://static.wikia.nocookie.net/coralisland/images/b/bf/Aaliyah_portrait.png/revision/latest?cb=20221015161005"
+    },
+    {
+      "id": 2,
+      "character": "Agung",
+      "url": "https://static.wikia.nocookie.net/coralisland/images/9/92/Agung_portrait.png/revision/latest?cb=20230801213822"
+    },
+    {
+      "id": 3,
+      "character": "Alice",
+      "url": "https://static.wikia.nocookie.net/coralisland/images/a/a5/Alice_portrait.png/revision/latest?cb=20221112215531"
+    },
+    {
+      "id": 4,
+      "character": "Anne",
+      "url": "https://static.wikia.nocookie.net/coralisland/images/3/36/Anne_portrait.png/revision/latest?cb=20221112215628"
+    },
+    {
+      "id": 5,
+      "character": "Antonio",
+      "url": "https://static.wikia.nocookie.net/coralisland/images/a/ab/Antonio_portrait.png/revision/latest?cb=20221015161007"
+    },
+    {
+      "id": 6,
+      "character": "Archie",
+      "url": "https://static.wikia.nocookie.net/coralisland/images/9/99/Archie_portrait.png/revision/latest?cb=20221112215659"
+    },
+    {
+      "id": 7,
+      "character": "Axel",
+      "url": "https://static.wikia.nocookie.net/coralisland/images/3/33/Axel_portrait.png/revision/latest?cb=20230830232726"
+    },
+    {
+      "id": 8,
+      "character": "Ben",
+      "url": "https://static.wikia.nocookie.net/coralisland/images/8/88/Ben_portrait.png/revision/latest?cb=20221112215727"
+    },
+    {
+      "id": 9,
+      "character": "Betty",
+      "url": "https://static.wikia.nocookie.net/coralisland/images/3/37/Betty_portrait.png/revision/latest?cb=20221112215751"
+    },
+    {
+      "id": 10,
+      "character": "Bobby",
+      "url": "https://static.wikia.nocookie.net/coralisland/images/9/9b/Bobby_portrait.png/revision/latest?cb=20231119225004"
+    },
+    {
+      "id": 11,
+      "character": "Bree",
+      "url": "https://static.wikia.nocookie.net/coralisland/images/c/c2/Bree_portrait.png/revision/latest?cb=20221112215829"
+    },
+    {
+      "id": 12,
+      "character": "Chaem",
+      "url": "https://static.wikia.nocookie.net/coralisland/images/a/a3/Chaem_portrait.png/revision/latest?cb=20221015161304"
+    },
+    {
+      "id": 13,
+      "character": "Charles",
+      "url": "https://static.wikia.nocookie.net/coralisland/images/1/1d/Charles_portrait.png/revision/latest?cb=20221112215815"
+    },
+    {
+      "id": 14,
+      "character": "Chieftain",
+      "url": "https://static.wikia.nocookie.net/coralisland/images/0/00/Chieftain_portrait.png/revision/latest?cb=20230830005501"
+    },
+    {
+      "id": 15,
+      "character": "Cho Oyu",
+      "url": "https://static.wikia.nocookie.net/coralisland/images/0/03/Cho_Oyu_portrait.png/revision/latest?cb=20230801214028"
+    },
+    {
+      "id": 16,
+      "character": "Connor",
+      "url": "https://static.wikia.nocookie.net/coralisland/images/4/4b/Connor_portrait.png/revision/latest?cb=20221112215843"
+    },
+    {
+      "id": 17,
+      "character": "Denali",
+      "url": "https://static.wikia.nocookie.net/coralisland/images/d/d9/Denali_portrait.png/revision/latest?cb=20230801213858"
+    },
+    {
+      "id": 18,
+      "character": "Deno",
+      "url": "https://static.wikia.nocookie.net/coralisland/images/2/21/Deno_portrait.png/revision/latest?cb=20231201001416"
+    },
+    {
+      "id": 19,
+      "character": "Derek",
+      "url": "https://static.wikia.nocookie.net/coralisland/images/8/89/Derek_portrait.png/revision/latest?cb=20230830224721"
+    },
+    {
+      "id": 20,
+      "character": "Dinda",
+      "url": "https://static.wikia.nocookie.net/coralisland/images/2/20/Dinda_portrait.png/revision/latest?cb=20230901142639"
+    },
+    {
+      "id": 21,
+      "character": "Dippa",
+      "url": "https://static.wikia.nocookie.net/coralisland/images/2/20/Dippa_portrait.png/revision/latest?cb=20230903164351"
+    },
+    {
+      "id": 22,
+      "character": "Eddy",
+      "url": "https://static.wikia.nocookie.net/coralisland/images/b/b3/Eddy_portrait.png/revision/latest?cb=20230831011728"
+    },
+    {
+      "id": 23,
+      "character": "Eleanor",
+      "url": "https://static.wikia.nocookie.net/coralisland/images/c/cb/Eleanor_portrait.png/revision/latest?cb=20221015161305"
+    },
+    {
+      "id": 24,
+      "character": "Emily",
+      "url": "https://static.wikia.nocookie.net/coralisland/images/4/42/Emily_portrait.png/revision/latest?cb=20221112215945"
+    },
+    {
+      "id": 25,
+      "character": "Emma",
+      "url": "https://static.wikia.nocookie.net/coralisland/images/6/6e/Emma_portrait.png/revision/latest?cb=20221112220027"
+    },
+    {
+      "id": 26,
+      "character": "Erika",
+      "url": "https://static.wikia.nocookie.net/coralisland/images/f/ff/Erika_portrait.png/revision/latest?cb=20221112220034"
+    },
+    {
+      "id": 27,
+      "character": "Eva",
+      "url": "https://static.wikia.nocookie.net/coralisland/images/1/1d/Eva.png/revision/latest?cb=20221112220101"
+    },
+    {
+      "id": 28,
+      "character": "Frank",
+      "url": "https://static.wikia.nocookie.net/coralisland/images/2/2b/Frank.png/revision/latest?cb=20221112220107"
+    },
+    {
+      "id": 29,
+      "character": "Giu",
+      "url": "https://static.wikia.nocookie.net/coralisland/images/e/e9/Giu.png/revision/latest?cb=20230502113955"
+    },
+    {
+      "id": 30,
+      "character": "Goddess of Flowers",
+      "url": "https://static.wikia.nocookie.net/coralisland/images/2/26/Goddess_of_Flowers_portrait.png/revision/latest?cb=20230701144516"
+    },
+    {
+      "id": 31,
+      "character": "Gong",
+      "url": "https://static.wikia.nocookie.net/coralisland/images/3/36/Gong.png/revision/latest?cb=20230330002406"
+    },
+    {
+      "id": 32,
+      "character": "Gort",
+      "url": "https://static.wikia.nocookie.net/coralisland/images/e/e4/Gort.png/revision/latest?cb=20240117161442"
+    },
+    {
+      "id": 33,
+      "character": "Grog",
+      "url": "https://static.wikia.nocookie.net/coralisland/images/8/85/Grog.png/revision/latest?cb=20230329233936"
+    },
+    {
+      "id": 34,
+      "character": "Groo",
+      "url": "https://static.wikia.nocookie.net/coralisland/images/d/d6/Groo.png/revision/latest?cb=20230330010915"
+    },
+    {
+      "id": 35,
+      "character": "Handsome",
+      "url": "https://static.wikia.nocookie.net/coralisland/images/2/21/Handsome_portrait.png/revision/latest?cb=20230801214059"
+    },
+    {
+      "id": 36,
+      "character": "Jack",
+      "url": "https://static.wikia.nocookie.net/coralisland/images/4/46/Jack.png/revision/latest?cb=20221112220114"
+    },
+    {
+      "id": 37,
+      "character": "Jeff Smith",
+      "url": "https://static.wikia.nocookie.net/coralisland/images/6/6c/Jeff_Smith_portrait.png/revision/latest?cb=20230831012048"
+    },
+    {
+      "id": 38,
+      "character": "Jim",
+      "url": "https://static.wikia.nocookie.net/coralisland/images/4/4f/Jim.png/revision/latest?cb=20221112220121"
+    },
+    {
+      "id": 39,
+      "character": "Jio Dan",
+      "url": "https://static.wikia.nocookie.net/coralisland/images/1/18/Jio_Dan_portrait.png/revision/latest?cb=20230526074404"
+    },
+    {
+      "id": 40,
+      "character": "Joko",
+      "url": "https://static.wikia.nocookie.net/coralisland/images/a/af/Joko.png/revision/latest?cb=20221112220129"
+    },
+    {
+      "id": 41,
+      "character": "Judge Ross",
+      "url": "https://static.wikia.nocookie.net/coralisland/images/d/d5/Judge_Ross_portrait.png/revision/latest?cb=20231201200932"
+    },
+    {
+      "id": 42,
+      "character": "Karen",
+      "url": "https://static.wikia.nocookie.net/coralisland/images/9/9a/Karen_portrait.png/revision/latest?cb=20221112220210"
+    },
+    {
+      "id": 43,
+      "character": "Kenny",
+      "url": "https://static.wikia.nocookie.net/coralisland/images/3/3c/Kenny.png/revision/latest?cb=20221112220317"
+    },
+    {
+      "id": 44,
+      "character": "Kira",
+      "url": "https://static.wikia.nocookie.net/coralisland/images/1/1b/Kira.png/revision/latest?cb=20221112220324"
+    },
+    {
+      "id": 45,
+      "character": "King Krakatoa",
+      "url": "https://static.wikia.nocookie.net/coralisland/images/8/8b/Krakatoa.png/revision/latest?cb=20230801214135"
+    },
+    {
+      "id": 47,
+      "character": "Leah",
+      "url": "https://static.wikia.nocookie.net/coralisland/images/e/e6/Leah.png/revision/latest?cb=20221112220429"
+    },
+    {
+      "id": 48,
+      "character": "Lily",
+      "url": "https://static.wikia.nocookie.net/coralisland/images/0/0a/Lily.png/revision/latest?cb=20221112220435"
+    },
+    {
+      "id": 49,
+      "character": "Ling",
+      "url": "https://static.wikia.nocookie.net/coralisland/images/6/6d/Ling.png/revision/latest?cb=20221112220444"
+    },
+    {
+      "id": 50,
+      "character": "Luke",
+      "url": "https://static.wikia.nocookie.net/coralisland/images/4/4f/Luke.png/revision/latest?cb=20221112220451"
+    },
+    {
+      "id": 51,
+      "character": "Macy",
+      "url": "https://static.wikia.nocookie.net/coralisland/images/9/96/Macy.png/revision/latest?cb=20221112220459"
+    },
+    {
+      "id": 52,
+      "character": "Mark",
+      "url": "https://static.wikia.nocookie.net/coralisland/images/4/4d/Mark.png/revision/latest?cb=20221015161647"
+    },
+    {
+      "id": 53,
+      "character": "Millie",
+      "url": "https://static.wikia.nocookie.net/coralisland/images/0/04/Millie.png/revision/latest?cb=20221112221942"
+    },
+    {
+      "id": 54,
+      "character": "Princess Miranjani",
+      "url": "https://static.wikia.nocookie.net/coralisland/images/d/da/Miranjani.png/revision/latest?cb=20230701144523"
+    },
+    {
+      "id": 55,
+      "character": "Queen Nanda Devi",
+      "url": "https://static.wikia.nocookie.net/coralisland/images/b/ba/Nanda_Devi.png/revision/latest?cb=20230801214208"
+    },
+    {
+      "id": 56,
+      "character": "Nina",
+      "url": "https://static.wikia.nocookie.net/coralisland/images/9/97/Nina.png/revision/latest?cb=20221112221950"
+    },
+    {
+      "id": 57,
+      "character": "Noah",
+      "url": "https://static.wikia.nocookie.net/coralisland/images/d/dd/Noah.png/revision/latest?cb=20221112221958"
+    },
+    {
+      "id": 58,
+      "character": "Olan",
+      "url": "https://static.wikia.nocookie.net/coralisland/images/9/96/Olan_portrait.png/revision/latest?cb=20231210115558"
+    },
+    {
+      "id": 59,
+      "character": "Oliver",
+      "url": "https://static.wikia.nocookie.net/coralisland/images/d/d4/Oliver.png/revision/latest?cb=20221112222007"
+    },
+    {
+      "id": 60,
+      "character": "Pablo",
+      "url": "https://static.wikia.nocookie.net/coralisland/images/c/c8/Pablo.png/revision/latest?cb=20221112222017"
+    },
+    {
+      "id": 61,
+      "character": "Paul",
+      "url": "https://static.wikia.nocookie.net/coralisland/images/0/00/Paul.png/revision/latest?cb=20221112222026"
+    },
+    {
+      "id": 62,
+      "character": "Rafael",
+      "url": "https://static.wikia.nocookie.net/coralisland/images/c/cb/Rafael.png/revision/latest?cb=20221112222157"
+    },
+    {
+      "id": 63,
+      "character": "Raina",
+      "url": "https://static.wikia.nocookie.net/coralisland/images/5/5c/Raina_portrait.png/revision/latest?cb=20230701144526"
+    },
+    {
+      "id": 64,
+      "character": "Raj",
+      "url": "https://static.wikia.nocookie.net/coralisland/images/0/00/Raj.png/revision/latest?cb=20221015162256"
+    },
+    {
+      "id": 65,
+      "character": "Randy",
+      "url": "https://static.wikia.nocookie.net/coralisland/images/3/33/Randy.png/revision/latest?cb=20221112222234"
+    },
+    {
+      "id": 66,
+      "character": "Ratih",
+      "url": "https://static.wikia.nocookie.net/coralisland/images/e/e9/Ratih_portrait.png/revision/latest?cb=20230903174408"
+    },
+    {
+      "id": 67,
+      "character": "Sam",
+      "url": "https://static.wikia.nocookie.net/coralisland/images/9/94/Sam.png/revision/latest?cb=20221112222241"
+    },
+    {
+      "id": 68,
+      "character": "Scott",
+      "url": "https://static.wikia.nocookie.net/coralisland/images/d/d2/Scott.png/revision/latest?cb=20221112222247"
+    },
+    {
+      "id": 69,
+      "character": "Semeru",
+      "url": "https://static.wikia.nocookie.net/coralisland/images/d/da/Semeru.png/revision/latest?cb=20230801213044"
+    },
+    {
+      "id": 70,
+      "character": "Senja",
+      "url": "https://static.wikia.nocookie.net/coralisland/images/6/66/Senja.png/revision/latest?cb=20230503231107"
+    },
+    {
+      "id": 71,
+      "character": "Suki",
+      "url": "https://static.wikia.nocookie.net/coralisland/images/1/14/Suki.png/revision/latest?cb=20221112222337"
+    },
+    {
+      "id": 72,
+      "character": "Sunny",
+      "url": "https://static.wikia.nocookie.net/coralisland/images/9/9a/Sunny.png/revision/latest?cb=20221112222345"
+    },
+    {
+      "id": 73,
+      "character": "Surya",
+      "url": "https://static.wikia.nocookie.net/coralisland/images/0/0b/Surya.png/revision/latest?cb=20221112222353"
+    },
+    {
+      "id": 74,
+      "character": "Takeba",
+      "url": "https://static.wikia.nocookie.net/coralisland/images/2/2d/Takeba.png/revision/latest?cb=20221015162341"
+    },
+    {
+      "id": 75,
+      "character": "Theo",
+      "url": "https://static.wikia.nocookie.net/coralisland/images/5/51/Theo.png/revision/latest?cb=20221112222400"
+    },
+    {
+      "id": 76,
+      "character": "Valentina",
+      "url": "https://static.wikia.nocookie.net/coralisland/images/9/90/Valentina.png/revision/latest?cb=20221112222536"
+    },
+    {
+      "id": 77,
+      "character": "Wakuu",
+      "url": "https://static.wikia.nocookie.net/coralisland/images/a/a5/Wakuu.png/revision/latest?cb=20221015162439"
+    },
+    {
+      "id": 78,
+      "character": "Walter",
+      "url": "https://static.wikia.nocookie.net/coralisland/images/2/26/Walter.png/revision/latest?cb=20221112222544"
+    },
+    {
+      "id": 79,
+      "character": "Wataru",
+      "url": "https://static.wikia.nocookie.net/coralisland/images/3/39/Wataru.png/revision/latest?cb=20221015161011"
+    },
+    {
+      "id": 80,
+      "character": "Yuri",
+      "url": "https://static.wikia.nocookie.net/coralisland/images/c/cc/Yuri.png/revision/latest?cb=20221112222550"
+    },
+    {
+      "id": 81,
+      "character": "Zarah",
+      "url": "https://static.wikia.nocookie.net/coralisland/images/3/30/Zarah.png/revision/latest?cb=20221112222557"
+    },
+    {
+      "id": 82,
+      "character": "Zoe",
+      "url": "https://static.wikia.nocookie.net/coralisland/images/4/4a/Zoe.png/revision/latest?cb=20221112222604"
+    }
+  ]
+}
