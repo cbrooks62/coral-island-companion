@@ -1,6 +1,8 @@
 import { Outlet, Route, Routes } from "react-router";
 import { CompanionNavbar } from "../Components/Navbar/Navbar.jsx";
 import { useEffect, useState } from "react";
+import { ReminderList } from "../Components/Reminders/ReminderList.jsx";
+
 
 export const ApplicationViews = () => {
     const [currentUser, setCurrentUser] = useState({});
@@ -22,7 +24,9 @@ export const ApplicationViews = () => {
             <Outlet />
           </>
         }
-      ></Route>
+      >
+        <Route path="/" element={<ReminderList currentUser={currentUser} />} />
+      </Route>
    </Routes>
   )
 }
