@@ -1,4 +1,5 @@
 // Purpose: Handles login functionality for the application.
+
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
@@ -16,7 +17,7 @@ export const Login = () => {
       if (foundUsers.length === 1) {
           const user = foundUsers[0];
           localStorage.setItem(
-              "nutshell_user",
+              "companion_user",
               JSON.stringify({
                   id: user.id,
               })

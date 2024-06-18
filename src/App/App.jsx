@@ -4,6 +4,7 @@ import { Route, Routes } from "react-router-dom";
 import { Login } from "../Components/Users/Login.jsx";
 import { Authorized } from "../Views/Authorized.jsx";
 import { Register } from "../Components/Users/RegisterUserProfile.jsx";
+import { ApplicationViews } from "../Views/ApplicationViews.jsx";
 
 export const App = () => {
 
@@ -16,6 +17,7 @@ export const App = () => {
       path="*"
       element={
         <Authorized>
+          <ApplicationViews />
         </Authorized>
       }
     />
