@@ -29,8 +29,7 @@ export const Login = () => {
   };
 
   return (
-    <main className="auth-container">
-      <div id="root"></div>
+    <div id="root" className="auth-container">
       <section className="login-card">
         <form className="auth-form" onSubmit={handleLogin}>
           <h1 className="header-login">Login</h1>
@@ -59,6 +58,7 @@ export const Login = () => {
       <section className="register-link">
         <Link to="/register">New User?</Link>
       </section>
-    </main>
+      
+    </div>
   );
 };

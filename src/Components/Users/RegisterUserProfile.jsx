@@ -51,7 +51,7 @@ export const Register = (props) => {
   }
 
   return (
-    <main className="auth-container">
+    <div id="root" className="auth-container">
       <form className="auth-form-register" onSubmit={handleRegister}>
         <h1 className="header-register">Welcome!</h1>
         <fieldset className="auth-fieldset">
@@ -85,6 +85,6 @@ export const Register = (props) => {
           </div>
         </fieldset>
       </form>
-    </main>
+    </div>
   )
 }

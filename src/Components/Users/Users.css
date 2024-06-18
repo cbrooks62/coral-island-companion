@@ -2,7 +2,7 @@
 .auth-container {
   background-image: url(src/Images/CICLogin.png);
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: 100vw 100vh;
 }
 
 .header-login {
@@ -53,10 +53,14 @@ text-align: center;
   padding: 6px;
   border-radius: 30px;
   background-color: #ffdf2b;
+  border-top: #7f62b7;
 }
 
 .login-card {
+  display: flex;
   align-items: center;
+  justify-content: center;
+  margin-top: 8rem;
 }
 
 .auth-form-register {
@@ -65,4 +69,5 @@ text-align: center;
   padding: 6px;
   border-radius: 30px;
   background-color: #ffdf2b;
+  margin-top: 8rem;
 }
