@@ -1,0 +1,24 @@
+.header-reminders {
+  color: #7F62B7;
+  font-size: 6rem;
+}
+
+.reminder-container {
+  width: 100vw;
+}
+
+.reminder-list {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+}
+
+.single-reminder-card {
+  padding: 2rem;
+  margin: 1rem;
+}
+
+.button-new-reminder {
+  background-color: #ff66c4;
+  border-radius: 15px;
+}

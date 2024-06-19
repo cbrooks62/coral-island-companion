@@ -20,7 +20,7 @@ import { useState } from "react";
 export const CompanionNavbar = () => {
   return (
     <div>
-      <Navbar className="navbar" fixed="top">
+      <Navbar className="navbar-CIC" fixed="top">
         <NavbarBrand>
           <img
             alt="coral island companion logo"

@@ -17,16 +17,6 @@
       "npcId": 13,
       "email": "seashell@mail.com",
       "userName": "Grant"
-    },
-    {
-      "email": "mouse@email.com",
-      "username": "Mickey",
-      "id": 4
-    },
-    {
-      "email": "plave@mail.com",
-      "username": "james",
-      "id": 5
     }
   ],
   "reminders": [
@@ -651,7 +641,7 @@
       "dayOfSeason": 28
     }
   ],
-  "season": [
+  "seasons": [
     {
       "id": 1,
       "name": "Spring"
@@ -669,7 +659,7 @@
       "name": "Winter"
     }
   ],
-  "npc": [
+  "npcs": [
     {
       "id": 1,
       "character": "Aaliyah",

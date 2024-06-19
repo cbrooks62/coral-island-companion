@@ -45,7 +45,7 @@ export const Reminder = ({ singleReminder, getAndSetReminders }) => {
           Due Date: {singleReminder.dueDate}
         </CardSubtitle>
         <CardSubtitle className="reminder-npc">
-          NPC: {singleReminder.npcId}
+          NPC: {singleReminder.npc.character}
         </CardSubtitle>
         <CardText className="reminder-synopsis">
           {singleReminder.synopsis}
