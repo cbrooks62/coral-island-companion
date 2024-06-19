@@ -6,18 +6,18 @@ import {
   NavbarToggler,
   NavbarBrand,
   Nav,
-  NavItem,
   NavLink,
   UncontrolledDropdown,
   DropdownToggle,
   DropdownMenu,
   DropdownItem,
   NavbarText,
+  Card,
 } from "reactstrap";
 import "./Navbar.css";
 import { useState } from "react";
 
-export const CompanionNavbar = () => {
+export const CompanionNavbar = ({currentUser}) => {
   return (
     <div>
       <Navbar className="navbar-CIC" fixed="top">
@@ -34,23 +34,23 @@ export const CompanionNavbar = () => {
           Coral Island Companion
         </NavbarBrand>
         <Nav>
-          <NavItem></NavItem>
-          <NavItem>
+          <div>
             <NavLink href="/">Reminders</NavLink>
-          </NavItem>
-          <NavItem>
+          </div>
+          <div>
             <NavLink href="/Calendar">Calendar</NavLink>
-          </NavItem>
-          <NavItem>
+          </div>
+          <div>
             <NavLink href="/Chat">Chat</NavLink>
-          </NavItem>
-          <NavItem>
+          </div>
+          <div>
             <NavLink href="/EditProfile">Profile</NavLink>
-          </NavItem>
+          </div>
         </Nav>
-        <NavItem>
-          <NavLink href="/Login">Logout</NavLink>
-        </NavItem>
+        <Card>
+        <div> Hi {currentUser.userName}!</div>
+          <NavLink href="/Login"> Logout</NavLink>
+        </Card>
       </Navbar>
     </div>
   );

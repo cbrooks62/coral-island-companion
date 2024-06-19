@@ -5,7 +5,7 @@ export const getAllReminders = () => {
 //fetch to handle the completed/current
 export const updateReminder = (reminder) => {
     return fetch (`http://localhost:8088/reminders/${reminder.id}?_expand=npc`, {
-        method: "POST",
+        method: "PUT",
         headers: {
             "Content-Type": "application/json",
         },
@@ -15,7 +15,7 @@ export const updateReminder = (reminder) => {
 
 //fetch to handle the deleted reminder
 export const deleteReminder = (reminderId) => {
-    return fetch (`http://localhost:8088/reminders/${reminder.id}?_expand=npc`, {
+    return fetch (`http://localhost:8088/reminders/${reminderId}?_expand=npc`, {
         method: "DELETE",
     })
 }

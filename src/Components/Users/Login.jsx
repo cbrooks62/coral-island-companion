@@ -20,10 +20,12 @@ export const Login = () => {
               "companion_user",
               JSON.stringify({
                   id: user.id,
+                  userName: user.userName,
+                  email: user.email
               })
           );
-
           navigate("/");
+          console.log(currentUser.id)
       } else {
           window.alert("Invalid login");
       }

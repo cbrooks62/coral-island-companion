@@ -1,9 +1,21 @@
-{/* PURPOSE: Single Reminder Card displayed on the DOM*/}
-  
-import { Button, Card, CardBody, CardSubtitle, CardText, CardTitle } from "reactstrap";
-import { deleteReminder, updateReminder } from "../../Services/reminderServices.jsx";
+{
+  /* PURPOSE: Single Reminder Card displayed on the DOM*/
+}
 
-export const Reminder = ({ singleReminder, getAndSetReminders }) => {
+import {
+  Button,
+  Card,
+  CardBody,
+  CardSubtitle,
+  CardText,
+  CardTitle,
+} from "reactstrap";
+import {
+  deleteReminder,
+  updateReminder,
+} from "../../Services/reminderServices.jsx";
+
+export const Reminder = ({ singleReminder, getAndSetAllReminders }) => {
   const handleClickComplete = async () => {
     const completedReminder = {
       id: singleReminder.id,
@@ -15,12 +27,12 @@ export const Reminder = ({ singleReminder, getAndSetReminders }) => {
       completed: !singleReminder.completed,
     };
     await updateReminder(completedReminder);
-    getAndSetReminders();
+    getAndSetAllReminders();
   };
 
   const handleDelete = () => {
     deleteReminder(singleReminder.id).then(() => {
-      getAndSetReminders();
+      getAndSetAllReminders();
     });
   };
 
@@ -33,14 +45,8 @@ export const Reminder = ({ singleReminder, getAndSetReminders }) => {
         width: "18rem",
       }}
     >
-      {/* <img
-    alt="Sample"
-    src="https://picsum.photos/300/200"
-  /> */}
       <CardBody>
-        <CardTitle className="reminder-title">
-          {singleReminder.title}
-        </CardTitle>
+        <CardTitle className="reminder-title">{singleReminder.title}</CardTitle>
         <CardSubtitle className="reminder-due-date">
           Due Date: {singleReminder.dueDate}
         </CardSubtitle>
@@ -50,8 +56,8 @@ export const Reminder = ({ singleReminder, getAndSetReminders }) => {
         <CardText className="reminder-synopsis">
           {singleReminder.synopsis}
         </CardText>
-        <Button className="button-current" onClick={handleClickComplete}>
-          Current
+        <Button className="button-complete" onClick={handleClickComplete}>
+          Complete
         </Button>
         <Button className="button-delete" onClick={handleDelete}>
           Delete

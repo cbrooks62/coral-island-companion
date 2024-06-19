@@ -13,6 +13,7 @@ export const ApplicationViews = () => {
         setCurrentUser(companionUserObject);
       }, []);
 
+      console.log(currentUser)
 
   return (
    <Routes>
@@ -20,7 +21,7 @@ export const ApplicationViews = () => {
         path="/"
         element={
           <>
-            <CompanionNavbar />
+            <CompanionNavbar currentUser={currentUser} />
             <Outlet />
           </>
         }

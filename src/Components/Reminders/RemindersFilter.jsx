@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router"
 
-export const RemindersFilter = ({currentUser, setSearchTerm}) => {
+export const RemindersFilter = ({currentUser, setSearchTerm, setShowOpenOnly}) => {
     const navigate= useNavigate()
   return (
     <div className="filter-bar">

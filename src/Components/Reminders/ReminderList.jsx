@@ -6,35 +6,31 @@ import { Reminder } from "./Reminder.jsx";
 import { Link } from "react-router-dom";
 import { RemindersFilter } from "./RemindersFilter.jsx";
 
-export const ReminderList = ({currentUser}) => {
+export const ReminderList = ({ currentUser }) => {
   const [allReminders, setAllReminders] = useState([]);
-  const [userReminders, setUserReminders] = useState([]);
   const [filteredReminders, setFilteredReminders] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
   const [showOpenOnly, setShowOpenOnly] = useState(false);
 
   const getAndSetAllReminders = async () => {
     getAllReminders().then((reminderArray) => {
-      setAllReminders(reminderArray);
+        const foundReminders = reminderArray.filter(
+            (reminder) => reminder.userId === currentUser.id
+          );
+          setAllReminders(foundReminders);
     });
   };
   //useEffect to get all reminders from the reminders array in database
   useEffect(() => {
     getAndSetAllReminders();
-  }, []);
+  }, [currentUser]);
 
-  //useEffect to filter reminder by current user, each user should only see their personal reminders
-  useEffect(() => {
-    const foundReminders = allReminders.filter(
-      (reminder) => reminder.userId === currentUser.id
-    );
-    setUserReminders(foundReminders);
-  }, [allReminders]);
 
-  //filter for searching reminders on DOM 
+  //filter for searching reminders on DOM
   useEffect(() => {
     const foundReminders = allReminders.filter((reminder) =>
-      reminder.synopsis.toLowerCase().includes(searchTerm.toLowerCase())
+      reminder.title.toLowerCase().includes(searchTerm.toLowerCase())
+
     );
 
     setFilteredReminders(foundReminders);
@@ -44,25 +40,31 @@ export const ReminderList = ({currentUser}) => {
   useEffect(() => {
     if (showOpenOnly) {
       const openReminders = allReminders.filter(
-        (reminder) => reminder.dueDate === ""
+        (reminder) => !reminder.completed
       );
       setFilteredReminders(openReminders);
     } else {
-      setFilteredReminders(allReminders);
+        const closedReminders = allReminders.filter(
+            (reminder) => reminder.completed
+          );
+      setFilteredReminders(closedReminders);
     }
   }, [showOpenOnly, allReminders]);
 
-//jsx for all reminders to be displayed on DOM
+  //jsx for all reminders to be displayed on DOM
 
   return (
     <div className="reminder-container">
-      <header className="header-reminders">Reminders</header>
+        <header className="header-reminders">Reminders</header>
       <RemindersFilter
-        allReminders={allReminders}    
+        allReminders={allReminders}
         setShowOpenOnly={setShowOpenOnly}
         setSearchTerm={setSearchTerm}
         currentUser={currentUser}
       />
+      <Link to="/CreateReminder">
+        <button className="button-new-reminder">Create New Reminder</button>
+      </Link>
       <article className="reminders">
         {filteredReminders.map((singleReminder) => {
           return (
@@ -75,20 +77,7 @@ export const ReminderList = ({currentUser}) => {
           );
         })}
       </article>
-      <Link to="/CreateReminder">
-        <button className="button-new-reminder">Create New Reminder</button>
-      </Link>
-      <div className="reminder-list">
-      {userReminders.map((singleReminder) => {
-        return (
-          <Reminder className="single-reminder"
-            key={singleReminder.id}
-            singleReminder={singleReminder}
-            getAndSetAllReminders={getAndSetAllReminders}
-          />
-        );
-      })}
-      </div>
+      <div className="reminder-list"></div>
     </div>
   );
 };
