@@ -14,6 +14,7 @@ import {
   deleteReminder,
   updateReminder,
 } from "../../Services/reminderServices.jsx";
+import { Link } from "react-router-dom";
 
 export const Reminder = ({ singleReminder, getAndSetAllReminders }) => {
   const handleClickComplete = async () => {
@@ -62,6 +63,9 @@ export const Reminder = ({ singleReminder, getAndSetAllReminders }) => {
         <Button className="button-delete" onClick={handleDelete}>
           Delete
         </Button>
+        <div>
+           <Link to={`/EditReminder/${singleReminder.id}`}><Button className="button-edit">Edit</Button></Link> 
+        </div>
       </CardBody>
     </Card>
   );
