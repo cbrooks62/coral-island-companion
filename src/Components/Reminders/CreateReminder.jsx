@@ -1,14 +1,27 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./Reminder.css";
 import { useNavigate } from "react-router";
 import { createReminder } from "../../Services/reminderServices.jsx";
-import { Button, Input, Form } from "reactstrap";
+import {
+  Button,
+  Input,
+  Form,
+  UncontrolledDropdown,
+  DropdownToggle,
+  DropdownMenu,
+  DropdownItem,
+} from "reactstrap";
+import { getAllNpcs } from "../../Services/npcServices.jsx";
 
 export const CreateReminder = ({ currentUser }) => {
+  const [npcs, setNpcs] = useState([]);
+  const [npcId, setNpcId] = useState();
+  const [selectedNpcName, setSelectedNpcName] = useState();
+
   const [myReminder, setMyReminder] = useState({
     title: "",
     dueDate: "",
-    character: "",
+    npcId: "",
     synopsis: "",
     completed: false,
   });
@@ -21,14 +34,17 @@ export const CreateReminder = ({ currentUser }) => {
       userId: currentUser.id,
       title: myReminder.title,
       dueDate: myReminder.dueDate,
-      character: myReminder.character,
+      npcId: npcId,
       synopsis: myReminder.synopsis,
-      completed: !myReminder.completed,
+      completed: myReminder.completed,
     };
     createReminder(newReminder).then(() => {
       navigate("/");
     });
   };
+  useEffect(() => {
+    getAllNpcs().then((data) => setNpcs(data));
+  }, []);
 
   return (
     <Form>
@@ -40,34 +56,42 @@ export const CreateReminder = ({ currentUser }) => {
           placeholder="Title"
           onChange={(e) => {
             const reminderCopy = { ...myReminder };
-            reminderCopy.reminder = e.target.value
-            setMyReminder(reminderCopy)
+            reminderCopy.title = e.target.value;
+            setMyReminder(reminderCopy);
           }}
         />
       </div>
       <div>
+        {/* implement drop downs later for Season and Day*/}
         <Input
           type="text"
           text="text"
           placeholder="Season and Day"
           onChange={(e) => {
             const reminderCopy = { ...myReminder };
-            reminderCopy.reminder = e.target.value
-            setMyReminder(reminderCopy)
+            reminderCopy.dueDate = e.target.value;
+            setMyReminder(reminderCopy);
           }}
         />
       </div>
       <div>
-        <Input
-          type="text"
-          text="text"
-          placeholder="Character"
-          onChange={(e) => {
-            const reminderCopy = { ...myReminder };
-            reminderCopy.reminder = e.target.value
-            setMyReminder(reminderCopy)
-          }}
-        />
+        <UncontrolledDropdown group>
+          <DropdownToggle caret color="light">
+            NPC
+          </DropdownToggle>
+          <DropdownMenu>
+            {npcs.map((singleNpc) => {
+              return (
+                <DropdownItem
+                  value={singleNpc.id}
+                  onClick={(e) => setNpcId(e.target.value)}
+                >
+                  {singleNpc.character}
+                </DropdownItem>
+              );
+            })}
+          </DropdownMenu>
+        </UncontrolledDropdown>
       </div>
       <div>
         <Input
@@ -76,8 +100,8 @@ export const CreateReminder = ({ currentUser }) => {
           placeholder="Synopsis"
           onChange={(e) => {
             const reminderCopy = { ...myReminder };
-            reminderCopy.reminder = e.target.value
-            setMyReminder(reminderCopy)
+            reminderCopy.synopsis = e.target.value;
+            setMyReminder(reminderCopy);
           }}
         />
       </div>

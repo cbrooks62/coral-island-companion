@@ -10,7 +10,7 @@ export const ReminderList = ({ currentUser }) => {
   const [allReminders, setAllReminders] = useState([]);
   const [filteredReminders, setFilteredReminders] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
-  const [showOpenOnly, setShowOpenOnly] = useState(false);
+  const [showOpenOnly, setShowOpenOnly] = useState(true);
 
   const getAndSetAllReminders = async () => {
     getAllReminders().then((reminderArray) => {

@@ -46,6 +46,33 @@
       "synopsis": "get fish",
       "dueDate": "Winter 1",
       "completed": true
+    },
+    {
+      "id": 4,
+      "userId": 3,
+      "npcId": 78,
+      "title": "Forage",
+      "synopsis": "find Mushroom",
+      "dueDate": "Spring 1",
+      "completed": false
+    },
+    {
+      "id": 5,
+      "userId": 3,
+      "npcId": 78,
+      "title": "Remember to do",
+      "synopsis": "grow pears",
+      "dueDate": "Summer 27",
+      "completed": false
+    },
+    {
+      "userId": 3,
+      "title": "NEW THINGGG",
+      "dueDate": "Fall 3",
+      "npcId": "24",
+      "synopsis": "GET ALL THE FLOWERS YOU CAN",
+      "completed": false,
+      "id": 6
     }
   ],
   "messages": [
