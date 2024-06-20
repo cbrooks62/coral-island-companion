@@ -46,6 +46,7 @@ export const CreateReminder = ({ currentUser }) => {
     getAllNpcs().then((data) => setNpcs(data));
   }, []);
 
+  //jsx to display form to create new reminder
   return (
     <Form>
       <h2 className="new-reminder-header">Create New Reminder</h2>

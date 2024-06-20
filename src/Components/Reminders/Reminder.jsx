@@ -41,10 +41,6 @@ export const Reminder = ({ singleReminder, getAndSetAllReminders }) => {
     <Card
       className="single-reminder-card"
       body
-      color="warning"
-      style={{
-        width: "18rem",
-      }}
     >
       <CardBody>
         <CardTitle className="reminder-title">{singleReminder.title}</CardTitle>
@@ -57,14 +53,14 @@ export const Reminder = ({ singleReminder, getAndSetAllReminders }) => {
         <CardText className="reminder-synopsis">
           {singleReminder.synopsis}
         </CardText>
-        <Button className="button-complete" onClick={handleClickComplete}>
+        <button className="button-complete" onClick={handleClickComplete}>
           Complete
-        </Button>
-        <Button className="button-delete" onClick={handleDelete}>
+        </button>
+        <button className="button-delete" onClick={handleDelete}>
           Delete
-        </Button>
+        </button>
         <div>
-           <Link to={`/EditReminder/${singleReminder.id}`}><Button className="button-edit">Edit</Button></Link> 
+           <Link to={`/EditReminder/${singleReminder.id}`}><button className="button-edit">Edit</button></Link> 
         </div>
       </CardBody>
     </Card>

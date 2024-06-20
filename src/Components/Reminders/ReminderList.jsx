@@ -77,7 +77,6 @@ export const ReminderList = ({ currentUser }) => {
           );
         })}
       </article>
-      <div className="reminder-list"></div>
     </div>
   );
 };
