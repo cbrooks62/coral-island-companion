@@ -15,8 +15,7 @@ import { getAllNpcs } from "../../Services/npcServices.jsx";
 
 export const CreateReminder = ({ currentUser }) => {
   const [npcs, setNpcs] = useState([]);
-  const [npcId, setNpcId] = useState();
-  const [selectedNpcName, setSelectedNpcName] = useState();
+  const [npcId, setNpcId] = useState({ character: "NPC" });
 
   const [myReminder, setMyReminder] = useState({
     title: "",
@@ -34,7 +33,7 @@ export const CreateReminder = ({ currentUser }) => {
       userId: currentUser.id,
       title: myReminder.title,
       dueDate: myReminder.dueDate,
-      npcId: npcId,
+      npcId: npcId.npcId,
       synopsis: myReminder.synopsis,
       completed: myReminder.completed,
     };
@@ -42,6 +41,7 @@ export const CreateReminder = ({ currentUser }) => {
       navigate("/");
     });
   };
+
   useEffect(() => {
     getAllNpcs().then((data) => setNpcs(data));
   }, []);
@@ -78,14 +78,20 @@ export const CreateReminder = ({ currentUser }) => {
       <div>
         <UncontrolledDropdown group>
           <DropdownToggle caret color="light">
-            NPC
+            {npcId.character}
           </DropdownToggle>
           <DropdownMenu>
             {npcs.map((singleNpc) => {
               return (
                 <DropdownItem
+                key={singleNpc.id}
                   value={singleNpc.id}
-                  onClick={(e) => setNpcId(e.target.value)}
+                  onClick={(e) =>
+                    setNpcId({
+                      npcId: e.target.value,
+                      character: singleNpc.character,
+                    })
+                  }
                 >
                   {singleNpc.character}
                 </DropdownItem>

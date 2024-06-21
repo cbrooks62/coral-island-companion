@@ -1,5 +1,12 @@
 /* Purpose: styling for Navbar.jsx */
 
 .navbar-CIC {
-    color: #FFDF2B;
+    position: static 0;
+    
 }
+
+.navbar-username {
+    color: #FF66C4;
+    font-size: 20px;
+}
+

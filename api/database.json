@@ -50,29 +50,20 @@
     {
       "id": 4,
       "userId": 3,
-      "npcId": 78,
-      "title": "Forage",
-      "synopsis": "find Mushroom",
-      "dueDate": "Spring 1",
+      "npcId": "20",
+      "title": "words words",
+      "synopsis": "swords",
+      "dueDate": "swords",
       "completed": false
     },
     {
       "id": 5,
       "userId": 3,
-      "npcId": 78,
-      "title": "Remember to do",
-      "synopsis": "grow pears",
-      "dueDate": "Summer 27",
+      "npcId": "4",
+      "title": "CHANGE IT AGAIN",
+      "synopsis": "IT WORKSSSSSSS",
+      "dueDate": "JUST TO BE SURE",
       "completed": false
-    },
-    {
-      "userId": 3,
-      "title": "NEW THINGGG",
-      "dueDate": "Fall 3",
-      "npcId": "24",
-      "synopsis": "GET ALL THE FLOWERS YOU CAN",
-      "completed": false,
-      "id": 6
     }
   ],
   "messages": [
@@ -260,226 +251,231 @@
   "npcs": [
     {
       "id": 1,
+      "character": "None",
+      "url": "https://static.wikia.nocookie.net/coralisland/images/4/42/Coral_Island_icon.png/revision/latest?cb=20230509143005"
+    },
+    {
+      "id": 2,
       "character": "Aaliyah",
       "url": "https://static.wikia.nocookie.net/coralisland/images/b/bf/Aaliyah_portrait.png/revision/latest?cb=20221015161005"
     },
     {
-      "id": 2,
+      "id": 3,
       "character": "Agung",
       "url": "https://static.wikia.nocookie.net/coralisland/images/9/92/Agung_portrait.png/revision/latest?cb=20230801213822"
     },
     {
-      "id": 3,
+      "id": 4,
       "character": "Alice",
       "url": "https://static.wikia.nocookie.net/coralisland/images/a/a5/Alice_portrait.png/revision/latest?cb=20221112215531"
     },
     {
-      "id": 4,
+      "id": 5,
       "character": "Anne",
       "url": "https://static.wikia.nocookie.net/coralisland/images/3/36/Anne_portrait.png/revision/latest?cb=20221112215628"
     },
     {
-      "id": 5,
+      "id": 6,
       "character": "Antonio",
       "url": "https://static.wikia.nocookie.net/coralisland/images/a/ab/Antonio_portrait.png/revision/latest?cb=20221015161007"
     },
     {
-      "id": 6,
+      "id": 7,
       "character": "Archie",
       "url": "https://static.wikia.nocookie.net/coralisland/images/9/99/Archie_portrait.png/revision/latest?cb=20221112215659"
     },
     {
-      "id": 7,
+      "id": 8,
       "character": "Axel",
       "url": "https://static.wikia.nocookie.net/coralisland/images/3/33/Axel_portrait.png/revision/latest?cb=20230830232726"
     },
     {
-      "id": 8,
+      "id": 9,
       "character": "Ben",
       "url": "https://static.wikia.nocookie.net/coralisland/images/8/88/Ben_portrait.png/revision/latest?cb=20221112215727"
     },
     {
-      "id": 9,
+      "id": 10,
       "character": "Betty",
       "url": "https://static.wikia.nocookie.net/coralisland/images/3/37/Betty_portrait.png/revision/latest?cb=20221112215751"
     },
     {
-      "id": 10,
+      "id": 11,
       "character": "Bobby",
       "url": "https://static.wikia.nocookie.net/coralisland/images/9/9b/Bobby_portrait.png/revision/latest?cb=20231119225004"
     },
     {
-      "id": 11,
+      "id": 12,
       "character": "Bree",
       "url": "https://static.wikia.nocookie.net/coralisland/images/c/c2/Bree_portrait.png/revision/latest?cb=20221112215829"
     },
     {
-      "id": 12,
+      "id": 13,
       "character": "Chaem",
       "url": "https://static.wikia.nocookie.net/coralisland/images/a/a3/Chaem_portrait.png/revision/latest?cb=20221015161304"
     },
     {
-      "id": 13,
+      "id": 14,
       "character": "Charles",
       "url": "https://static.wikia.nocookie.net/coralisland/images/1/1d/Charles_portrait.png/revision/latest?cb=20221112215815"
     },
     {
-      "id": 14,
+      "id": 15,
       "character": "Chieftain",
       "url": "https://static.wikia.nocookie.net/coralisland/images/0/00/Chieftain_portrait.png/revision/latest?cb=20230830005501"
     },
     {
-      "id": 15,
+      "id": 16,
       "character": "Cho Oyu",
       "url": "https://static.wikia.nocookie.net/coralisland/images/0/03/Cho_Oyu_portrait.png/revision/latest?cb=20230801214028"
     },
     {
-      "id": 16,
+      "id": 17,
       "character": "Connor",
       "url": "https://static.wikia.nocookie.net/coralisland/images/4/4b/Connor_portrait.png/revision/latest?cb=20221112215843"
     },
     {
-      "id": 17,
+      "id": 18,
       "character": "Denali",
       "url": "https://static.wikia.nocookie.net/coralisland/images/d/d9/Denali_portrait.png/revision/latest?cb=20230801213858"
     },
     {
-      "id": 18,
+      "id": 19,
       "character": "Deno",
       "url": "https://static.wikia.nocookie.net/coralisland/images/2/21/Deno_portrait.png/revision/latest?cb=20231201001416"
     },
     {
-      "id": 19,
+      "id": 20,
       "character": "Derek",
       "url": "https://static.wikia.nocookie.net/coralisland/images/8/89/Derek_portrait.png/revision/latest?cb=20230830224721"
     },
     {
-      "id": 20,
+      "id": 21,
       "character": "Dinda",
       "url": "https://static.wikia.nocookie.net/coralisland/images/2/20/Dinda_portrait.png/revision/latest?cb=20230901142639"
     },
     {
-      "id": 21,
+      "id": 22,
       "character": "Dippa",
       "url": "https://static.wikia.nocookie.net/coralisland/images/2/20/Dippa_portrait.png/revision/latest?cb=20230903164351"
     },
     {
-      "id": 22,
+      "id": 23,
       "character": "Eddy",
       "url": "https://static.wikia.nocookie.net/coralisland/images/b/b3/Eddy_portrait.png/revision/latest?cb=20230831011728"
     },
     {
-      "id": 23,
+      "id": 24,
       "character": "Eleanor",
       "url": "https://static.wikia.nocookie.net/coralisland/images/c/cb/Eleanor_portrait.png/revision/latest?cb=20221015161305"
     },
     {
-      "id": 24,
+      "id": 25,
       "character": "Emily",
       "url": "https://static.wikia.nocookie.net/coralisland/images/4/42/Emily_portrait.png/revision/latest?cb=20221112215945"
     },
     {
-      "id": 25,
+      "id": 26,
       "character": "Emma",
       "url": "https://static.wikia.nocookie.net/coralisland/images/6/6e/Emma_portrait.png/revision/latest?cb=20221112220027"
     },
     {
-      "id": 26,
+      "id": 27,
       "character": "Erika",
       "url": "https://static.wikia.nocookie.net/coralisland/images/f/ff/Erika_portrait.png/revision/latest?cb=20221112220034"
     },
     {
-      "id": 27,
+      "id": 28,
       "character": "Eva",
       "url": "https://static.wikia.nocookie.net/coralisland/images/1/1d/Eva.png/revision/latest?cb=20221112220101"
     },
     {
-      "id": 28,
+      "id": 29,
       "character": "Frank",
       "url": "https://static.wikia.nocookie.net/coralisland/images/2/2b/Frank.png/revision/latest?cb=20221112220107"
     },
     {
-      "id": 29,
+      "id": 30,
       "character": "Giu",
       "url": "https://static.wikia.nocookie.net/coralisland/images/e/e9/Giu.png/revision/latest?cb=20230502113955"
     },
     {
-      "id": 30,
+      "id": 31,
       "character": "Goddess of Flowers",
       "url": "https://static.wikia.nocookie.net/coralisland/images/2/26/Goddess_of_Flowers_portrait.png/revision/latest?cb=20230701144516"
     },
     {
-      "id": 31,
+      "id": 32,
       "character": "Gong",
       "url": "https://static.wikia.nocookie.net/coralisland/images/3/36/Gong.png/revision/latest?cb=20230330002406"
     },
     {
-      "id": 32,
+      "id": 33,
       "character": "Gort",
       "url": "https://static.wikia.nocookie.net/coralisland/images/e/e4/Gort.png/revision/latest?cb=20240117161442"
     },
     {
-      "id": 33,
+      "id": 34,
       "character": "Grog",
       "url": "https://static.wikia.nocookie.net/coralisland/images/8/85/Grog.png/revision/latest?cb=20230329233936"
     },
     {
-      "id": 34,
+      "id": 35,
       "character": "Groo",
       "url": "https://static.wikia.nocookie.net/coralisland/images/d/d6/Groo.png/revision/latest?cb=20230330010915"
     },
     {
-      "id": 35,
+      "id": 36,
       "character": "Handsome",
       "url": "https://static.wikia.nocookie.net/coralisland/images/2/21/Handsome_portrait.png/revision/latest?cb=20230801214059"
     },
     {
-      "id": 36,
+      "id": 37,
       "character": "Jack",
       "url": "https://static.wikia.nocookie.net/coralisland/images/4/46/Jack.png/revision/latest?cb=20221112220114"
     },
     {
-      "id": 37,
+      "id": 38,
       "character": "Jeff Smith",
       "url": "https://static.wikia.nocookie.net/coralisland/images/6/6c/Jeff_Smith_portrait.png/revision/latest?cb=20230831012048"
     },
     {
-      "id": 38,
+      "id": 39,
       "character": "Jim",
       "url": "https://static.wikia.nocookie.net/coralisland/images/4/4f/Jim.png/revision/latest?cb=20221112220121"
     },
     {
-      "id": 39,
+      "id": 40,
       "character": "Jio Dan",
       "url": "https://static.wikia.nocookie.net/coralisland/images/1/18/Jio_Dan_portrait.png/revision/latest?cb=20230526074404"
     },
     {
-      "id": 40,
+      "id": 41,
       "character": "Joko",
       "url": "https://static.wikia.nocookie.net/coralisland/images/a/af/Joko.png/revision/latest?cb=20221112220129"
     },
     {
-      "id": 41,
+      "id": 42,
       "character": "Judge Ross",
       "url": "https://static.wikia.nocookie.net/coralisland/images/d/d5/Judge_Ross_portrait.png/revision/latest?cb=20231201200932"
     },
     {
-      "id": 42,
+      "id": 43,
       "character": "Karen",
       "url": "https://static.wikia.nocookie.net/coralisland/images/9/9a/Karen_portrait.png/revision/latest?cb=20221112220210"
     },
     {
-      "id": 43,
+      "id": 44,
       "character": "Kenny",
       "url": "https://static.wikia.nocookie.net/coralisland/images/3/3c/Kenny.png/revision/latest?cb=20221112220317"
     },
     {
-      "id": 44,
+      "id": 45,
       "character": "Kira",
       "url": "https://static.wikia.nocookie.net/coralisland/images/1/1b/Kira.png/revision/latest?cb=20221112220324"
     },
     {
-      "id": 45,
+      "id": 46,
       "character": "King Krakatoa",
       "url": "https://static.wikia.nocookie.net/coralisland/images/8/8b/Krakatoa.png/revision/latest?cb=20230801214135"
     },

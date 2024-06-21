@@ -1,8 +1,15 @@
+.reminder-container {
+padding-top: 10rem;
+}
 .header-reminders {
   color: #7F62B7;
-  font-size: 6rem;
+  font-size: 90px;
 }
 
+.new-reminder-header{
+    color: #7F62B7;
+    font-size: 6rem; 
+}
 .reminder-container {
   width: 100vw;
 }
@@ -15,11 +22,12 @@
 .button-new-reminder {
   background-color: #ff66c4;
   border-radius: 15px;
+  margin: 1rem;
 }
 
 /* all individual reminders card*/
 .reminders {
- margin-top: 5rem;
+ margin-top: 1rem;
  display: flex;
  flex-direction: row;
  padding: 3rem;

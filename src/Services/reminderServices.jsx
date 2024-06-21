@@ -1,6 +1,6 @@
 export const getAllReminders = () => {
-  return fetch(`http://localhost:8088/reminders?_expand=npc`).then((res) =>
-    res.json()
+  return fetch(`http://localhost:8088/reminders?_expand=npc`)
+  .then((res) => res.json()
   );
 };
 
@@ -33,3 +33,7 @@ export const createReminder = (reminders) => {
   });
 };
 
+export const getReminderById = (reminderId) => {
+  return fetch(`http://localhost:8088/reminders/${reminderId}?_expand=npc`)
+  .then((res) => res.json());
+};
