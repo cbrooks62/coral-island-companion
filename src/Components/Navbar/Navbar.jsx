@@ -3,12 +3,13 @@
 import { Navbar, NavbarBrand, Nav, NavLink, Card } from "reactstrap";
 import "./Navbar.css";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export const CompanionNavbar = ({ currentUser }) => {
   return (
-    <div>
-      <Navbar className="navbar-CIC" fixed="top" color="warning">
-        <NavbarBrand>
+  <div className="nav-container">
+      <ul className="navbar-CIC">
+        <li>
           <img
             alt="logo"
             src="./src/Images/CI-icon.png"
@@ -19,26 +20,25 @@ export const CompanionNavbar = ({ currentUser }) => {
             }}
           />
           Coral Island Companion
-        </NavbarBrand>
-        <Nav>
-          <div>
-            <NavLink href="/">Reminders</NavLink>
-          </div>
-          <div>
-            <NavLink href="/Calendar">Calendar</NavLink>
-          </div>
-          <div>
-            <NavLink href="/Characters">Characters</NavLink>
-          </div>
-          <div>
-            <NavLink href="/EditProfile">Profile</NavLink>
-          </div>
-        </Nav>
+        </li>
+     
+          <li>
+            <Link href="/">Reminders</Link>
+          </li>
+          <li>
+            <Link href="/Calendar">Calendar</Link>
+          </li>
+          <li>
+            <Link href="/Characters">Characters</Link>
+          </li>
+          <li>
+            <Link href="/EditProfile">Profile</Link>
+          </li>
         <Card className="logout-link">
-          <div className="navbar-username"> Hi {currentUser.userName}!</div>
-          <NavLink href="/Login" className="logout-link"> Logout</NavLink>
+          <li className="navbar-username"> Hi {currentUser.userName}!</li>
+          <Link href="/Login" className="logout-link"> Logout</Link>
         </Card>
-      </Navbar>
-    </div>
+      </ul>
+      </div>
   );
 };

@@ -1,23 +1,33 @@
 .reminder-container {
-padding-top: 10rem;
-}
-.header-reminders {
-  color: #7F62B7;
-  font-size: 90px;
-}
-
-.new-reminder-header{
-    color: #7F62B7;
-    font-size: 6rem; 
-}
-.reminder-container {
+  background-image: url(src/Images/background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 100vw;
+  padding-top: 10rem;
 }
 
-.single-reminder-card {
-  padding: 2rem;
-  margin: 1rem;
+.header-reminders {
+  background-image: url(src/Images/Reminder-header1.png);
+  justify-content: center;
+  margin: auto;
+  height: 12rem;
+  width: 30rem;
+  background-repeat: no-repeat;
 }
+
+.new-reminder-header {
+  color: #7f62b7;
+  font-size: 6rem;
+}
+
+/* calling from Reminder.jsx for individual reminder cards*/
+.single-reminder-card{
+    flex: 0 1 24%;
+  padding: 5rem;
+  margin: 1rem;
+  background-color: #D6E9F1;
+}
+
 
 .button-new-reminder {
   background-color: #ff66c4;
@@ -25,33 +35,37 @@ padding-top: 10rem;
   margin: 1rem;
 }
 
-/* all individual reminders card*/
+/* all reminders card*/
 .reminders {
- margin-top: 1rem;
- display: flex;
- flex-direction: row;
- padding: 3rem;
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-basis: 15em;
+  width: 60rem;
+  padding: 3rem;
 }
 
 /*edit button on reminder card*/
-.button-edit{
-    margin: 1rem;
-    background-color: #D6E9F1;
-    color: #7F62B7;
-    border-radius: 15px; 
+.button-edit {
+  margin: 1rem;
+  background-color: #d6e9f1;
+  color: #7f62b7;
+  border-radius: 15px;
 }
 
 .button-delete {
-    margin: 1rem;
-    background-color: #7F62B7;
-    color: #ff66c4;
-    border-radius: 15px; 
+  margin: 1rem;
+  background-color: #7f62b7;
+  color: #ff66c4;
+  border-radius: 15px;
 }
 .button-complete {
-    margin: 1rem;
-    background-color: #00B8F1;
-    border-radius: 15px; 
+  margin: 1rem;
+  background-color: #00b8f1;
+  border-radius: 15px;
 }
 .reminder-title {
- font-size: 25px;
+  font-size: 30px;
 }

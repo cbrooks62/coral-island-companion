@@ -38,11 +38,8 @@ export const Reminder = ({ singleReminder, getAndSetAllReminders }) => {
   };
 
   return (
-    <Card
-      className="single-reminder-card"
-      body
-    >
-      <CardBody>
+    <Card className="reminder-card">
+      <CardBody className="single-reminder-card">
         <CardTitle className="reminder-title">{singleReminder.title}</CardTitle>
         <CardSubtitle className="reminder-due-date">
           Due Date: {singleReminder.dueDate}

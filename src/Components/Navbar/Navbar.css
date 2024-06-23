@@ -1,8 +1,21 @@
 /* Purpose: styling for Navbar.jsx */
 
-.navbar-CIC {
-    position: static 0;
+.nav-container {
+    width: 100%;
+    min-width: 880px;
+    align-self: baseline;
     
+  }
+
+.navbar-CIC {
+    display: flex;
+    flex-wrap: nowrap;
+    border: 3px solid #00B8F1;
+    padding: 0.5rem;
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: #FFDF2B;
+    overflow: hidden;
 }
 
 .navbar-username {

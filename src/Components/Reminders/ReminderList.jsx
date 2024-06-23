@@ -14,10 +14,10 @@ export const ReminderList = ({ currentUser }) => {
 
   const getAndSetAllReminders = async () => {
     getAllReminders().then((reminderArray) => {
-        const foundReminders = reminderArray.filter(
-            (reminder) => reminder.userId === currentUser.id
-          );
-          setAllReminders(foundReminders);
+      const foundReminders = reminderArray.filter(
+        (reminder) => reminder.userId === currentUser.id
+      );
+      setAllReminders(foundReminders);
     });
   };
   //useEffect to get all reminders from the reminders array in database
@@ -25,12 +25,10 @@ export const ReminderList = ({ currentUser }) => {
     getAndSetAllReminders();
   }, [currentUser]);
 
-
   //filter for searching reminders on DOM
   useEffect(() => {
     const foundReminders = allReminders.filter((reminder) =>
       reminder.title.toLowerCase().includes(searchTerm.toLowerCase())
-
     );
 
     setFilteredReminders(foundReminders);
@@ -44,9 +42,9 @@ export const ReminderList = ({ currentUser }) => {
       );
       setFilteredReminders(openReminders);
     } else {
-        const closedReminders = allReminders.filter(
-            (reminder) => reminder.completed
-          );
+      const closedReminders = allReminders.filter(
+        (reminder) => reminder.completed
+      );
       setFilteredReminders(closedReminders);
     }
   }, [showOpenOnly, allReminders]);
@@ -55,7 +53,7 @@ export const ReminderList = ({ currentUser }) => {
 
   return (
     <div className="reminder-container">
-        <header className="header-reminders">Reminders</header>
+      <header className="header-reminders"></header>
       <RemindersFilter
         allReminders={allReminders}
         setShowOpenOnly={setShowOpenOnly}
@@ -69,6 +67,7 @@ export const ReminderList = ({ currentUser }) => {
         {filteredReminders.map((singleReminder) => {
           return (
             <Reminder
+              className="single-reminder"
               singleReminder={singleReminder}
               currentUser={currentUser}
               getAndSetAllReminders={getAndSetAllReminders}
