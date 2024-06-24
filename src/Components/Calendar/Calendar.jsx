@@ -1,5 +1,7 @@
 export const Calendar = () => {
   return (
-    <div>Calendar</div>
+    <div>
+      <header className="calendar-header"></header>
+    </div>
   )
 }

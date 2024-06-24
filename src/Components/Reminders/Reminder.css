@@ -1,5 +1,6 @@
+/* REMINDER LIST CSS */
 .reminder-container {
-    background-repeat: no-repeat;
+  background-repeat: no-repeat;
   background-size: cover;
   width: 100vw;
   display: flex;
@@ -14,24 +15,6 @@
   background-repeat: no-repeat;
   margin-top: 8%;
 }
-
-.edit-reminder-header {
-  background-image: url(src/Images/Edit-Reminder-header.png);
-  height: 12rem;
-  width: 30rem;
-  background-repeat: no-repeat;
-  margin-top: 8%;
-}
-
-.new-reminder-header {
-  color: #7f62b7;
-  font-size: 6rem;
-}
-
-.reminder-card {
-  margin: .5rem;
-}
-
 /* 
   Calling from Reminder.jsx for individual reminder cards.
   This is CardBody of Card
@@ -39,14 +22,13 @@
 .single-reminder-card {
   background-color: #d6e9f1;
 }
-
-.button-new-reminder {
-  background-color: #ff66c4;
-  border-radius: 15px;
-  margin: 1rem;
+/* ReminderList/ Homepage Title */
+.reminder-title {
+  font-size: 30px;
 }
-
-/* all reminders card*/
+.reminder-card {
+  margin: 0.5rem;
+}
 .reminders {
   margin-top: 1rem;
   display: flex;
@@ -55,7 +37,38 @@
   width: 90vw;
   padding: 3rem;
 }
+.button-delete {
+  margin: 1rem;
+  background-color: #7f62b7;
+  color: #ff66c4;
+  border-radius: 15px;
+}
+.button-complete {
+  margin: 1rem;
+  background-color: #00b8f1;
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+  font-size: 0.5em;
+  font-weight: bolder;
+  color: magenta;
+}
+.button-new-reminder {
+  background-color: #ff66c4;
+  border-radius: 15px;
+  margin: 1rem;
+}
 
+
+/* ALL EDIT REMINDERS CSS */
+.edit-reminder-header {
+  background-image: url(src/Images/Edit-Reminder-header.png);
+  height: 12rem;
+  width: 30rem;
+  background-repeat: no-repeat;
+  margin-top: 8%;
+  /* all reminders card*/
+}
 /*edit button on reminder card*/
 .button-edit {
   margin: 1rem;
@@ -64,24 +77,29 @@
   border-radius: 15px;
 }
 
-.button-delete {
-  margin: 1rem;
-  background-color: #7f62b7;
+
+/* ALL CREATE REMINDER CSS */
+.new-reminder-header {
+  background-image: url(src/Images/Create-Reminder-header1.png);
+  height: 12rem;
+  width: 50rem;
+  background-repeat: no-repeat;
+  margin-top: 8%;
+}
+.button-create-submit {
   color: #ff66c4;
-  border-radius: 15px;
 }
-
-.button-complete {
-  margin: 1rem;
-  background-color: #00b8f1;
-  border-radius: 100%;
-  width: 50px;
-  height: 50px;
-  font-size: .5em;
-  font-weight: bolder;
-  color: magenta
+.create-reminder-card {
+  background-color: #ff66c4;
+  padding: 2rem;
+  border-radius: 25%;
 }
-
-.reminder-title {
-  font-size: 30px;
+.title-text-field{
+  text-align: center;
+margin-bottom: 2px;
+}
+.synopsis-text-field{
+  height: 70px;
+  margin-bottom: 2px;
+  margin-top: 4px;
 }

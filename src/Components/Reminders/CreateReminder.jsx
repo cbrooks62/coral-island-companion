@@ -3,9 +3,6 @@ import "./Reminder.css";
 import { useNavigate } from "react-router";
 import { createReminder } from "../../Services/reminderServices.jsx";
 import {
-  Button,
-  Input,
-  Form,
   UncontrolledDropdown,
   DropdownToggle,
   DropdownMenu,
@@ -49,10 +46,11 @@ export const CreateReminder = ({ currentUser }) => {
   //jsx to display form to create new reminder
   return (
     <div className="reminder-container">
-    <Form>
-      <h2 className="new-reminder-header">Create New Reminder</h2>
+      <h2 className="new-reminder-header"></h2>
+    <form className="create-reminder-card">
       <div>
-        <Input
+        <input
+        className="title-text-field"
           type="text"
           text="text"
           placeholder="Title"
@@ -65,7 +63,8 @@ export const CreateReminder = ({ currentUser }) => {
       </div>
       <div>
         {/* implement drop downs later for Season and Day*/}
-        <Input
+        <input
+        className="title-text-field"
           type="text"
           text="text"
           placeholder="Season and Day"
@@ -76,7 +75,7 @@ export const CreateReminder = ({ currentUser }) => {
           }}
         />
       </div>
-      <div>
+      <div className="npc-dropdown">
         <UncontrolledDropdown group>
           <DropdownToggle caret color="light">
             {npcId.character}
@@ -102,7 +101,8 @@ export const CreateReminder = ({ currentUser }) => {
         </UncontrolledDropdown>
       </div>
       <div>
-        <Input
+        <textarea
+         className="synopsis-text-field"
           type="text"
           text="text"
           placeholder="Synopsis"
@@ -114,11 +114,11 @@ export const CreateReminder = ({ currentUser }) => {
         />
       </div>
       <fieldset>
-        <Button color="dark" onClick={handleSaveNewReminder}>
+        <button className="button-create-submit" onClick={handleSaveNewReminder}>
           Submit
-        </Button>
+        </button>
       </fieldset>
-    </Form>
+    </form>
     </div>
   );
 };

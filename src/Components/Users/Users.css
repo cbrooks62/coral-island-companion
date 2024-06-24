@@ -70,3 +70,25 @@ text-align: center;
   background-color: #ffdf2b;
   margin-top: 8rem;
 }
+
+.profile-header {
+  background-image: url(src/Images/Profile-header.png);
+  height: 12rem;
+  width: 30rem;
+  background-repeat: no-repeat;
+  margin-top: 8%;
+}
+.profile-edit-card{
+  background-color: #7f62b7;
+  padding: 10rem;
+}
+.username-text-field {
+  margin: 5px;
+}
+.email-text-field {
+  margin: 5px;
+}
+.button-save-profile {
+  background-color: #ffdf2b;
+  border-radius: 50%;
+}

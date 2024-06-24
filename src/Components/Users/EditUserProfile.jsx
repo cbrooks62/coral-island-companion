@@ -30,11 +30,12 @@ export const EditUserProfile = ({currentUser}) => {
 
   return (
     <div>
-      <Form>
-        <h2>Edit Profile</h2>
+        <header className="profile-header"></header>
+      <form className="profile-edit-card">
         <fieldset>
           <div>
-            <Input
+            <input
+            className="username-text-field"
               type="text"
               text="text"
               placeholder={myProfile.userName}
@@ -48,7 +49,8 @@ export const EditUserProfile = ({currentUser}) => {
         </fieldset>
         <fieldset>
           <div>
-            <Input
+            <input
+            className="email-text-field"
               type="text"
               text="text"
               placeholder={myProfile.email}
@@ -61,11 +63,13 @@ export const EditUserProfile = ({currentUser}) => {
           </div>
                   </fieldset>
                   <fieldset>
-          <Button color="dark" onClick={handleSaveEditUserProfile}>
+          <button 
+          className="button-save-profile"
+          onClick={handleSaveEditUserProfile}>
             Save
-          </Button>
+          </button>
         </fieldset>
-      </Form>
+      </form>
     </div>
   );
 };

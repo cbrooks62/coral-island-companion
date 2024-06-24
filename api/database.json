@@ -102,13 +102,22 @@
       "id": 10
     },
     {
+      "id": 11,
       "userId": 3,
-      "title": "GET Stuff",
-      "dueDate": "Winter 1",
       "npcId": "75",
+      "title": "GET Stuff",
       "synopsis": "Give bread",
+      "dueDate": "Winter 1",
+      "completed": true
+    },
+    {
+      "userId": 3,
+      "title": "New Task to Reminder",
+      "dueDate": "Winter 2",
+      "npcId": "4",
+      "synopsis": "I will need to grow apples to make apple wine",
       "completed": false,
-      "id": 11
+      "id": 12
     }
   ],
   "days": [

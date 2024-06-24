@@ -24,7 +24,7 @@ export const Login = ({currentUser}) => {
                   email: user.email
               })
           );
-          navigate("/ReminderList");
+          navigate("/");
           console.log(currentUser.id)
       } else {
           window.alert("Invalid login");

@@ -31,10 +31,10 @@ export const CompanionNavbar = ({ currentUser }) => {
           <li className="navbar-pages">
             <Link to="/EditProfile">Profile</Link>
           </li>
-        <Card className="logout-card">
+        <card className="logout-card">
           <li className="navbar-username"> Hi {currentUser.userName}!</li>
           <Link to="/Login" className="logout-link"> Logout</Link>
-        </Card>
+        </card>
       </ul>
       </div>
   );
