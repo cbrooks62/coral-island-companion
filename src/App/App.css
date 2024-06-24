@@ -1,7 +1,8 @@
 #root {
+  background-image: url(src/Images/background.png);
   margin: 0 auto;
   text-align: center;
-  height: 100vh;
+  height: 100%;
   width: 100vw;
   display: flex;
   flex-direction: column;

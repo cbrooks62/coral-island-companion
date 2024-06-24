@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 import "./Users.css";
 import { getUserByEmail } from "../../Services/userServices.jsx";
 
-export const Login = () => {
+export const Login = ({currentUser}) => {
   const [email, set] = useState("");
   const navigate = useNavigate();
 
@@ -24,7 +24,7 @@ export const Login = () => {
                   email: user.email
               })
           );
-          navigate("/");
+          navigate("/ReminderList");
           console.log(currentUser.id)
       } else {
           window.alert("Invalid login");
@@ -32,7 +32,7 @@ export const Login = () => {
   };
 
   return (
-    <div id="root" className="auth-container">
+    <div className="auth-container">
       <section className="login-card">
         <form className="auth-form" onSubmit={handleLogin}>
           <h1 className="header-login">Login</h1>

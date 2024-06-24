@@ -48,7 +48,7 @@ export const CreateReminder = ({ currentUser }) => {
 
   //jsx to display form to create new reminder
   return (
-    <div className="create-reminder-container">
+    <div className="reminder-container">
     <Form>
       <h2 className="new-reminder-header">Create New Reminder</h2>
       <div>

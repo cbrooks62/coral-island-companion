@@ -30,8 +30,8 @@ export const ApplicationViews = () => {
       >
         <Route
           path="/"
-          index
           element={<ReminderList currentUser={currentUser} />}
+          index
         />
         <Route
           path="/CreateReminder"

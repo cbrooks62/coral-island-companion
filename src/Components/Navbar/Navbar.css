@@ -1,25 +1,42 @@
 /* Purpose: styling for Navbar.jsx */
 
 .nav-container {
-    width: 100%;
-    min-width: 880px;
-    align-self: baseline;
-    
-  }
+  min-width: 880px;
+  align-self: baseline;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+}
 
 .navbar-CIC {
-    display: flex;
-    flex-wrap: nowrap;
-    border: 3px solid #00B8F1;
-    padding: 0.5rem;
-    width: 100%;
-    margin-bottom: 20px;
-    background-color: #FFDF2B;
-    overflow: hidden;
+  background-color: #00b8f1;
+  border-bottom: 7px double #ffdf2b;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  padding: 14px 16px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  width: 100vw;
+  max-height: 5rem;
+}
+
+.navbar-pages {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
 .navbar-username {
-    color: #FF66C4;
-    font-size: 20px;
+  color: #ff66c4;
+  font-size: 20px;
 }
 
+.logout-card {
+  position: absolute;
+  right: 5px;
+}

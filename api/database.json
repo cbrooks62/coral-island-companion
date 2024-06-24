@@ -48,15 +48,6 @@
       "completed": true
     },
     {
-      "id": 4,
-      "userId": 3,
-      "npcId": "20",
-      "title": "words words",
-      "synopsis": "swords",
-      "dueDate": "swords",
-      "completed": false
-    },
-    {
       "id": 5,
       "userId": 3,
       "npcId": "4",
@@ -109,28 +100,15 @@
       "synopsis": "Water plants",
       "completed": false,
       "id": 10
-    }
-  ],
-  "messages": [
-    {
-      "id": 1,
-      "userId": 1,
-      "text": "Hi!"
     },
     {
-      "id": 2,
-      "userId": 2,
-      "text": "Hi!"
-    },
-    {
-      "id": 3,
       "userId": 3,
-      "text": "Hi!"
-    },
-    {
-      "id": 4,
-      "userId": 1,
-      "text": "Hi!"
+      "title": "GET Stuff",
+      "dueDate": "Winter 1",
+      "npcId": "75",
+      "synopsis": "Give bread",
+      "completed": false,
+      "id": 11
     }
   ],
   "days": [
@@ -297,412 +275,494 @@
     {
       "id": 1,
       "character": "None",
-      "url": "https://static.wikia.nocookie.net/coralisland/images/4/42/Coral_Island_icon.png/revision/latest?cb=20230509143005"
+      "urlImg": "https://static.wikia.nocookie.net/coralisland/images/4/42/Coral_Island_icon.png/revision/latest?cb=20230509143005",
+      "url": "https://coralisland.fandom.com/wiki/Coral_Island_Wiki"
     },
     {
       "id": 2,
       "character": "Aaliyah",
-      "url": "https://static.wikia.nocookie.net/coralisland/images/b/bf/Aaliyah_portrait.png/revision/latest?cb=20221015161005"
+      "urlImg": "https://static.wikia.nocookie.net/coralisland/images/b/bf/Aaliyah_portrait.png/revision/latest?cb=20221015161005",
+      "url": "https://coralisland.fandom.com/wiki/Aaliyah"
     },
     {
       "id": 3,
       "character": "Agung",
-      "url": "https://static.wikia.nocookie.net/coralisland/images/9/92/Agung_portrait.png/revision/latest?cb=20230801213822"
+      "urlImg": "https://static.wikia.nocookie.net/coralisland/images/9/92/Agung_portrait.png/revision/latest?cb=20230801213822",
+      "url": "https://coralisland.fandom.com/wiki/Agung"
     },
     {
       "id": 4,
       "character": "Alice",
-      "url": "https://static.wikia.nocookie.net/coralisland/images/a/a5/Alice_portrait.png/revision/latest?cb=20221112215531"
+      "urlImg": "https://static.wikia.nocookie.net/coralisland/images/a/a5/Alice_portrait.png/revision/latest?cb=20221112215531",
+      "url": "https://coralisland.fandom.com/wiki/Alice"
     },
     {
       "id": 5,
       "character": "Anne",
-      "url": "https://static.wikia.nocookie.net/coralisland/images/3/36/Anne_portrait.png/revision/latest?cb=20221112215628"
+      "urlImg": "https://static.wikia.nocookie.net/coralisland/images/3/36/Anne_portrait.png/revision/latest?cb=20221112215628",
+      "url": "https://coralisland.fandom.com/wiki/Anne"
     },
     {
       "id": 6,
       "character": "Antonio",
-      "url": "https://static.wikia.nocookie.net/coralisland/images/a/ab/Antonio_portrait.png/revision/latest?cb=20221015161007"
+      "urlImg": "https://static.wikia.nocookie.net/coralisland/images/a/ab/Antonio_portrait.png/revision/latest?cb=20221015161007",
+      "url": "https://coralisland.fandom.com/wiki/Antonio"
     },
     {
       "id": 7,
       "character": "Archie",
-      "url": "https://static.wikia.nocookie.net/coralisland/images/9/99/Archie_portrait.png/revision/latest?cb=20221112215659"
+      "urlImg": "https://static.wikia.nocookie.net/coralisland/images/9/99/Archie_portrait.png/revision/latest?cb=20221112215659",
+      "url": "https://coralisland.fandom.com/wiki/Archie"
     },
     {
       "id": 8,
       "character": "Axel",
-      "url": "https://static.wikia.nocookie.net/coralisland/images/3/33/Axel_portrait.png/revision/latest?cb=20230830232726"
+      "urlImg": "https://static.wikia.nocookie.net/coralisland/images/3/33/Axel_portrait.png/revision/latest?cb=20230830232726",
+      "url": "Axel"
     },
     {
       "id": 9,
       "character": "Ben",
-      "url": "https://static.wikia.nocookie.net/coralisland/images/8/88/Ben_portrait.png/revision/latest?cb=20221112215727"
+      "urlImg": "https://static.wikia.nocookie.net/coralisland/images/8/88/Ben_portrait.png/revision/latest?cb=20221112215727",
+      "url": "https://coralisland.fandom.com/wiki/Ben"
     },
     {
       "id": 10,
       "character": "Betty",
-      "url": "https://static.wikia.nocookie.net/coralisland/images/3/37/Betty_portrait.png/revision/latest?cb=20221112215751"
+      "urlImg": "https://static.wikia.nocookie.net/coralisland/images/3/37/Betty_portrait.png/revision/latest?cb=20221112215751",
+      "url": "https://coralisland.fandom.com/wiki/Betty"
     },
     {
       "id": 11,
       "character": "Bobby",
-      "url": "https://static.wikia.nocookie.net/coralisland/images/9/9b/Bobby_portrait.png/revision/latest?cb=20231119225004"
+      "urlImg": "https://static.wikia.nocookie.net/coralisland/images/9/9b/Bobby_portrait.png/revision/latest?cb=20231119225004",
+      "url": "https://coralisland.fandom.com/wiki/Bobby"
     },
     {
       "id": 12,
       "character": "Bree",
-      "url": "https://static.wikia.nocookie.net/coralisland/images/c/c2/Bree_portrait.png/revision/latest?cb=20221112215829"
+      "urlImg": "https://static.wikia.nocookie.net/coralisland/images/c/c2/Bree_portrait.png/revision/latest?cb=20221112215829",
+      "url": "https://coralisland.fandom.com/wiki/Bree"
     },
     {
       "id": 13,
       "character": "Chaem",
-      "url": "https://static.wikia.nocookie.net/coralisland/images/a/a3/Chaem_portrait.png/revision/latest?cb=20221015161304"
+      "urlImg": "https://static.wikia.nocookie.net/coralisland/images/a/a3/Chaem_portrait.png/revision/latest?cb=20221015161304",
+      "url": "https://coralisland.fandom.com/wiki/Chaem"
     },
     {
       "id": 14,
       "character": "Charles",
-      "url": "https://static.wikia.nocookie.net/coralisland/images/1/1d/Charles_portrait.png/revision/latest?cb=20221112215815"
+      "urlImg": "https://static.wikia.nocookie.net/coralisland/images/1/1d/Charles_portrait.png/revision/latest?cb=20221112215815",
+      "url": "https://coralisland.fandom.com/wiki/Charles"
     },
     {
       "id": 15,
       "character": "Chieftain",
-      "url": "https://static.wikia.nocookie.net/coralisland/images/0/00/Chieftain_portrait.png/revision/latest?cb=20230830005501"
+      "urlImg": "https://static.wikia.nocookie.net/coralisland/images/0/00/Chieftain_portrait.png/revision/latest?cb=20230830005501",
+      "url": "https://coralisland.fandom.com/wiki/Chieftain"
     },
     {
       "id": 16,
       "character": "Cho Oyu",
-      "url": "https://static.wikia.nocookie.net/coralisland/images/0/03/Cho_Oyu_portrait.png/revision/latest?cb=20230801214028"
+      "urlImg": "https://static.wikia.nocookie.net/coralisland/images/0/03/Cho_Oyu_portrait.png/revision/latest?cb=20230801214028",
+      "url": "https://coralisland.fandom.com/wiki/Cho_Oyu"
     },
     {
       "id": 17,
       "character": "Connor",
-      "url": "https://static.wikia.nocookie.net/coralisland/images/4/4b/Connor_portrait.png/revision/latest?cb=20221112215843"
+      "urlImg": "https://static.wikia.nocookie.net/coralisland/images/4/4b/Connor_portrait.png/revision/latest?cb=20221112215843",
+      "url": "https://coralisland.fandom.com/wiki/Connor"
     },
     {
       "id": 18,
       "character": "Denali",
-      "url": "https://static.wikia.nocookie.net/coralisland/images/d/d9/Denali_portrait.png/revision/latest?cb=20230801213858"
+      "urlImg": "https://static.wikia.nocookie.net/coralisland/images/d/d9/Denali_portrait.png/revision/latest?cb=20230801213858",
+      "url": "https://coralisland.fandom.com/wiki/Denali"
     },
     {
       "id": 19,
       "character": "Deno",
-      "url": "https://static.wikia.nocookie.net/coralisland/images/2/21/Deno_portrait.png/revision/latest?cb=20231201001416"
+      "urlImg": "https://static.wikia.nocookie.net/coralisland/images/2/21/Deno_portrait.png/revision/latest?cb=20231201001416",
+      "url": "https://coralisland.fandom.com/wiki/Deno"
     },
     {
       "id": 20,
       "character": "Derek",
-      "url": "https://static.wikia.nocookie.net/coralisland/images/8/89/Derek_portrait.png/revision/latest?cb=20230830224721"
+      "urlImg": "https://static.wikia.nocookie.net/coralisland/images/8/89/Derek_portrait.png/revision/latest?cb=20230830224721",
+      "url": "https://coralisland.fandom.com/wiki/Derek"
     },
     {
       "id": 21,
       "character": "Dinda",
-      "url": "https://static.wikia.nocookie.net/coralisland/images/2/20/Dinda_portrait.png/revision/latest?cb=20230901142639"
+      "urlImg": "https://static.wikia.nocookie.net/coralisland/images/2/20/Dinda_portrait.png/revision/latest?cb=20230901142639",
+      "url": "https://coralisland.fandom.com/wiki/Dinda"
     },
     {
       "id": 22,
       "character": "Dippa",
-      "url": "https://static.wikia.nocookie.net/coralisland/images/2/20/Dippa_portrait.png/revision/latest?cb=20230903164351"
+      "urlImg": "https://static.wikia.nocookie.net/coralisland/images/2/20/Dippa_portrait.png/revision/latest?cb=20230903164351",
+      "url": "https://coralisland.fandom.com/wiki/Dippa"
     },
     {
       "id": 23,
       "character": "Eddy",
-      "url": "https://static.wikia.nocookie.net/coralisland/images/b/b3/Eddy_portrait.png/revision/latest?cb=20230831011728"
+      "urlImg": "https://static.wikia.nocookie.net/coralisland/images/b/b3/Eddy_portrait.png/revision/latest?cb=20230831011728",
+      "url": "https://coralisland.fandom.com/wiki/Eddy"
     },
     {
       "id": 24,
       "character": "Eleanor",
-      "url": "https://static.wikia.nocookie.net/coralisland/images/c/cb/Eleanor_portrait.png/revision/latest?cb=20221015161305"
+      "urlImg": "https://static.wikia.nocookie.net/coralisland/images/c/cb/Eleanor_portrait.png/revision/latest?cb=20221015161305",
+      "url": "https://coralisland.fandom.com/wiki/Eleanor"
     },
     {
       "id": 25,
       "character": "Emily",
-      "url": "https://static.wikia.nocookie.net/coralisland/images/4/42/Emily_portrait.png/revision/latest?cb=20221112215945"
+      "urlImg": "https://static.wikia.nocookie.net/coralisland/images/4/42/Emily_portrait.png/revision/latest?cb=20221112215945",
+      "url": "https://coralisland.fandom.com/wiki/Emily"
     },
     {
       "id": 26,
       "character": "Emma",
-      "url": "https://static.wikia.nocookie.net/coralisland/images/6/6e/Emma_portrait.png/revision/latest?cb=20221112220027"
+      "urlImg": "https://static.wikia.nocookie.net/coralisland/images/6/6e/Emma_portrait.png/revision/latest?cb=20221112220027",
+      "url": "https://coralisland.fandom.com/wiki/Emma"
     },
     {
       "id": 27,
       "character": "Erika",
-      "url": "https://static.wikia.nocookie.net/coralisland/images/f/ff/Erika_portrait.png/revision/latest?cb=20221112220034"
+      "urlImg": "https://static.wikia.nocookie.net/coralisland/images/f/ff/Erika_portrait.png/revision/latest?cb=20221112220034",
+      "url": "https://coralisland.fandom.com/wiki/Erika"
     },
     {
       "id": 28,
       "character": "Eva",
-      "url": "https://static.wikia.nocookie.net/coralisland/images/1/1d/Eva.png/revision/latest?cb=20221112220101"
+      "urlImg": "https://static.wikia.nocookie.net/coralisland/images/1/1d/Eva.png/revision/latest?cb=20221112220101",
+      "url": "https://coralisland.fandom.com/wiki/Eva"
     },
     {
       "id": 29,
       "character": "Frank",
-      "url": "https://static.wikia.nocookie.net/coralisland/images/2/2b/Frank.png/revision/latest?cb=20221112220107"
+      "urlImg": "https://static.wikia.nocookie.net/coralisland/images/2/2b/Frank.png/revision/latest?cb=20221112220107",
+      "url": "https://coralisland.fandom.com/wiki/Frank"
     },
     {
       "id": 30,
       "character": "Giu",
-      "url": "https://static.wikia.nocookie.net/coralisland/images/e/e9/Giu.png/revision/latest?cb=20230502113955"
+      "urlImg": "https://static.wikia.nocookie.net/coralisland/images/e/e9/Giu.png/revision/latest?cb=20230502113955",
+      "url": "https://coralisland.fandom.com/wiki/Giu"
     },
     {
       "id": 31,
       "character": "Goddess of Flowers",
-      "url": "https://static.wikia.nocookie.net/coralisland/images/2/26/Goddess_of_Flowers_portrait.png/revision/latest?cb=20230701144516"
+      "urlImg": "https://static.wikia.nocookie.net/coralisland/images/2/26/Goddess_of_Flowers_portrait.png/revision/latest?cb=20230701144516",
+      "url": "https://coralisland.fandom.com/wiki/Goddess_of_Flowers"
     },
     {
       "id": 32,
       "character": "Gong",
-      "url": "https://static.wikia.nocookie.net/coralisland/images/3/36/Gong.png/revision/latest?cb=20230330002406"
+      "urlImg": "https://static.wikia.nocookie.net/coralisland/images/3/36/Gong.png/revision/latest?cb=20230330002406",
+      "url": "https://coralisland.fandom.com/wiki/Gong"
     },
     {
       "id": 33,
       "character": "Gort",
-      "url": "https://static.wikia.nocookie.net/coralisland/images/e/e4/Gort.png/revision/latest?cb=20240117161442"
+      "urlImg": "https://static.wikia.nocookie.net/coralisland/images/e/e4/Gort.png/revision/latest?cb=20240117161442",
+      "url": "https://coralisland.fandom.com/wiki/Gort"
     },
     {
       "id": 34,
       "character": "Grog",
-      "url": "https://static.wikia.nocookie.net/coralisland/images/8/85/Grog.png/revision/latest?cb=20230329233936"
+      "urlImg": "https://static.wikia.nocookie.net/coralisland/images/8/85/Grog.png/revision/latest?cb=20230329233936",
+      "url": "https://coralisland.fandom.com/wiki/Grog"
     },
     {
       "id": 35,
       "character": "Groo",
-      "url": "https://static.wikia.nocookie.net/coralisland/images/d/d6/Groo.png/revision/latest?cb=20230330010915"
+      "urlImg": "https://static.wikia.nocookie.net/coralisland/images/d/d6/Groo.png/revision/latest?cb=20230330010915",
+      "url": "https://coralisland.fandom.com/wiki/Groo"
     },
     {
       "id": 36,
       "character": "Handsome",
-      "url": "https://static.wikia.nocookie.net/coralisland/images/2/21/Handsome_portrait.png/revision/latest?cb=20230801214059"
+      "urlImg": "https://static.wikia.nocookie.net/coralisland/images/2/21/Handsome_portrait.png/revision/latest?cb=20230801214059",
+      "url": "https://coralisland.fandom.com/wiki/Handsome"
     },
     {
       "id": 37,
       "character": "Jack",
-      "url": "https://static.wikia.nocookie.net/coralisland/images/4/46/Jack.png/revision/latest?cb=20221112220114"
+      "urlImg": "https://static.wikia.nocookie.net/coralisland/images/4/46/Jack.png/revision/latest?cb=20221112220114",
+      "url": "https://coralisland.fandom.com/wiki/Jack"
     },
     {
       "id": 38,
       "character": "Jeff Smith",
-      "url": "https://static.wikia.nocookie.net/coralisland/images/6/6c/Jeff_Smith_portrait.png/revision/latest?cb=20230831012048"
+      "urlImg": "https://static.wikia.nocookie.net/coralisland/images/6/6c/Jeff_Smith_portrait.png/revision/latest?cb=20230831012048",
+      "url": "https://coralisland.fandom.com/wiki/Jeff_Smith"
     },
     {
       "id": 39,
       "character": "Jim",
-      "url": "https://static.wikia.nocookie.net/coralisland/images/4/4f/Jim.png/revision/latest?cb=20221112220121"
+      "urlImg": "https://static.wikia.nocookie.net/coralisland/images/4/4f/Jim.png/revision/latest?cb=20221112220121",
+      "url": "https://coralisland.fandom.com/wiki/Jim"
     },
     {
       "id": 40,
       "character": "Jio Dan",
-      "url": "https://static.wikia.nocookie.net/coralisland/images/1/18/Jio_Dan_portrait.png/revision/latest?cb=20230526074404"
+      "urlImg": "https://static.wikia.nocookie.net/coralisland/images/1/18/Jio_Dan_portrait.png/revision/latest?cb=20230526074404",
+      "url": "https://coralisland.fandom.com/wiki/Jio_Dan"
     },
     {
       "id": 41,
       "character": "Joko",
-      "url": "https://static.wikia.nocookie.net/coralisland/images/a/af/Joko.png/revision/latest?cb=20221112220129"
+      "urlImg": "https://static.wikia.nocookie.net/coralisland/images/a/af/Joko.png/revision/latest?cb=20221112220129",
+      "url": "https://coralisland.fandom.com/wiki/Joko"
     },
     {
       "id": 42,
       "character": "Judge Ross",
-      "url": "https://static.wikia.nocookie.net/coralisland/images/d/d5/Judge_Ross_portrait.png/revision/latest?cb=20231201200932"
+      "urlImg": "https://static.wikia.nocookie.net/coralisland/images/d/d5/Judge_Ross_portrait.png/revision/latest?cb=20231201200932",
+      "url": "https://coralisland.fandom.com/wiki/Judge_Ross"
     },
     {
       "id": 43,
       "character": "Karen",
-      "url": "https://static.wikia.nocookie.net/coralisland/images/9/9a/Karen_portrait.png/revision/latest?cb=20221112220210"
+      "urlImg": "https://static.wikia.nocookie.net/coralisland/images/9/9a/Karen_portrait.png/revision/latest?cb=20221112220210",
+      "url": "https://coralisland.fandom.com/wiki/Karen"
     },
     {
       "id": 44,
       "character": "Kenny",
-      "url": "https://static.wikia.nocookie.net/coralisland/images/3/3c/Kenny.png/revision/latest?cb=20221112220317"
+      "urlImg": "https://static.wikia.nocookie.net/coralisland/images/3/3c/Kenny.png/revision/latest?cb=20221112220317",
+      "url": "https://coralisland.fandom.com/wiki/Kenny"
     },
     {
       "id": 45,
       "character": "Kira",
-      "url": "https://static.wikia.nocookie.net/coralisland/images/1/1b/Kira.png/revision/latest?cb=20221112220324"
+      "urlImg": "https://static.wikia.nocookie.net/coralisland/images/1/1b/Kira.png/revision/latest?cb=20221112220324",
+      "url": "https://coralisland.fandom.com/wiki/Kira"
     },
     {
       "id": 46,
       "character": "King Krakatoa",
-      "url": "https://static.wikia.nocookie.net/coralisland/images/8/8b/Krakatoa.png/revision/latest?cb=20230801214135"
+      "urlImg": "https://static.wikia.nocookie.net/coralisland/images/8/8b/Krakatoa.png/revision/latest?cb=20230801214135",
+      "url": "https://coralisland.fandom.com/wiki/King_Krakatoa"
     },
     {
       "id": 47,
       "character": "Leah",
-      "url": "https://static.wikia.nocookie.net/coralisland/images/e/e6/Leah.png/revision/latest?cb=20221112220429"
+      "urlImg": "https://static.wikia.nocookie.net/coralisland/images/e/e6/Leah.png/revision/latest?cb=20221112220429",
+      "url": "https://coralisland.fandom.com/wiki/Leah"
     },
     {
       "id": 48,
       "character": "Lily",
-      "url": "https://static.wikia.nocookie.net/coralisland/images/0/0a/Lily.png/revision/latest?cb=20221112220435"
+      "urlImg": "https://static.wikia.nocookie.net/coralisland/images/0/0a/Lily.png/revision/latest?cb=20221112220435",
+      "url": "https://coralisland.fandom.com/wiki/Lily"
     },
     {
       "id": 49,
       "character": "Ling",
-      "url": "https://static.wikia.nocookie.net/coralisland/images/6/6d/Ling.png/revision/latest?cb=20221112220444"
+      "urlImg": "https://static.wikia.nocookie.net/coralisland/images/6/6d/Ling.png/revision/latest?cb=20221112220444",
+      "url": "https://coralisland.fandom.com/wiki/Ling"
     },
     {
       "id": 50,
       "character": "Luke",
-      "url": "https://static.wikia.nocookie.net/coralisland/images/4/4f/Luke.png/revision/latest?cb=20221112220451"
+      "urlImg": "https://static.wikia.nocookie.net/coralisland/images/4/4f/Luke.png/revision/latest?cb=20221112220451",
+      "url": "https://coralisland.fandom.com/wiki/Luke"
     },
     {
       "id": 51,
       "character": "Macy",
-      "url": "https://static.wikia.nocookie.net/coralisland/images/9/96/Macy.png/revision/latest?cb=20221112220459"
+      "urlImg": "https://static.wikia.nocookie.net/coralisland/images/9/96/Macy.png/revision/latest?cb=20221112220459",
+      "url": "https://coralisland.fandom.com/wiki/Macy"
     },
     {
       "id": 52,
       "character": "Mark",
-      "url": "https://static.wikia.nocookie.net/coralisland/images/4/4d/Mark.png/revision/latest?cb=20221015161647"
+      "urlImg": "https://static.wikia.nocookie.net/coralisland/images/4/4d/Mark.png/revision/latest?cb=20221015161647",
+      "url": "https://coralisland.fandom.com/wiki/Mark"
     },
     {
       "id": 53,
       "character": "Millie",
-      "url": "https://static.wikia.nocookie.net/coralisland/images/0/04/Millie.png/revision/latest?cb=20221112221942"
+      "urlImg": "https://static.wikia.nocookie.net/coralisland/images/0/04/Millie.png/revision/latest?cb=20221112221942",
+      "url": "https://coralisland.fandom.com/wiki/Mille"
     },
     {
       "id": 54,
       "character": "Princess Miranjani",
-      "url": "https://static.wikia.nocookie.net/coralisland/images/d/da/Miranjani.png/revision/latest?cb=20230701144523"
+      "urlImg": "https://static.wikia.nocookie.net/coralisland/images/d/da/Miranjani.png/revision/latest?cb=20230701144523",
+      "url": "https://coralisland.fandom.com/wiki/Princess_Miranjani"
     },
     {
       "id": 55,
       "character": "Queen Nanda Devi",
-      "url": "https://static.wikia.nocookie.net/coralisland/images/b/ba/Nanda_Devi.png/revision/latest?cb=20230801214208"
+      "urlImg": "https://static.wikia.nocookie.net/coralisland/images/b/ba/Nanda_Devi.png/revision/latest?cb=20230801214208",
+      "url": "https://coralisland.fandom.com/wiki/Queen_Nanda_Devi"
     },
     {
       "id": 56,
       "character": "Nina",
-      "url": "https://static.wikia.nocookie.net/coralisland/images/9/97/Nina.png/revision/latest?cb=20221112221950"
+      "urlImg": "https://static.wikia.nocookie.net/coralisland/images/9/97/Nina.png/revision/latest?cb=20221112221950",
+      "url": "https://coralisland.fandom.com/wiki/Nina"
     },
     {
       "id": 57,
       "character": "Noah",
-      "url": "https://static.wikia.nocookie.net/coralisland/images/d/dd/Noah.png/revision/latest?cb=20221112221958"
+      "urlImg": "https://static.wikia.nocookie.net/coralisland/images/d/dd/Noah.png/revision/latest?cb=20221112221958",
+      "url": "https://coralisland.fandom.com/wiki/Noah"
     },
     {
       "id": 58,
       "character": "Olan",
-      "url": "https://static.wikia.nocookie.net/coralisland/images/9/96/Olan_portrait.png/revision/latest?cb=20231210115558"
+      "urlImg": "https://static.wikia.nocookie.net/coralisland/images/9/96/Olan_portrait.png/revision/latest?cb=20231210115558",
+      "url": "https://coralisland.fandom.com/wiki/Olan"
     },
     {
       "id": 59,
       "character": "Oliver",
-      "url": "https://static.wikia.nocookie.net/coralisland/images/d/d4/Oliver.png/revision/latest?cb=20221112222007"
+      "urlImg": "https://static.wikia.nocookie.net/coralisland/images/d/d4/Oliver.png/revision/latest?cb=20221112222007",
+      "url": "https://coralisland.fandom.com/wiki/Oliver"
     },
     {
       "id": 60,
       "character": "Pablo",
-      "url": "https://static.wikia.nocookie.net/coralisland/images/c/c8/Pablo.png/revision/latest?cb=20221112222017"
+      "urlImg": "https://static.wikia.nocookie.net/coralisland/images/c/c8/Pablo.png/revision/latest?cb=20221112222017",
+      "url": "https://coralisland.fandom.com/wiki/Pablo"
     },
     {
       "id": 61,
       "character": "Paul",
-      "url": "https://static.wikia.nocookie.net/coralisland/images/0/00/Paul.png/revision/latest?cb=20221112222026"
+      "urlImg": "https://static.wikia.nocookie.net/coralisland/images/0/00/Paul.png/revision/latest?cb=20221112222026",
+      "url": "https://coralisland.fandom.com/wiki/Paul"
     },
     {
       "id": 62,
       "character": "Rafael",
-      "url": "https://static.wikia.nocookie.net/coralisland/images/c/cb/Rafael.png/revision/latest?cb=20221112222157"
+      "urlImg": "https://static.wikia.nocookie.net/coralisland/images/c/cb/Rafael.png/revision/latest?cb=20221112222157",
+      "url": "https://coralisland.fandom.com/wiki/Rafael"
     },
     {
       "id": 63,
       "character": "Raina",
-      "url": "https://static.wikia.nocookie.net/coralisland/images/5/5c/Raina_portrait.png/revision/latest?cb=20230701144526"
+      "urlImg": "https://static.wikia.nocookie.net/coralisland/images/5/5c/Raina_portrait.png/revision/latest?cb=20230701144526",
+      "url": "https://coralisland.fandom.com/wiki/Raina"
     },
     {
       "id": 64,
       "character": "Raj",
-      "url": "https://static.wikia.nocookie.net/coralisland/images/0/00/Raj.png/revision/latest?cb=20221015162256"
+      "urlImg": "https://static.wikia.nocookie.net/coralisland/images/0/00/Raj.png/revision/latest?cb=20221015162256",
+      "url": "https://coralisland.fandom.com/wiki/Raj"
     },
     {
       "id": 65,
       "character": "Randy",
-      "url": "https://static.wikia.nocookie.net/coralisland/images/3/33/Randy.png/revision/latest?cb=20221112222234"
+      "urlImg": "https://static.wikia.nocookie.net/coralisland/images/3/33/Randy.png/revision/latest?cb=20221112222234",
+      "url": "https://coralisland.fandom.com/wiki/Randy"
     },
     {
       "id": 66,
       "character": "Ratih",
-      "url": "https://static.wikia.nocookie.net/coralisland/images/e/e9/Ratih_portrait.png/revision/latest?cb=20230903174408"
+      "urlImg": "https://static.wikia.nocookie.net/coralisland/images/e/e9/Ratih_portrait.png/revision/latest?cb=20230903174408",
+      "url": "https://coralisland.fandom.com/wiki/Raith"
     },
     {
       "id": 67,
       "character": "Sam",
-      "url": "https://static.wikia.nocookie.net/coralisland/images/9/94/Sam.png/revision/latest?cb=20221112222241"
+      "urlImg": "https://static.wikia.nocookie.net/coralisland/images/9/94/Sam.png/revision/latest?cb=20221112222241",
+      "url": "https://coralisland.fandom.com/wiki/Sam"
     },
     {
       "id": 68,
       "character": "Scott",
-      "url": "https://static.wikia.nocookie.net/coralisland/images/d/d2/Scott.png/revision/latest?cb=20221112222247"
+      "urlImg": "https://static.wikia.nocookie.net/coralisland/images/d/d2/Scott.png/revision/latest?cb=20221112222247",
+      "url": "https://coralisland.fandom.com/wiki/Scott"
     },
     {
       "id": 69,
       "character": "Semeru",
-      "url": "https://static.wikia.nocookie.net/coralisland/images/d/da/Semeru.png/revision/latest?cb=20230801213044"
+      "urlImg": "https://static.wikia.nocookie.net/coralisland/images/d/da/Semeru.png/revision/latest?cb=20230801213044",
+      "url": "https://coralisland.fandom.com/wiki/Semeru"
     },
     {
       "id": 70,
       "character": "Senja",
-      "url": "https://static.wikia.nocookie.net/coralisland/images/6/66/Senja.png/revision/latest?cb=20230503231107"
+      "urlImg": "https://static.wikia.nocookie.net/coralisland/images/6/66/Senja.png/revision/latest?cb=20230503231107",
+      "url": "https://coralisland.fandom.com/wiki/Senja"
     },
     {
       "id": 71,
       "character": "Suki",
-      "url": "https://static.wikia.nocookie.net/coralisland/images/1/14/Suki.png/revision/latest?cb=20221112222337"
+      "urlImg": "https://static.wikia.nocookie.net/coralisland/images/1/14/Suki.png/revision/latest?cb=20221112222337",
+      "url": "https://coralisland.fandom.com/wiki/Suki"
     },
     {
       "id": 72,
       "character": "Sunny",
-      "url": "https://static.wikia.nocookie.net/coralisland/images/9/9a/Sunny.png/revision/latest?cb=20221112222345"
+      "urlImg": "https://static.wikia.nocookie.net/coralisland/images/9/9a/Sunny.png/revision/latest?cb=20221112222345",
+      "url": "https://coralisland.fandom.com/wiki/Sunny"
     },
     {
       "id": 73,
       "character": "Surya",
-      "url": "https://static.wikia.nocookie.net/coralisland/images/0/0b/Surya.png/revision/latest?cb=20221112222353"
+      "urlImg": "https://static.wikia.nocookie.net/coralisland/images/0/0b/Surya.png/revision/latest?cb=20221112222353",
+      "url": "https://coralisland.fandom.com/wiki/Surya"
     },
     {
       "id": 74,
       "character": "Takeba",
-      "url": "https://static.wikia.nocookie.net/coralisland/images/2/2d/Takeba.png/revision/latest?cb=20221015162341"
+      "urlImg": "https://static.wikia.nocookie.net/coralisland/images/2/2d/Takeba.png/revision/latest?cb=20221015162341",
+      "url": "https://coralisland.fandom.com/wiki/Takeba"
     },
     {
       "id": 75,
       "character": "Theo",
-      "url": "https://static.wikia.nocookie.net/coralisland/images/5/51/Theo.png/revision/latest?cb=20221112222400"
+      "urlImg": "https://static.wikia.nocookie.net/coralisland/images/5/51/Theo.png/revision/latest?cb=20221112222400",
+      "url": "https://coralisland.fandom.com/wiki/Theo"
     },
     {
       "id": 76,
       "character": "Valentina",
-      "url": "https://static.wikia.nocookie.net/coralisland/images/9/90/Valentina.png/revision/latest?cb=20221112222536"
+      "urlImg": "https://static.wikia.nocookie.net/coralisland/images/9/90/Valentina.png/revision/latest?cb=20221112222536",
+      "url": "https://coralisland.fandom.com/wiki/Valentina"
     },
     {
       "id": 77,
       "character": "Wakuu",
-      "url": "https://static.wikia.nocookie.net/coralisland/images/a/a5/Wakuu.png/revision/latest?cb=20221015162439"
+      "urlImg": "https://static.wikia.nocookie.net/coralisland/images/a/a5/Wakuu.png/revision/latest?cb=20221015162439",
+      "url": "https://coralisland.fandom.com/wiki/Wakuu"
     },
     {
       "id": 78,
       "character": "Walter",
-      "url": "https://static.wikia.nocookie.net/coralisland/images/2/26/Walter.png/revision/latest?cb=20221112222544"
+      "urlImg": "https://static.wikia.nocookie.net/coralisland/images/2/26/Walter.png/revision/latest?cb=20221112222544",
+      "url": "https://coralisland.fandom.com/wiki/Walter"
     },
     {
       "id": 79,
       "character": "Wataru",
-      "url": "https://static.wikia.nocookie.net/coralisland/images/3/39/Wataru.png/revision/latest?cb=20221015161011"
+      "urlImg": "https://static.wikia.nocookie.net/coralisland/images/3/39/Wataru.png/revision/latest?cb=20221015161011",
+      "url": "https://coralisland.fandom.com/wiki/Wataru"
     },
     {
       "id": 80,
       "character": "Yuri",
-      "url": "https://static.wikia.nocookie.net/coralisland/images/c/cc/Yuri.png/revision/latest?cb=20221112222550"
+      "urlImg": "https://static.wikia.nocookie.net/coralisland/images/c/cc/Yuri.png/revision/latest?cb=20221112222550",
+      "url": "https://coralisland.fandom.com/wiki/Yuri"
     },
     {
       "id": 81,
       "character": "Zarah",
-      "url": "https://static.wikia.nocookie.net/coralisland/images/3/30/Zarah.png/revision/latest?cb=20221112222557"
+      "urlImg": "https://static.wikia.nocookie.net/coralisland/images/3/30/Zarah.png/revision/latest?cb=20221112222557",
+      "url": "https://coralisland.fandom.com/wiki/Zarah"
     },
     {
       "id": 82,
       "character": "Zoe",
-      "url": "https://static.wikia.nocookie.net/coralisland/images/4/4a/Zoe.png/revision/latest?cb=20221112222604"
+      "urlImg": "https://static.wikia.nocookie.net/coralisland/images/4/4a/Zoe.png/revision/latest?cb=20221112222604",
+      "url": "https://coralisland.fandom.com/wiki/Zoe"
     }
   ]
 }

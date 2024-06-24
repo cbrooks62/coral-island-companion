@@ -24,7 +24,7 @@ export const EditUserProfile = ({currentUser}) => {
       userName: myProfile.userName,
     };
     updateUserProfile(editProfile).then(() => {
-      navigate("/");
+      navigate("/ReminderList");
     });
   };
 

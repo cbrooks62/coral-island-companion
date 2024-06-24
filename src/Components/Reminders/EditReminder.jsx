@@ -44,7 +44,7 @@ export const EditReminder = ({ currentUser }) => {
       completed: myReminder.completed,
     };
     updateReminder(editCurrentReminder).then(() => {
-      navigate("/");
+      navigate("/ReminderList");
     });
   };
 
@@ -63,9 +63,9 @@ Conditional to render the correct state of the character on dropdown. If the npc
 
   //jsx to edit a current reminder
   return (
-    <div className="edit-reminder-form">
-      <Form>
-        <h2>Edit Reminder</h2>
+    <div className="reminder-container">
+      <form>
+       <header className="edit-reminder-header"></header>
         <fieldset>
           <div>
             <Input
@@ -103,6 +103,7 @@ Conditional to render the correct state of the character on dropdown. If the npc
               </DropdownToggle>
               <DropdownMenu>
                 {npcs.map((singleNpc) => {
+                  {console.log(typeof singleNpc.id)}
                   return (
                     <DropdownItem
                       key={singleNpc.id}
@@ -137,11 +138,11 @@ Conditional to render the correct state of the character on dropdown. If the npc
           </div>
         </fieldset>
         <fieldset>
-          <Button color="dark" onClick={handleSaveEditReminder}>
+          <button color="dark" onClick={handleSaveEditReminder}>
             Save
-          </Button>
+          </button>
         </fieldset>
-      </Form>
+      </form>
     </div>
   );
 };

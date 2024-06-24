@@ -1,0 +1,22 @@
+.npc-characters-card {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+    margin-top: 25%;
+}
+
+.npc-single-card {
+    padding: 1rem;
+}
+
+.npc-name {
+    color: #FFDF2B;
+}
+
+.characters-header {
+    background-image: url(src/Images/Characters-header.png);
+    height: 12rem;
+    width: 30rem;
+    background-repeat: no-repeat;
+    margin-top: 8%;
+}

@@ -26,7 +26,7 @@ export const Register = (props) => {
           })
         )
 
-        navigate("/")
+        navigate("/ReminderList")
       }
     })
   }
@@ -51,7 +51,7 @@ export const Register = (props) => {
   }
 
   return (
-    <div id="root" className="auth-container">
+    <div className="auth-container">
       <form className="auth-form-register" onSubmit={handleRegister}>
         <h1 className="header-register">Welcome!</h1>
         <fieldset className="auth-fieldset">

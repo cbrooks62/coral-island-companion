@@ -1,8 +1,7 @@
 //Purpose: Created the navbar that will be displayed on every page, and set appropriate routes for the corresponding buttons.
 
-import { Navbar, NavbarBrand, Nav, NavLink, Card } from "reactstrap";
+import { Card } from "reactstrap";
 import "./Navbar.css";
-import { useState } from "react";
 import { Link } from "react-router-dom";
 
 export const CompanionNavbar = ({ currentUser }) => {
@@ -12,31 +11,29 @@ export const CompanionNavbar = ({ currentUser }) => {
         <li>
           <img
             alt="logo"
-            src="./src/Images/CI-icon.png"
+            src="src/Images/Navbar-Icon.png"
             style={{
-              height: 50,
-              width: 55,
+              height: 75,
+              width: 150,
               paddingRight: 5,
             }}
           />
-          Coral Island Companion
-        </li>
-     
-          <li>
-            <Link href="/">Reminders</Link>
+        </li> 
+          <li className="navbar-pages">
+            <Link to="/">Reminders</Link>
           </li>
-          <li>
-            <Link href="/Calendar">Calendar</Link>
+          <li className="navbar-pages">
+            <Link to="/Calendar">Calendar</Link>
           </li>
-          <li>
-            <Link href="/Characters">Characters</Link>
+          <li className="navbar-pages">
+            <Link to="/Characters">Characters</Link>
           </li>
-          <li>
-            <Link href="/EditProfile">Profile</Link>
+          <li className="navbar-pages">
+            <Link to="/EditProfile">Profile</Link>
           </li>
-        <Card className="logout-link">
+        <Card className="logout-card">
           <li className="navbar-username"> Hi {currentUser.userName}!</li>
-          <Link href="/Login" className="logout-link"> Logout</Link>
+          <Link to="/Login" className="logout-link"> Logout</Link>
         </Card>
       </ul>
       </div>
