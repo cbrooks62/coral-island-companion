@@ -5,7 +5,7 @@ import { ReminderList } from "../Components/Reminders/ReminderList.jsx";
 import { CreateReminder } from "../Components/Reminders/CreateReminder.jsx";
 import { EditReminder } from "../Components/Reminders/EditReminder.jsx";
 import { EditUserProfile } from "../Components/Users/EditUserProfile.jsx";
-import { Calendar } from "../Components/Calendar/Calendar.jsx";
+import { Calendar } from "../Components/Calendar/Calendar.jsx"
 import { NpcList } from "../Components/NPCs/NpcList.jsx";
 
 export const ApplicationViews = () => {
