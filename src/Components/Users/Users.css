@@ -1,9 +1,8 @@
 /* Purpose: Styling for login and registration pages */
-.auth-container {
-  background-image: url(src/Images/CICLogin.png);
+/* .auth-container {
   background-repeat: no-repeat;
   background-size: 100vw 100vh;
-}
+} */
 
 .header-login {
   color: #7f62b7;
@@ -72,7 +71,7 @@ text-align: center;
 }
 
 .profile-header {
-  background-image: url(src/Images/Profile-header.png);
+  background-image: url(src/Images/Headers/Profile-header.png);
   height: 12rem;
   width: 30rem;
   background-repeat: no-repeat;

@@ -10,18 +10,18 @@
 }
 
 .character-image {
-    width: 10rem;
-    height: 10rem;
+    width: 8rem;
+    height: 8rem;
 }
 
 .npc-name {
     color: #FFDF2B;
-    font-size: 30px;
-    text-align: left;
+    font-size: 25px;
+    text-align: center;
 }
 
 .characters-header {
-    background-image: url(src/Images/Characters-header.png);
+    background-image: url(src/Images/Headers/Characters-header.png);
     height: 12rem;
     width: 30rem;
     background-repeat: no-repeat;

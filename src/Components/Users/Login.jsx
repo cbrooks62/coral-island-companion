@@ -1,6 +1,6 @@
 // Purpose: Handles login functionality for the application.
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import "./Users.css";
@@ -9,6 +9,10 @@ import { getUserByEmail } from "../../Services/userServices.jsx";
 export const Login = ({currentUser}) => {
   const [email, set] = useState("");
   const navigate = useNavigate();
+
+  useEffect(() => {
+    document.body.style.backgroundImage = `url(src/Images/CICLogin.png)`
+  } , [])
 
   const handleLogin = async (e) => {
     e.preventDefault();

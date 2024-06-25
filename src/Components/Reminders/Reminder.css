@@ -9,7 +9,7 @@
 }
 
 .header-reminders {
-  background-image: url(src/Images/Reminder-header1.png);
+  background-image: url(src/Images/Headers/Reminder-header1.png);
   height: 12rem;
   width: 30rem;
   background-repeat: no-repeat;
@@ -62,7 +62,7 @@
 
 /* ALL EDIT REMINDERS CSS */
 .edit-reminder-header {
-  background-image: url(src/Images/Edit-Reminder-header.png);
+  background-image: url(src/Images/Headers/Edit-Reminder-header.png);
   height: 12rem;
   width: 30rem;
   background-repeat: no-repeat;
@@ -80,7 +80,7 @@
 
 /* ALL CREATE REMINDER CSS */
 .new-reminder-header {
-  background-image: url(src/Images/Create-Reminder-header1.png);
+  background-image: url(src/Images/Headers/Create-Reminder-header1.png);
   height: 12rem;
   width: 50rem;
   background-repeat: no-repeat;
