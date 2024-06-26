@@ -1,10 +1,12 @@
 //Purpose: Created the navbar that will be displayed on every page, and set appropriate routes for the corresponding buttons.
 
-import { Card } from "reactstrap";
+
 import "./Navbar.css";
 import { Link } from "react-router-dom";
 
 export const CompanionNavbar = ({ currentUser }) => {
+
+
   return (
     <div className="nav-container">
       <ul className="navbar-CIC">
@@ -33,6 +35,7 @@ export const CompanionNavbar = ({ currentUser }) => {
         </li>
         <div className="logout-card">
           <li className="navbar-username"> Hi {currentUser.userName}!</li>
+          {/* <a><img src={currentUser.urlImg}/></a> */}
           <Link to="/Login" className="logout-link">
             {" "}
             Logout

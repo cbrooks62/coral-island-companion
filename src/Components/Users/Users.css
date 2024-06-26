@@ -93,3 +93,7 @@ text-align: center;
   background-color: #ffdf2b;
   border-radius: 50%;
 }
+.dropdown-img {
+  width: 3rem;
+  height: 3rem;
+}

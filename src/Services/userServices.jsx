@@ -8,7 +8,7 @@ export const getUserByEmail = (email) => {
 
 //fetch to register a new user used in RegisterUserProfile.jsx
 export const createUser = (user) => {
-  return fetch("http://localhost:8088/users", {
+  return fetch("http://localhost:8088/users?_expand=npc", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -22,13 +22,13 @@ export const getAllUsers = () => {
 };
 
 //fetch to edit user profile used in EditUserProfile.jsx
-export const updateUserProfile = (userId) => {
-  return fetch(`http://localhost:8088/users${userId}?_expand=npc`, {
+export const updateUserProfile = (userObj) => {
+  return fetch(`http://localhost:8088/users/${userObj.id}?_expand=npc`, {
     method: "PUT",
     headers: {
       "Content-Type": "application/json",
     },
-    body: JSON.stringify(userId),
+    body: JSON.stringify(userObj),
   });
 };
 

@@ -1,16 +1,23 @@
 //Purpose: Handles user registration functionality for the  app.
 
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { useNavigate } from "react-router-dom"
 import "./Users.css"
 import { createUser, getUserByEmail } from "../../Services/userServices.jsx"
+import { DropdownItem, DropdownMenu, DropdownToggle, UncontrolledDropdown } from "reactstrap"
+import { getAllNpcs } from "../../Services/npcServices.jsx"
 
 export const Register = (props) => {
   const [user, setUser] = useState({
+    id: "",
+    npcId: "",
+    character: "",
     email: "",
     username: "",
-    npcId: ""
   })
+  const [npcs, setNpcs] = useState([])
+  const [npcId, setNpcId] = useState({ character: user.npcId });
+
   let navigate = useNavigate()
 
   const registerNewUser = () => {
@@ -27,10 +34,11 @@ export const Register = (props) => {
           })
         )
 
-        navigate("/ReminderList")
+        navigate("/")
       }
     })
   }
+
 
   const handleRegister = (e) => {
     e.preventDefault()
@@ -50,6 +58,19 @@ export const Register = (props) => {
     copy[evt.target.id] = evt.target.value
     setUser(copy)
   }
+
+   //useEffect to get all NPCs from database
+   useEffect(() => {
+    getAllNpcs().then((data) => setNpcs(data));
+  }, []);
+
+/*
+Conditional to render the correct state of the character on dropdown. If the npcId state has a character (mean it returns true), change the name displayed to that.
+*/
+let toggleNpc = user?.npc?.urlImg;
+if (npcId.urlImg) {
+  toggleNpc = npcId.urlImg;
+}
 
   return (
     <div className="auth-container">
@@ -78,6 +99,43 @@ export const Register = (props) => {
               placeholder="Email address"
               required
             />
+          </div>
+        </fieldset>
+        <fieldset>
+          <div>
+            <UncontrolledDropdown group>
+              <DropdownToggle caret color="light">
+                {toggleNpc}
+              </DropdownToggle>
+              <DropdownMenu>
+                {npcs.map((singleNpc) => {
+                  {console.log(typeof singleNpc.id)}
+                  return (
+                    <DropdownItem
+                      key={singleNpc.id}
+                      value={singleNpc.id}
+                      
+              //         onChange={updateUser}
+              // type="email"
+              // id="email"
+              // className="auth-form-input"
+              // placeholder="Email address"
+              // required
+                      onClick={(e) => {
+                        const profileCopy = { ...updateUser };
+                        profileCopy.npcId = singleNpc.id;
+                        profileCopy.character = singleNpc.character;
+                        setUser(profileCopy);
+                      }}
+                    >
+                      <img 
+                      className="dropdown-img"
+                      src={singleNpc.urlImg}/>
+                    </DropdownItem>
+                  );
+                })}
+              </DropdownMenu>
+            </UncontrolledDropdown>
           </div>
         </fieldset>
         <fieldset className="auth-fieldset">
