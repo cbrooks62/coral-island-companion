@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 export const CompanionNavbar = ({ currentUser }) => {
   return (
-  <div className="nav-container">
+    <div className="nav-container">
       <ul className="navbar-CIC">
         <li>
           <img
@@ -18,24 +18,27 @@ export const CompanionNavbar = ({ currentUser }) => {
               paddingRight: 5,
             }}
           />
-        </li> 
-          <li className="navbar-pages">
-            <Link to="/">Reminders</Link>
-          </li>
-          <li className="navbar-pages">
-            <Link to="/Calendar">Calendar</Link>
-          </li>
-          <li className="navbar-pages">
-            <Link to="/Characters">Characters</Link>
-          </li>
-          <li className="navbar-pages">
-            <Link to="/EditProfile">Profile</Link>
-          </li>
+        </li>
+        <li className="navbar-pages">
+          <Link to="/">Reminders</Link>
+        </li>
+        <li className="navbar-pages">
+          <Link to="/Calendar">Calendar</Link>
+        </li>
+        <li className="navbar-pages">
+          <Link to="/Characters">Characters</Link>
+        </li>
+        <li className="navbar-pages">
+          <Link to="/EditProfile">Profile</Link>
+        </li>
         <div className="logout-card">
           <li className="navbar-username"> Hi {currentUser.userName}!</li>
-          <Link to="/Login" className="logout-link"> Logout</Link>
+          <Link to="/Login" className="logout-link">
+            {" "}
+            Logout
+          </Link>
         </div>
       </ul>
-      </div>
+    </div>
   );
 };

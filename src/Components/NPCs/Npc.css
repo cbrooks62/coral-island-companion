@@ -23,7 +23,7 @@
 .characters-header {
     background-image: url(src/Images/Headers/Characters-header.png);
     height: 12rem;
-    width: 30rem;
+    width: 80rem;
     background-repeat: no-repeat;
     margin-top: 8%;
 }

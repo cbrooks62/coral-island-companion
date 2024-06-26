@@ -68,7 +68,7 @@ Conditional to render the correct state of the character on dropdown. If the npc
        <header className="edit-reminder-header"></header>
         <fieldset>
           <div>
-            <Input
+            <input
               type="text"
               text="text"
               placeholder={myReminder.title}
@@ -83,7 +83,7 @@ Conditional to render the correct state of the character on dropdown. If the npc
         <fieldset>
           <div>
             {/* implement drop downs later for Season and Day*/}
-            <Input
+            <input
               type="text"
               text="text"
               placeholder={myReminder.dueDate}
@@ -125,7 +125,7 @@ Conditional to render the correct state of the character on dropdown. If the npc
         </fieldset>
         <fieldset>
           <div>
-            <Input
+            <input
               type="text"
               text="text"
               placeholder={myReminder.synopsis}

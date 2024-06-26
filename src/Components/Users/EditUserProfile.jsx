@@ -1,14 +1,11 @@
 import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router";
 import { getUserById, updateUserProfile } from "../../Services/userServices.jsx";
-import { Button, Form, Input } from "reactstrap";
 
 export const EditUserProfile = ({currentUser}) => {
   const [myProfile, setMyProfile] = useState([]);
 
-  
-
-  useEffect(() => {
+    useEffect(() => {
     getUserById(currentUser.id).then((userObj) => {
       setMyProfile(userObj);
     });
@@ -24,14 +21,14 @@ export const EditUserProfile = ({currentUser}) => {
       userName: myProfile.userName,
     };
     updateUserProfile(editProfile).then(() => {
-      navigate("/ReminderList");
+      navigate("/");
     });
   };
 
   return (
     <div>
         <header className="profile-header"></header>
-      <form className="profile-edit-card">
+      <div className="profile-edit-card">
         <fieldset>
           <div>
             <input
@@ -69,7 +66,7 @@ export const EditUserProfile = ({currentUser}) => {
             Save
           </button>
         </fieldset>
-      </form>
+      </div>
     </div>
   );
 };

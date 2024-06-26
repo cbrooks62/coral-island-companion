@@ -9,18 +9,20 @@
 }
 
 .header-reminders {
-  background-image: url(src/Images/Headers/Reminder-header1.png);
+  background-image: url(src/Images/Headers/Reminder-header.png);
   height: 12rem;
-  width: 30rem;
+  width: 60rem;
   background-repeat: no-repeat;
   margin-top: 8%;
-}
+ }
 /* 
   Calling from Reminder.jsx for individual reminder cards.
   This is CardBody of Card
 */
 .single-reminder-card {
   background-color: #d6e9f1;
+  border-radius: 30%;
+  box-shadow: 2px 2px  black;
 }
 /* ReminderList/ Homepage Title */
 .reminder-title {
@@ -42,6 +44,7 @@
   background-color: #7f62b7;
   color: #ff66c4;
   border-radius: 15px;
+  box-shadow: 2px 2px  black;
 }
 .button-complete {
   margin: 1rem;
@@ -52,11 +55,21 @@
   font-size: 0.5em;
   font-weight: bolder;
   color: magenta;
+  box-shadow: 2px 2px  black;
 }
 .button-new-reminder {
   background-color: #ff66c4;
   border-radius: 15px;
   margin: 1rem;
+  box-shadow: 2px 2px  black;
+}
+/*edit button on reminder card*/
+.button-edit {
+  margin: 1rem;
+  background-color: #d6e9f1;
+  color: #7f62b7;
+  border-radius: 15px;
+  box-shadow: 2px 2px  black;
 }
 
 
@@ -69,20 +82,13 @@
   margin-top: 8%;
   /* all reminders card*/
 }
-/*edit button on reminder card*/
-.button-edit {
-  margin: 1rem;
-  background-color: #d6e9f1;
-  color: #7f62b7;
-  border-radius: 15px;
-}
 
 
 /* ALL CREATE REMINDER CSS */
 .new-reminder-header {
-  background-image: url(src/Images/Headers/Create-Reminder-header1.png);
+  background-image: url(src/Images/Headers/Create-Reminder-header.png);
   height: 12rem;
-  width: 50rem;
+  width: 85rem;
   background-repeat: no-repeat;
   margin-top: 8%;
 }
