@@ -2,21 +2,17 @@
   "users": [
     {
       "id": 1,
-      "npcId": 1,
-      "email": "hotchocolatelover@mail.com",
-      "userName": "Donna"
+      "npcId": 41,
+      "character": "Joko",
+      "email": "place@mail.com",
+      "userName": "Melissa"
     },
     {
       "id": 2,
-      "npcId": 6,
+      "npcId": 9,
+      "character": "Ben",
       "email": "turtle@mail.com",
       "userName": "Amanda"
-    },
-    {
-      "id": 3,
-      "npcId": 13,
-      "email": "seashell@mail.com",
-      "userName": "Grant"
     }
   ],
   "reminders": [
@@ -30,15 +26,6 @@
       "completed": true
     },
     {
-      "id": 2,
-      "userId": 3,
-      "npcId": 60,
-      "title": "Things needed",
-      "synopsis": "gather things",
-      "dueDate": "Fall 5",
-      "completed": true
-    },
-    {
       "id": 3,
       "userId": 2,
       "npcId": 78,
@@ -46,15 +33,6 @@
       "synopsis": "get fish",
       "dueDate": "Winter 1",
       "completed": true
-    },
-    {
-      "id": 5,
-      "userId": 3,
-      "npcId": "4",
-      "title": "CHANGE IT AGAIN",
-      "synopsis": "IT WORKSSSSSSS",
-      "dueDate": "JUST TO BE SURE",
-      "completed": false
     },
     {
       "userId": 1,
@@ -100,24 +78,6 @@
       "synopsis": "Water plants",
       "completed": false,
       "id": 10
-    },
-    {
-      "id": 11,
-      "userId": 3,
-      "npcId": "75",
-      "title": "GET Stuff",
-      "synopsis": "Give bread",
-      "dueDate": "Winter 1",
-      "completed": true
-    },
-    {
-      "userId": 3,
-      "title": "New Task to Reminder",
-      "dueDate": "Winter 2",
-      "npcId": "4",
-      "synopsis": "I will need to grow apples to make apple wine",
-      "completed": false,
-      "id": 12
     }
   ],
   "days": [
@@ -283,8 +243,8 @@
   "npcs": [
     {
       "id": 1,
-      "character": "None",
-      "urlImg": "https://static.wikia.nocookie.net/coralisland/images/4/42/Coral_Island_icon.png/revision/latest?cb=20230509143005",
+      "character": "Coral Island",
+      "urlImg": "src/Images/CI-icon.png",
       "url": "https://coralisland.fandom.com/wiki/Coral_Island_Wiki"
     },
     {

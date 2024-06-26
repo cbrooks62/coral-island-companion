@@ -29,7 +29,7 @@ export const Login = ({currentUser}) => {
               })
           );
           navigate("/");
-          console.log(currentUser.id)
+          
       } else {
           window.alert("Invalid login");
       }

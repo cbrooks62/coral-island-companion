@@ -1,55 +1,73 @@
 //Purpose: Handles user registration functionality for the  app.
 
-import { useState } from "react"
-import { useNavigate } from "react-router-dom"
-import "./Users.css"
-import { createUser, getUserByEmail } from "../../Services/userServices.jsx"
+import "./Users.css";
+import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { createUser, getUserByEmail } from "../../Services/userServices.jsx";
+import {
+  DropdownItem,
+  DropdownMenu,
+  DropdownToggle,
+  UncontrolledDropdown,
+} from "reactstrap";
+import { getAllNpcs } from "../../Services/npcServices.jsx";
 
 export const Register = (props) => {
   const [user, setUser] = useState({
+    id: "",
+    npcId: "",
+    character: "",
     email: "",
-    username: "",
-    npcId: ""
-  })
-  let navigate = useNavigate()
+    userName: "",
+  });
+
+  const [npcs, setNpcs] = useState([]);
+
+  let navigate = useNavigate();
 
   const registerNewUser = () => {
     const newUser = {
-      ...user
-    }
+      ...user,
+    };
 
     createUser(newUser).then((createdUser) => {
       if (createdUser.hasOwnProperty("id")) {
         localStorage.setItem(
           "companion_user",
           JSON.stringify({
-            id: createdUser.id
+            id: createdUser.id,
           })
-        )
+        );
 
-        navigate("/ReminderList")
+        navigate("/");
       }
-    })
-  }
+    });
+  };
 
   const handleRegister = (e) => {
-    e.preventDefault()
+    e.preventDefault();
+
     getUserByEmail(user.email).then((response) => {
       if (response.length > 0) {
         // Duplicate email. No good.
-        window.alert("Account with that email address already exists")
+        window.alert("Account with that email address already exists");
       } else {
         // Good email, create user.
-        registerNewUser()
+        registerNewUser();
       }
-    })
-  }
+    });
+  };
 
-  const updateUser = (evt) => {
-    const copy = { ...user }
-    copy[evt.target.id] = evt.target.value
-    setUser(copy)
-  }
+  const updateUser = (e) => {
+    const copy = { ...user };
+    copy[e.target.id] = e.target.value;
+    setUser(copy);
+  };
+
+  //useEffect to get all NPCs from database
+  useEffect(() => {
+    getAllNpcs().then((data) => setNpcs(data));
+  }, []);
 
   return (
     <div className="auth-container">
@@ -60,9 +78,9 @@ export const Register = (props) => {
             <input
               onChange={updateUser}
               type="text"
-              id="username"
+              id="userName"
               className="auth-form-input"
-              placeholder="Enter your username"
+              placeholder="Username"
               required
               autoFocus
             />
@@ -80,12 +98,44 @@ export const Register = (props) => {
             />
           </div>
         </fieldset>
+        <fieldset>
+          <div>
+            <UncontrolledDropdown group>
+              <DropdownToggle caret color="light">
+                {user.character}
+              </DropdownToggle>
+              <DropdownMenu>
+                {npcs.map((singleNpc) => {
+                  {
+                    console.log(typeof singleNpc.id);
+                  }
+                  return (
+                    <DropdownItem
+                      key={singleNpc.id}
+                      value={singleNpc.id}
+                      onClick={(e) => {
+                        const profileCopy = { ...user };
+                        profileCopy.npcId = singleNpc.id;
+                        profileCopy.character = singleNpc.character;
+                        setUser(profileCopy);
+                      }}
+                    >
+                      <img className="dropdown-img" src={singleNpc.urlImg} />
+                    </DropdownItem>
+                  );
+                })}
+              </DropdownMenu>
+            </UncontrolledDropdown>
+          </div>
+        </fieldset>
         <fieldset className="auth-fieldset">
           <div className="input-button">
-            <button type="submit" className="auth-button">Register</button>
+            <button type="submit" className="auth-button">
+              Register
+            </button>
           </div>
         </fieldset>
       </form>
     </div>
-  )
-}
+  );
+};
