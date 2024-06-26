@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router";
 import {
+  deleteProfile,
   getUserById,
   updateUserProfile,
 } from "../../Services/userServices.jsx";
@@ -44,6 +45,12 @@ export const EditUserProfile = ({ currentUser }) => {
     getAllNpcs().then((data) => setNpcs(data));
   }, []);
 
+  //function to handle deleting a user profile from database
+  // const handleDeleteProfile = () => {
+  //   deleteProfile(myProfile.id).then(() => {
+  //     updateUserProfile();
+  //   });
+  // };
  
   return (
     <div>
@@ -114,6 +121,9 @@ export const EditUserProfile = ({ currentUser }) => {
           >
             Save
           </button>
+          {/* <button className="button-delete" onClick={handleDeleteProfile}>
+            Delete
+          </button> */}
         </fieldset>
       </div>
     </div>

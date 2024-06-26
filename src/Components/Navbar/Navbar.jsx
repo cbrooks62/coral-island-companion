@@ -34,8 +34,8 @@ export const CompanionNavbar = ({ currentUser }) => {
           <Link to="/EditProfile">Profile</Link>
         </li>
         <div className="logout-card">
-          <li className="navbar-username"> Hi {currentUser.userName}!</li>
-          {/* <a><img src={currentUser.urlImg}/></a> */}
+          <li className="navbar-username"> Hi {currentUser.userName}!<a><img className="navbar-useImg" src={currentUser.character}/></a></li>
+          
           <Link to="/Login" className="logout-link">
             {" "}
             Logout

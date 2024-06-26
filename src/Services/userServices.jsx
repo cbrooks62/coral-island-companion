@@ -1,5 +1,6 @@
 //Purpose: All fetch services related to login.jsx and database.json. This includes: receiving data, creating data, and editing data.
 
+//fetch in RegisterUserProfile.jsx used to not allow duplicate emails within users
 export const getUserByEmail = (email) => {
   return fetch(`http://localhost:8088/users?email=${email}`).then((res) =>
     res.json()
@@ -37,4 +38,11 @@ export const getUserById = (userId) => {
   return fetch(`http://localhost:8088/users/${userId}?_expand=npc`)
   .then((res) => res.json()
   );
+};
+
+//fetch to handle the deleted user profile
+export const deleteProfile = (userId) => {
+  return fetch(`http://localhost:8088/users/${userId}?_expand=npc`, {
+    method: "DELETE",
+  });
 };
