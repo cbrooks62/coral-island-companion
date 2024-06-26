@@ -3,12 +3,9 @@ import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router";
 
 import {
-  Button,
   DropdownItem,
   DropdownMenu,
   DropdownToggle,
-  Form,
-  Input,
   UncontrolledDropdown,
 } from "reactstrap";
 import {
@@ -44,7 +41,7 @@ export const EditReminder = ({ currentUser }) => {
       completed: myReminder.completed,
     };
     updateReminder(editCurrentReminder).then(() => {
-      navigate("/ReminderList");
+      navigate("/");
     });
   };
 

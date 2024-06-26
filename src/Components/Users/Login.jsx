@@ -10,9 +10,9 @@ export const Login = ({currentUser}) => {
   const [email, set] = useState("");
   const navigate = useNavigate();
 
-  useEffect(() => {
-    document.body.style.backgroundImage = `url(src/Images/CICLogin.png)`
-  } , [])
+  // useEffect(() => {
+  //   document.body.style.backgroundImage = `url(src/Images/CICLogin.png)`
+  // } , [])
 
   const handleLogin = async (e) => {
     e.preventDefault();

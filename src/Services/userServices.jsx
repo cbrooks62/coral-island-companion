@@ -6,6 +6,7 @@ export const getUserByEmail = (email) => {
   );
 };
 
+//fetch to register a new user used in RegisterUserProfile.jsx
 export const createUser = (user) => {
   return fetch("http://localhost:8088/users", {
     method: "POST",
@@ -20,20 +21,20 @@ export const getAllUsers = () => {
   return fetch(`http://localhost:8088/users`).then((res) => res.json());
 };
 
-//fetch to edit user profile
-export const updateUserProfile = (user) => {
-  return fetch(`http://localhost:8088/users`, {
+//fetch to edit user profile used in EditUserProfile.jsx
+export const updateUserProfile = (userId) => {
+  return fetch(`http://localhost:8088/users${userId}?_expand=npc`, {
     method: "PUT",
     headers: {
       "Content-Type": "application/json",
     },
-    body: JSON.stringify(user),
+    body: JSON.stringify(userId),
   });
 };
 
-//fetch to get users by id
+//fetch to get users by id used in EditUserProfile.jsx
 export const getUserById = (userId) => {
-  return fetch(`http://localhost:8088/users/${userId}`)
+  return fetch(`http://localhost:8088/users/${userId}?_expand=npc`)
   .then((res) => res.json()
   );
 };
