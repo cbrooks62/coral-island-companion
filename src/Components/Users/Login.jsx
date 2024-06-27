@@ -1,18 +1,23 @@
 // Purpose: Handles login functionality for the application.
 
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import "./Users.css";
 import { getUserByEmail } from "../../Services/userServices.jsx";
 
 export const Login = ({currentUser}) => {
+  const location = useLocation();
+  const path = location.pathname
   const [email, set] = useState("");
   const navigate = useNavigate();
 
-  // useEffect(() => {
-  //   document.body.style.backgroundImage = `url(src/Images/CICLogin.png)`
-  // } , [])
+  //useEffect to add CICLogin.png to page
+  useEffect(() => {
+      document.body.style.backgroundImage = `url(src/Images/CICLogin.png)`
+      document.body.style.backgroundSize = '100vw 100vh'
+  }, [])
+
 
   const handleLogin = async (e) => {
     e.preventDefault();
@@ -34,7 +39,6 @@ export const Login = ({currentUser}) => {
           window.alert("Invalid login");
       }
   };
-
   return (
     <div className="auth-container">
       <section className="login-card">
@@ -46,7 +50,7 @@ export const Login = ({currentUser}) => {
                 type="email"
                 value={email}
                 className="auth-form-input"
-                onChange={(evt) => set(evt.target.value)}
+                onChange={(e) => set(e.target.value)}
                 placeholder="Email address"
                 required
                 autoFocus

@@ -9,27 +9,34 @@
 }
 
 .header-reminders {
-  background-image: url(src/Images/Headers/Reminder-header.png);
   height: 12rem;
-  width: 60rem;
-  background-repeat: no-repeat;
+  width: 80rem;
   margin-top: 8%;
- }
+}
 /* 
   Calling from Reminder.jsx for individual reminder cards.
   This is CardBody of Card
 */
 .single-reminder-card {
   background-color: #d6e9f1;
-  border-radius: 30%;
-  box-shadow: 2px 2px  black;
+  border-radius: 3%;
+  box-shadow: 2px 2px black;
 }
 /* ReminderList/ Homepage Title */
 .reminder-title {
+  font-family: "Comfortaa", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
   font-size: 30px;
 }
 .reminder-card {
   margin: 0.5rem;
+  font-family: "Comfortaa", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 16px;
 }
 .reminders {
   margin-top: 1rem;
@@ -44,7 +51,12 @@
   background-color: #7f62b7;
   color: #ff66c4;
   border-radius: 15px;
-  box-shadow: 2px 2px  black;
+  box-shadow: 2px 2px black;
+  font-family: "Comfortaa", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: oblique;
+  font-size: 16px;
 }
 .button-complete {
   margin: 1rem;
@@ -54,58 +66,91 @@
   height: 50px;
   font-size: 0.5em;
   font-weight: bolder;
-  color: magenta;
-  box-shadow: 2px 2px  black;
+  color: #ffdf2b;
+  box-shadow: 2px 2px black;
+  font-family: "Comfortaa", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
 }
 .button-new-reminder {
   background-color: #ff66c4;
   border-radius: 15px;
   margin: 1rem;
-  box-shadow: 2px 2px  black;
+  box-shadow: 2px 2px black;
+  font-family: "Comfortaa", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
 }
 /*edit button on reminder card*/
 .button-edit {
   margin: 1rem;
-  background-color: #d6e9f1;
+  background-color: #ffdf2b;
   color: #7f62b7;
   border-radius: 15px;
-  box-shadow: 2px 2px  black;
+  box-shadow: 2px 2px black;
+  font-family: "Comfortaa", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
 }
-
 
 /* ALL EDIT REMINDERS CSS */
 .edit-reminder-header {
-  background-image: url(src/Images/Headers/Edit-Reminder-header.png);
   height: 12rem;
-  width: 30rem;
+  width: 85rem;
   background-repeat: no-repeat;
   margin-top: 8%;
-  /* all reminders card*/
 }
 
+.edit-profile-card {
+  background-color: #7f62b7;
+  padding: 2rem;
+  padding-left: 1rem;
+  border-radius: 10%;
+
+  font-family: "Comfortaa", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
 
 /* ALL CREATE REMINDER CSS */
 .new-reminder-header {
-  background-image: url(src/Images/Headers/Create-Reminder-header.png);
   height: 12rem;
   width: 85rem;
   background-repeat: no-repeat;
   margin-top: 8%;
 }
 .button-create-submit {
-  color: #ff66c4;
+  color: #d6e9f1;
+  background-color: #00b8f1;
+  border-radius: 45%;
+  box-shadow: 1px 2px black;
+  font-family: "Comfortaa", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  margin-top: 3px;
 }
 .create-reminder-card {
   background-color: #ff66c4;
   padding: 2rem;
   border-radius: 25%;
+  font-family: "Comfortaa", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
 }
-.title-text-field{
+.title-text-field {
   text-align: center;
-margin-bottom: 2px;
+  margin-bottom: 2px;
 }
-.synopsis-text-field{
+.synopsis-text-field {
   height: 70px;
   margin-bottom: 2px;
   margin-top: 4px;
+  display: flex;
+  flex-wrap: wrap;
 }

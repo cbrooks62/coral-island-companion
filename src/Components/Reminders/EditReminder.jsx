@@ -50,7 +50,7 @@ export const EditReminder = ({ currentUser }) => {
     getAllNpcs().then((data) => setNpcs(data));
   }, []);
 
-/*
+  /*
 Conditional to render the correct state of the character on dropdown. If the npcId state has a character (mean it returns true), change the name displayed to that.
 */
   let toggleNpc = myReminder?.npc?.character;
@@ -62,7 +62,10 @@ Conditional to render the correct state of the character on dropdown. If the npc
   return (
     <div className="reminder-container">
       <form>
-       <header className="edit-reminder-header"></header>
+        <header className="edit-reminder-header">
+          <img src="src/Images/Headers/Edit-Reminder-header.png" />
+        </header>
+        <div className="edit-profile-card">
         <fieldset>
           <div>
             <input
@@ -100,7 +103,9 @@ Conditional to render the correct state of the character on dropdown. If the npc
               </DropdownToggle>
               <DropdownMenu>
                 {npcs.map((singleNpc) => {
-                  {console.log(typeof singleNpc.id)}
+                  {
+                    console.log(typeof singleNpc.id);
+                  }
                   return (
                     <DropdownItem
                       key={singleNpc.id}
@@ -139,6 +144,7 @@ Conditional to render the correct state of the character on dropdown. If the npc
             Save
           </button>
         </fieldset>
+        </div>
       </form>
     </div>
   );

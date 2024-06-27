@@ -16,7 +16,7 @@ import {
 export const EditUserProfile = ({ currentUser }) => {
   const [myProfile, setMyProfile] = useState([]);
   const [npcs, setNpcs] = useState([]);
-  // const [npcId, setNpcId] = useState({ character: myProfile.character });
+
 
   useEffect(() => {
     getUserById(currentUser.id).then((userObj) => {
@@ -53,8 +53,8 @@ export const EditUserProfile = ({ currentUser }) => {
   // };
  
   return (
-    <div>
-      <header className="profile-header"></header>
+    <div className="profile-container">
+      <header className="profile-header"><img src="src/Images/Headers/Profile-header.png"/></header>
       <div className="profile-edit-card">
         <fieldset>
           <div>

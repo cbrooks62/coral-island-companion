@@ -1,29 +1,38 @@
 .npc-characters-list {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 1rem;
 }
 
 .npc-single-card {
-    padding: 1rem;
+  padding: 1rem;
 }
 
 .character-image {
-    width: 8rem;
-    height: 8rem;
+  width: 8rem;
+  height: 8rem;
 }
 
 .npc-name {
-    color: #FFDF2B;
-    font-size: 25px;
-    text-align: center;
+  color: #ffdf2b;
+  font-family: "Comfortaa", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 25px;
+  text-align: center;
+  
 }
 
 .characters-header {
-    background-image: url(src/Images/Headers/Characters-header.png);
-    height: 12rem;
-    width: 80rem;
-    background-repeat: no-repeat;
-    margin-top: 8%;
+  height: 12rem;
+  width: 80rem;
+  margin-top: 8%;
+}
+
+.npc-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

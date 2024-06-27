@@ -2,10 +2,10 @@
   "users": [
     {
       "id": 1,
-      "npcId": 41,
-      "character": "Joko",
+      "npcId": 71,
+      "character": "Suki",
       "email": "place@mail.com",
-      "userName": "Melissa"
+      "userName": "Charlie"
     },
     {
       "id": 2,
@@ -13,6 +13,20 @@
       "character": "Ben",
       "email": "turtle@mail.com",
       "userName": "Amanda"
+    },
+    {
+      "id": 3,
+      "npcId": 8,
+      "character": "Axel",
+      "email": "cb@mail.com",
+      "userName": "Piper"
+    },
+    {
+      "id": 4,
+      "npcId": 80,
+      "character": "Yuri",
+      "email": "mouse@email.com",
+      "userName": "peoplesPerson"
     }
   ],
   "reminders": [
@@ -71,13 +85,22 @@
       "completed": false
     },
     {
+      "id": 10,
       "userId": 1,
+      "npcId": "1",
       "title": "Water Plants",
+      "synopsis": "Water plants",
+      "dueDate": "N/A",
+      "completed": true
+    },
+    {
+      "userId": 3,
+      "title": "Make Gourmet Salt ",
       "dueDate": "N/A",
       "npcId": "1",
-      "synopsis": "Water plants",
+      "synopsis": "Dive in ocean and harvest salt. Take salt to Mill and process into gourmet salt.",
       "completed": false,
-      "id": 10
+      "id": 11
     }
   ],
   "days": [

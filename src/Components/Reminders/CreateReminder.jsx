@@ -46,7 +46,7 @@ export const CreateReminder = ({ currentUser }) => {
   //jsx to display form to create new reminder
   return (
     <div className="reminder-container">
-      <h2 className="new-reminder-header"></h2>
+      <header className="new-reminder-header"><img src="src/Images/Headers/Create-Reminder-header.png"/></header>
     <form className="create-reminder-card">
       <div>
         <input
