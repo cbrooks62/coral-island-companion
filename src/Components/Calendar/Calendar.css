@@ -1,14 +1,18 @@
 .calendar-header {
-    background-image: url(src/Images/Headers/Calendar-header1.png);
-    height: 12rem;
-    width: 30rem;
-    background-repeat: no-repeat;
-    margin-top: 8%;
+  height: 12rem;
+  width: 80rem;
+  margin-top: 20%;
 }
 
 .calendar-container {
-    display: flex;
-    flex-direction: column;
-width: 100vw;
-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  margin: 2rem;
+}
+
+.spring-calendar {
+  width: 100vw;
+  height: 100vh;
 }
