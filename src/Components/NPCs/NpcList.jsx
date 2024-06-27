@@ -8,6 +8,14 @@ export const NpcList = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [filteredNpcs, setFilteredNpcs] = useState([]);
 
+//useEffect to add background.png to page
+useEffect(() => {
+  document.body.style.backgroundImage = `url(src/Images/background.png)`
+  document.body.style.backgroundSize = '100vw 100vh'
+  document.body.style.backgroundRepeat = "repeat-y"
+  document.body.style.backgroundAttachment = "fixed"
+}, [])
+
 
   useEffect(() => {
     getAllNpcs().then((npcArray) => {

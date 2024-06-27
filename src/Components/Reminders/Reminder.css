@@ -13,6 +13,32 @@
   width: 80rem;
   margin-top: 8%;
 }
+
+/* from RemindersFilter.jsx: reminder-search, button-complete, button-current */
+.reminder-search{
+  font-family: "Comfortaa", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 18px;
+}
+.button-current {
+  color: #7f62b7;
+  font-family: "Comfortaa", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 18px;
+  box-shadow: 1px 2px;
+}
+.button-completed {
+  color: #00b8f1;
+  font-family: "Comfortaa", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 18px;
+}
 /* 
   Calling from Reminder.jsx for individual reminder cards.
   This is CardBody of Card
@@ -104,12 +130,11 @@
   margin-top: 8%;
 }
 
-.edit-profile-card {
+.edit-reminder-card {
   background-color: #7f62b7;
   padding: 2rem;
   padding-left: 1rem;
-  border-radius: 10%;
-
+  /* border-radius: 10%; */
   font-family: "Comfortaa", sans-serif;
   font-optical-sizing: auto;
   font-weight: 700;

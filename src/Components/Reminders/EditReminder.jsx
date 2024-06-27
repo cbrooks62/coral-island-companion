@@ -1,7 +1,6 @@
 import "./Reminder.css";
 import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router";
-
 import {
   DropdownItem,
   DropdownMenu,
@@ -58,6 +57,13 @@ Conditional to render the correct state of the character on dropdown. If the npc
     toggleNpc = npcId.character;
   }
 
+   //useEffect to add background.png to page
+useEffect(() => {
+  document.body.style.backgroundImage = `url(src/Images/background.png)`
+  document.body.style.backgroundSize = '100vw 100vh'
+  document.body.style.backgroundRepeat = "repeat-y"
+}, [])
+
   //jsx to edit a current reminder
   return (
     <div className="reminder-container">
@@ -65,10 +71,11 @@ Conditional to render the correct state of the character on dropdown. If the npc
         <header className="edit-reminder-header">
           <img src="src/Images/Headers/Edit-Reminder-header.png" />
         </header>
-        <div className="edit-profile-card">
+        <div className="edit-reminder-card">
         <fieldset>
           <div>
             <input
+            className="title-text-field"
               type="text"
               text="text"
               placeholder={myReminder.title}
@@ -84,6 +91,7 @@ Conditional to render the correct state of the character on dropdown. If the npc
           <div>
             {/* implement drop downs later for Season and Day*/}
             <input
+            className="title-text-field"
               type="text"
               text="text"
               placeholder={myReminder.dueDate}
@@ -96,7 +104,7 @@ Conditional to render the correct state of the character on dropdown. If the npc
           </div>
         </fieldset>
         <fieldset>
-          <div>
+          <div className="npc-dropdown">
             <UncontrolledDropdown group>
               <DropdownToggle caret color="light">
                 {toggleNpc}
@@ -128,6 +136,7 @@ Conditional to render the correct state of the character on dropdown. If the npc
         <fieldset>
           <div>
             <input
+            className="synopsis-text-field "
               type="text"
               text="text"
               placeholder={myReminder.synopsis}
@@ -140,7 +149,7 @@ Conditional to render the correct state of the character on dropdown. If the npc
           </div>
         </fieldset>
         <fieldset>
-          <button color="dark" onClick={handleSaveEditReminder}>
+          <button className="button-create-submit" onClick={handleSaveEditReminder}>
             Save
           </button>
         </fieldset>

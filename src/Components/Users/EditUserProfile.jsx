@@ -52,6 +52,13 @@ export const EditUserProfile = ({ currentUser }) => {
   //   });
   // };
  
+   //useEffect to add background.png to page
+useEffect(() => {
+  document.body.style.backgroundImage = `url(src/Images/background.png)`
+  document.body.style.backgroundSize = '100vw 100vh'
+  document.body.style.backgroundRepeat = "repeat-y"
+}, [])
+
   return (
     <div className="profile-container">
       <header className="profile-header"><img src="src/Images/Headers/Profile-header.png"/></header>

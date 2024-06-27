@@ -4,6 +4,15 @@
   flex-wrap: wrap;
   padding: 1rem;
 }
+.character-search-bar {
+  box-shadow: 1px 1px;
+  font-family: "Comfortaa", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 20px;
+  text-align: center;
+}
 
 .npc-single-card {
   padding: 1rem;

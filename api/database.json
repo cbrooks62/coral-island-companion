@@ -101,6 +101,15 @@
       "synopsis": "Dive in ocean and harvest salt. Take salt to Mill and process into gourmet salt.",
       "completed": false,
       "id": 11
+    },
+    {
+      "userId": 1,
+      "title": "Fish for Arapaima",
+      "dueDate": "N/A",
+      "npcId": "39",
+      "synopsis": "To find Arapaima, you'll need to wait until after sunset–which is around 5:00PM–in Fall or Winter in-game.",
+      "completed": false,
+      "id": 12
     }
   ],
   "days": [

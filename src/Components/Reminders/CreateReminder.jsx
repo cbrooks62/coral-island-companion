@@ -43,6 +43,13 @@ export const CreateReminder = ({ currentUser }) => {
     getAllNpcs().then((data) => setNpcs(data));
   }, []);
 
+   //useEffect to add background.png to page
+useEffect(() => {
+  document.body.style.backgroundImage = `url(src/Images/background.png)`
+  document.body.style.backgroundSize = '100vw 100vh'
+  document.body.style.backgroundRepeat = "repeat-y"
+}, [])
+
   //jsx to display form to create new reminder
   return (
     <div className="reminder-container">

@@ -77,11 +77,12 @@ text-align: center;
 
 .profile-edit-card{
   background-color: #ff66c4;
-  padding: 6rem;
-  height: 15rem;
-  width: 15rem;
-  align-items: center;
-  border-radius: 30%;
+  padding: 2rem;
+  /* border-radius: 25%; */
+  font-family: "Comfortaa", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
 }
 .username-text-field {
   margin: 5px;

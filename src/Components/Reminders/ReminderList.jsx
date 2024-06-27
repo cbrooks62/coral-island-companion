@@ -5,7 +5,6 @@ import { getAllReminders } from "../../Services/reminderServices.jsx";
 import { Reminder } from "./Reminder.jsx";
 import { Link } from "react-router-dom";
 import { RemindersFilter } from "./RemindersFilter.jsx";
-// import {background} from "../../Images/background.png"
 
 export const ReminderList = ({ currentUser }) => {
   const [allReminders, setAllReminders] = useState([]);
@@ -21,13 +20,13 @@ export const ReminderList = ({ currentUser }) => {
       setAllReminders(foundReminders);
     });
   };
-//   //useEffect to add background.png to page
-//   useEffect(() => {
-//     document.body.style.backgroundImage = background
-//     document.body.style.backgroundSize = '100vw 100vh'
-//     document.body.style.backgroundRepeat = "repeat-y"
-// }, [])
 
+//   //useEffect to add background.png to page
+useEffect(() => {
+  document.body.style.backgroundImage = `url(src/Images/background.png)`
+  document.body.style.backgroundSize = '100vw 100vh'
+  document.body.style.backgroundAttachment = "fixed"
+}, [])
 
   //useEffect to get all reminders from the reminders array in database
   useEffect(() => {
@@ -59,7 +58,6 @@ export const ReminderList = ({ currentUser }) => {
   }, [showOpenOnly, allReminders]);
 
   //jsx for all reminders to be displayed on DOM
-
   return (
     <div className="reminder-container">
       <header className="header-reminders">

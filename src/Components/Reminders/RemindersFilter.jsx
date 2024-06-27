@@ -15,7 +15,7 @@ export const RemindersFilter = ({currentUser, setSearchTerm, setShowOpenOnly}) =
           <>
     
           <button
-            className="filter-btn btn-info"
+            className="button-current"
             onClick={() => {
               setShowOpenOnly(true);
             }}
@@ -23,7 +23,7 @@ export const RemindersFilter = ({currentUser, setSearchTerm, setShowOpenOnly}) =
             Current Reminders
           </button>
           <button
-            className="filter-btn btn-secondary"
+            className="button-completed"
             onClick={() => {
               setShowOpenOnly(false);
             }}
