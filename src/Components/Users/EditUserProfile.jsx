@@ -1,3 +1,4 @@
+import "./User.css"
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router";
 import {
@@ -13,7 +14,7 @@ import {
   UncontrolledDropdown,
 } from "reactstrap";
 
-export const EditUserProfile = ({ currentUser }) => {
+export const EditUserProfile = ({ currentUser, updateUserProfile }) => {
   const [myProfile, setMyProfile] = useState([]);
   const [npcs, setNpcs] = useState([]);
 
@@ -45,12 +46,13 @@ export const EditUserProfile = ({ currentUser }) => {
     getAllNpcs().then((data) => setNpcs(data));
   }, []);
 
-  //function to handle deleting a user profile from database
-  // const handleDeleteProfile = () => {
-  //   deleteProfile(myProfile.id).then(() => {
-  //     updateUserProfile();
-  //   });
-  // };
+  // function to handle deleting a user profile from database
+  const handleDeleteProfile = () => {
+    deleteProfile(myProfile.id).then(() => {
+      updateUserProfile();
+    });
+    navigate("/Login")
+  };
  
    //useEffect to add background.png to page
 useEffect(() => {
@@ -60,9 +62,10 @@ useEffect(() => {
 }, [])
 
   return (
-    <div className="profile-container">
+    <div className="reminder-container">
       <header className="profile-header"><img src="src/Images/Headers/Profile-header.png"/></header>
       <div className="profile-edit-card">
+        <h2>Edit Profile</h2>
         <fieldset>
           <div>
             <input
@@ -128,9 +131,9 @@ useEffect(() => {
           >
             Save
           </button>
-          {/* <button className="button-delete" onClick={handleDeleteProfile}>
-            Delete
-          </button> */}
+          <div><button className="button-delete" onClick={handleDeleteProfile}>
+            Delete Profile
+          </button></div>
         </fieldset>
       </div>
     </div>

@@ -20,13 +20,6 @@
       "character": "Axel",
       "email": "cb@mail.com",
       "userName": "Piper"
-    },
-    {
-      "id": 4,
-      "npcId": 80,
-      "character": "Yuri",
-      "email": "mouse@email.com",
-      "userName": "peoplesPerson"
     }
   ],
   "reminders": [

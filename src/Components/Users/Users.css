@@ -6,7 +6,8 @@
  background-image: url(`src/Images/CICLogin.png`);
  height: 100vh;
  justify-content: center;
-}za1q2xzFrz 
+}
+
 .header-login {
   color: #7f62b7;
   font-size: 50px;
@@ -72,17 +73,23 @@ text-align: center;
 }
 
 .profile-container {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
   align-items: center;
 }
 
 .profile-edit-card{
   background-color: #ff66c4;
-  padding: 2rem;
-  /* border-radius: 25%; */
+  border-radius: 3%;
   font-family: "Comfortaa", sans-serif;
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
+  font-size: larger;
+  height: 18rem;
+  width: 22rem;
+  margin-top: 3rem;
 }
 .username-text-field {
   margin: 5px;
@@ -93,6 +100,8 @@ text-align: center;
 .button-save-profile {
   background-color: #ffdf2b;
   border-radius: 50%;
+  margin: .5rem;
+  color: #7f62b7;
 }
 .dropdown-img {
   width: 3rem;

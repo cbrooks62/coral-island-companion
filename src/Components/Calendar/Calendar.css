@@ -1,18 +1,30 @@
 .calendar-header {
   height: 12rem;
   width: 80rem;
-  margin-top: 20%;
+  margin: 4%;
+  align-items: center;
 }
-
 .calendar-container {
+  width: 100vw;
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  width: 100vw;
-  height: 100vh;
-  margin: 2rem;
-}
+  align-items: center;
 
-.spring-calendar {
-  width: 100vw;
-  height: 100vh;
+}
+.calendar-images {
+  width: 80rem;
+  height: 45rem;
+  margin-bottom: 2%;
+}
+.calendar-button {
+    margin: 1rem;
+    background-color: #ffdf2b;
+    color: #7f62b7;
+    border-radius: 15px;
+    box-shadow: 2px 2px black;
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
 }

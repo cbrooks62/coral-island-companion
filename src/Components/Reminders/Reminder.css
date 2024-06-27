@@ -47,9 +47,12 @@
   background-color: #d6e9f1;
   border-radius: 3%;
   box-shadow: 2px 2px black;
+  width: 20rem;
+  height: 20rem;
 }
 /* ReminderList/ Homepage Title */
 .reminder-title {
+  color: #ff66c4;
   font-family: "Comfortaa", sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
@@ -63,7 +66,7 @@
   font-weight: 500;
   font-style: normal;
   font-size: 16px;
-}
+ }
 .reminders {
   margin-top: 1rem;
   display: flex;
@@ -71,6 +74,9 @@
   flex-wrap: wrap;
   width: 90vw;
   padding: 3rem;
+}
+.reminder-synopsis {
+  text-wrap: wrap;
 }
 .button-delete {
   margin: 1rem;
@@ -134,11 +140,13 @@
   background-color: #7f62b7;
   padding: 2rem;
   padding-left: 1rem;
-  /* border-radius: 10%; */
+  border-radius: 10%;
   font-family: "Comfortaa", sans-serif;
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
+  height: 18rem;
+  width: 25rem;
 }
 
 /* ALL CREATE REMINDER CSS */
