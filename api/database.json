@@ -60,13 +60,13 @@
       "id": 7
     },
     {
+      "id": 8,
       "userId": 1,
-      "title": "Winter Festival",
-      "dueDate": "Winter 15",
       "npcId": "1",
+      "title": "Winter Festival",
       "synopsis": "Attend Festival",
-      "completed": false,
-      "id": 8
+      "dueDate": "Winter 15",
+      "completed": true
     },
     {
       "id": 9,

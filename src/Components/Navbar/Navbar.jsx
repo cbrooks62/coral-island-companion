@@ -11,7 +11,7 @@ export const CompanionNavbar = ({ currentUser }) => {
 
   //useEffect to get all NPCs from database
   useEffect(() => {
-    getUserById().then((data) => setNpc(data));
+    getUserById(currentUser).then((data) => setNpc(data));
   }, []);
 
   return (
@@ -20,7 +20,7 @@ export const CompanionNavbar = ({ currentUser }) => {
         <li>
           <img
             alt="logo"
-            src="src/Images/Navbar-Icon.png"
+            src="src/assets/Images/Navbar-Icon.png"
             style={{
               height: 75,
               width: 150,
@@ -45,9 +45,9 @@ export const CompanionNavbar = ({ currentUser }) => {
             {" "}
             Hi {currentUser.userName}!
             <a>
-              <img
+             <img
             alt="profile-character"
-            src={currentUser.character} 
+            src={npc?.npc?.urlImg} 
             style={{
               height: 50,
               width: 50,

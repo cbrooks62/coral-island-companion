@@ -21,7 +21,7 @@ export const ReminderList = ({ currentUser }) => {
     });
   };
 
-//   //useEffect to add background.png to page
+//useEffect to add background.png to page
 useEffect(() => {
   document.body.style.backgroundImage = `url(src/Images/background.png)`
   document.body.style.backgroundSize = '100vw 100vh'

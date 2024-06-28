@@ -43,7 +43,7 @@ export const Reminder = ({ singleReminder, getAndSetAllReminders }) => {
           <button className="button-delete" onClick={handleDelete}>
             Delete
           </button>
-          <Link to={`/EditReminder/${singleReminder.id}`}>
+          <Link to={`${singleReminder.id}/EditCurrentReminder/`}>
             <button className="button-edit">Edit</button>
           </Link>
         </div>

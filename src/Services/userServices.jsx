@@ -34,10 +34,18 @@ export const updateUserProfile = (userObj) => {
 };
 
 //fetch to get users by id used in EditUserProfile.jsx and Navbar.jsx
-export const getUserById = (userId) => {
-  return fetch(`http://localhost:8088/users/${userId}?_expand=npc`)
-  .then((res) => res.json()
-  );
+export const getUserById = (user) => {
+   return fetch(`http://localhost:8088/users/${user.id}?_expand=npc`)
+  .then((res) => {
+    if (res.ok) {
+   return res.json()
+  } else {
+    throw new Error(`Failed to get user with ID: ${user.id} - Status: ${res.status}`)
+  }
+})
+.catch((error) => {
+  console.error("Error fetching user", error);
+})
 };
 
 //fetch to handle the deleted user profile

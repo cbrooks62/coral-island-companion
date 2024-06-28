@@ -3,20 +3,18 @@ import { CompanionNavbar } from "../Components/Navbar/Navbar.jsx";
 import { useEffect, useState } from "react";
 import { ReminderList } from "../Components/Reminders/ReminderList.jsx";
 import { CreateReminder } from "../Components/Reminders/CreateReminder.jsx";
-import { EditReminder } from "../Components/Reminders/EditReminder.jsx";
+
 import { EditUserProfile } from "../Components/Users/EditUserProfile.jsx";
 import { Calendar } from "../Components/Calendar/Calendar.jsx"
 import { NpcList } from "../Components/NPCs/NpcList.jsx";
-
-
-
+import { EditCurrentReminder } from "../Components/Reminders/EditCurrentReminder.jsx";
 
 export const ApplicationViews = () => {
   const [currentUser, setCurrentUser] = useState({});
 
   useEffect(() => {
     const localCompanionUser = localStorage.getItem("companion_user");
-    const companionUserObject = JSON.parse(localCompanionUser);
+    const companionUserObject = localCompanionUser ? JSON.parse(localCompanionUser) : null;
     setCurrentUser(companionUserObject);
   }, []);
 
@@ -40,9 +38,9 @@ export const ApplicationViews = () => {
           path="/CreateReminder"
           element={<CreateReminder currentUser={currentUser} />}
         />
-        <Route
-          path="/EditReminder/:reminderId"
-          element={<EditReminder currentUser={currentUser} />}
+        <Route 
+        path=":reminderId/EditCurrentReminder/"
+        element={<EditCurrentReminder currentUser={currentUser} />}
         />
         <Route
           path="/Calendar"
