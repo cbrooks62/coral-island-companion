@@ -31,13 +31,12 @@
   font-style: normal;
   font-size: 25px;
   text-align: center;
-  
-}
+ }
 
 .characters-header {
   height: 12rem;
   width: 80rem;
-  margin-top: 8%;
+  margin-top: 6%;
 }
 
 .npc-container {

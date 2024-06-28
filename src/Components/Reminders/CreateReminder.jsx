@@ -56,6 +56,7 @@ useEffect(() => {
       <header className="new-reminder-header"><img src="src/Images/Headers/Create-Reminder-header.png"/></header>
     <form className="create-reminder-card">
       <div>
+        <h2>Add Reminder</h2>
         <input
         className="title-text-field"
           type="text"

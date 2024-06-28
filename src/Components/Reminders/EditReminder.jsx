@@ -67,13 +67,14 @@ useEffect(() => {
   //jsx to edit a current reminder
   return (
     <div className="reminder-container">
-      <form>
         <header className="edit-reminder-header">
           <img src="src/Images/Headers/Edit-Reminder-header.png" />
         </header>
+      <form>
         <div className="edit-reminder-card">
         <fieldset>
           <div>
+            <h2>Edit Current Reminder</h2>
             <input
             className="title-text-field"
               type="text"

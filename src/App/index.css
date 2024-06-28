@@ -4,3 +4,12 @@
     place-items: center;
     min-width: 320px;
   }
+
+  :Link {
+    text-decoration: none;
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+    }

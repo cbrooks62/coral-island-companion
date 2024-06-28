@@ -69,7 +69,6 @@ export const Login = ({currentUser}) => {
       <section className="register-link">
         <Link to="/register">New User?</Link>
       </section>
-      
     </div>
   );
 };

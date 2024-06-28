@@ -19,12 +19,13 @@
 }
 .calendar-button {
     margin: 1rem;
-    background-color: #ffdf2b;
+    background-color:#00b8f1;
     color: #7f62b7;
-    border-radius: 15px;
+    border-radius: 40%;
     box-shadow: 2px 2px black;
     font-family: "Comfortaa", sans-serif;
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
+    font-size: 3rem;
 }

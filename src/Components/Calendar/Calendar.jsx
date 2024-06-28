@@ -1,4 +1,5 @@
 import "./Calendar.css";
+import { SlArrowLeftCircle, SlArrowRightCircle } from "react-icons/sl";
 import { useEffect, useState } from "react";
 
 // import { Carousel } from "react-responsive-carousel";
@@ -40,14 +41,14 @@ export const Calendar = () => {
       </header>
 
       <div>
-        <button className="calendar-button" onClick={goToPrevious}>Previous</button>
+        <button className="calendar-button" onClick={goToPrevious}><SlArrowLeftCircle /></button>
 
         <img
           className="calendar-images"
           src={images[currentIndex]}
           alt="image-carousel"
         />
-        <button className="calendar-button" onClick={goToNext}>Next</button>
+        <button className="calendar-button" onClick={goToNext}><SlArrowRightCircle /></button>
       </div>
     </div>
   );

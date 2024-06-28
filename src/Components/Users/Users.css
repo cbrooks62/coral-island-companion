@@ -3,7 +3,6 @@
  display: flex;
  flex-direction: column;
  align-items: center;
- background-image: url(`src/Images/CICLogin.png`);
  height: 100vh;
  justify-content: center;
 }
@@ -12,6 +11,7 @@
   color: #7f62b7;
   font-size: 50px;
   text-align: center;
+
 }
 .input-login{
   text-align: center;
@@ -46,6 +46,7 @@ text-align: center;
   border-radius: 30px;
   background-color: #ffdf2b;
   box-shadow: black 4px 4px;
+  margin-bottom: 12px;
 }
 .login-card {
   display: flex;
@@ -69,7 +70,6 @@ text-align: center;
   height: 12rem;
   width: 80rem;
   background-repeat: no-repeat;
-  margin-top: 8%;
 }
 
 .profile-container {
@@ -80,16 +80,19 @@ text-align: center;
 }
 
 .profile-edit-card{
+  color: #ffdf2b;
   background-color: #ff66c4;
-  border-radius: 3%;
+  border-radius: 10%;
+  padding: 2rem;
   font-family: "Comfortaa", sans-serif;
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
   font-size: larger;
-  height: 18rem;
+  height: 20rem;
   width: 22rem;
-  margin-top: 3rem;
+  margin-top: 5rem;
+  box-shadow: 1px 1px black;
 }
 .username-text-field {
   margin: 5px;
