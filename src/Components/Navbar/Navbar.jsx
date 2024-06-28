@@ -1,9 +1,19 @@
 //Purpose: Created the navbar that will be displayed on every page, and set appropriate routes for the corresponding buttons.
 
+import { useEffect, useState } from "react";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
+import { getUserById } from "../../Services/userServices.jsx";
+
 
 export const CompanionNavbar = ({ currentUser }) => {
+  const [npc, setNpc] = useState([])
+
+  //useEffect to get all NPCs from database
+  useEffect(() => {
+    getUserById().then((data) => setNpc(data));
+  }, []);
+
   return (
     <div className="nav-container">
       <ul className="navbar-CIC">
@@ -35,8 +45,14 @@ export const CompanionNavbar = ({ currentUser }) => {
             {" "}
             Hi {currentUser.userName}!
             <a>
-              <img className="navbar-urlImg"  />
-              src={currentUser.urlImg}
+              <img
+            alt="profile-character"
+            src={currentUser.character} 
+            style={{
+              height: 50,
+              width: 50,
+            }}
+          />
             </a>
           </li>
           <Link to="/Login" className="logout-link">

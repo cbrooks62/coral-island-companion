@@ -1,7 +1,7 @@
 .calendar-header {
   height: 12rem;
   width: 80rem;
-  margin: 4%;
+  margin: 5%;
   align-items: center;
 }
 .calendar-container {
@@ -21,11 +21,14 @@
     margin: 1rem;
     background-color:#00b8f1;
     color: #7f62b7;
-    border-radius: 40%;
+    border-radius: 100%;
     box-shadow: 2px 2px black;
     font-family: "Comfortaa", sans-serif;
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
     font-size: 3rem;
+    width: 5rem;
+    height: 5rem;
+
 }

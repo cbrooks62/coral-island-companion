@@ -33,7 +33,7 @@ export const updateUserProfile = (userObj) => {
   });
 };
 
-//fetch to get users by id used in EditUserProfile.jsx
+//fetch to get users by id used in EditUserProfile.jsx and Navbar.jsx
 export const getUserById = (userId) => {
   return fetch(`http://localhost:8088/users/${userId}?_expand=npc`)
   .then((res) => res.json()
