@@ -42,13 +42,13 @@
       "completed": true
     },
     {
+      "id": 6,
       "userId": 1,
-      "title": "New Task",
-      "dueDate": "Winter 6",
-      "npcId": "17",
-      "synopsis": "Bring peas",
-      "completed": false,
-      "id": 6
+      "npcId": "5",
+      "title": "new ",
+      "synopsis": "please help",
+      "dueDate": "winter 7",
+      "completed": false
     },
     {
       "userId": 1,

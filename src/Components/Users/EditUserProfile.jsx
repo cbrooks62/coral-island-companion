@@ -145,7 +145,7 @@ export const EditUserProfile = ({ currentUser, updateUserProfile }) => {
        Are you sure you want to delete this profile?
       </ModalBody>
       <ModalFooter>
-        <Button color="primary" onClick={handleDeleteProfile}>
+        <Button color="warning" onClick={handleDeleteProfile}>
           Delete Profile
         </Button>{' '}
         <Button color="secondary" onClick={toggle}>

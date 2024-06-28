@@ -8,6 +8,9 @@ import { EditUserProfile } from "../Components/Users/EditUserProfile.jsx";
 import { Calendar } from "../Components/Calendar/Calendar.jsx"
 import { NpcList } from "../Components/NPCs/NpcList.jsx";
 
+
+
+
 export const ApplicationViews = () => {
   const [currentUser, setCurrentUser] = useState({});
 
