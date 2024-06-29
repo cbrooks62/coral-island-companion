@@ -7,7 +7,7 @@ import { CreateReminder } from "../Components/Reminders/CreateReminder.jsx";
 import { EditUserProfile } from "../Components/Users/EditUserProfile.jsx";
 import { Calendar } from "../Components/Calendar/Calendar.jsx"
 import { NpcList } from "../Components/NPCs/NpcList.jsx";
-import { EditCurrentReminder } from "../Components/Reminders/EditCurrentReminder.jsx";
+// import { EditCurrentReminder } from "../Components/Reminders/EditCurrentReminder.jsx";
 
 export const ApplicationViews = () => {
   const [currentUser, setCurrentUser] = useState({});
@@ -38,10 +38,10 @@ export const ApplicationViews = () => {
           path="/CreateReminder"
           element={<CreateReminder currentUser={currentUser} />}
         />
-        <Route 
+        {/* <Route 
         path=":reminderId/EditCurrentReminder/"
         element={<EditCurrentReminder currentUser={currentUser} />}
-        />
+        /> */}
         <Route
           path="/Calendar"
           element={<Calendar currentUser={currentUser} />}

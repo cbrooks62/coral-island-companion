@@ -1,37 +1,36 @@
 import { useEffect, useState } from "react";
-import { useNavigate, useParams } from "react-router-dom";
 import {
   getReminderById,
   updateReminder,
 } from "../../Services/reminderServices.jsx";
 import { getAllNpcs } from "../../Services/npcServices.jsx";
-import { DropdownItem, DropdownMenu, DropdownToggle, UncontrolledDropdown } from "reactstrap";
+import {
+  DropdownItem,
+  DropdownMenu,
+  DropdownToggle,
+  UncontrolledDropdown,
+} from "reactstrap";
 
-export const EditCurrentReminder = ({currentUser}) => {
+export const EditCurrentReminder = ({
+  currentUser,
+  singleReminder,
+  closeModal,
+  getAndSetAllReminders,
+}) => {
   const [myReminder, setMyReminder] = useState({});
   const [npcs, setNpcs] = useState([]);
   const [npcId, setNpcId] = useState({ character: myReminder.npcId });
 
-  const { reminderId } = useParams();
-  const navigate = useNavigate();
-  // useEffect to add background.png to page background
-  // useEffect(() => {
-  //   document.body.style.backgroundImage = `url(src/Images/background.png)`;
-  //   document.body.style.backgroundSize = "100vw 100vh";
-  //   document.body.style.backgroundAttachment = "fixed";
-  // }, []);
-
   useEffect(() => {
-    getReminderById(reminderId).then((reminderObj) => {
-     setMyReminder(reminderObj);
+    getReminderById(singleReminder.id).then((reminderObj) => {
+      setMyReminder(reminderObj);
     });
   }, []);
 
   //useEffect to get all NPCs from database
   useEffect(() => {
-   getAllNpcs().then((data) => setNpcs(data));
+    getAllNpcs().then((data) => setNpcs(data));
   }, []);
-
 
   const handleSaveEdit = (e) => {
     e.preventDefault();
@@ -44,9 +43,9 @@ export const EditCurrentReminder = ({currentUser}) => {
       dueDate: myReminder.dueDate,
       completed: myReminder.completed,
     };
-    updateReminder(editSingleReminder).then(() => {
-      navigate("/");
-    });
+    updateReminder(editSingleReminder)
+      .then(getAndSetAllReminders())
+      .then(closeModal());
   };
 
   //Conditional to render the correct state of the character on dropdown. If the npcId state has a character (mean it returns true), change the name displayed to that.
@@ -58,9 +57,10 @@ export const EditCurrentReminder = ({currentUser}) => {
   //jsx to edit a current reminder from Reminder.jsx
   return (
     <div id="edit-page" className="reminder-container">
-    <header className="edit-reminder-header">
-      <img src="src/Images/Headers/Edit-Reminder-header.png" /></header>
-  
+      <header className="edit-reminder-header">
+        <img src="src/Images/Headers/Edit-Reminder-header.png" />
+      </header>
+
       <div className="edit-reminder-card">
         <fieldset>
           <div>
@@ -145,9 +145,11 @@ export const EditCurrentReminder = ({currentUser}) => {
           >
             Save
           </button>
+          <button className="button-edit" onClick={() => closeModal()}>
+            Cancel
+          </button>
         </fieldset>
       </div>
- 
-  </div>
-)
+    </div>
+  );
 };

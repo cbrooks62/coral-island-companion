@@ -135,6 +135,9 @@ export const EditUserProfile = ({ currentUser, updateUserProfile }) => {
           </div>
         </fieldset>
         <fieldset>
+          <div>
+            <button className="button-save-profile" onClick={handleSaveEditUserProfile}>Save</button>
+          </div>
         <div>
     <button className="button-delete" onClick={toggle}>
       Delete Profile

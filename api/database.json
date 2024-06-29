@@ -51,13 +51,13 @@
       "completed": false
     },
     {
+      "id": 7,
       "userId": 1,
-      "title": "Help Taco",
-      "dueDate": "Fall 8",
-      "npcId": "4",
-      "synopsis": "Bring dog treats",
-      "completed": false,
-      "id": 7
+      "npcId": "22",
+      "title": "editted",
+      "synopsis": "editted",
+      "dueDate": "editted",
+      "completed": false
     },
     {
       "id": 8,

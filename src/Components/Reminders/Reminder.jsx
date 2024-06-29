@@ -1,11 +1,18 @@
 {
   /* PURPOSE: Single Reminder Card displayed on the DOM*/
 }
-import {deleteReminder,updateReminder,} from "../../Services/reminderServices.jsx";
-import { Link } from "react-router-dom";
+import { useState } from "react";
+import {
+  deleteReminder,
+  updateReminder,
+} from "../../Services/reminderServices.jsx";
+import { EditCurrentReminder } from "./EditCurrentReminder.jsx";
+import { Modal } from "reactstrap";
 
-export const Reminder = ({ singleReminder, getAndSetAllReminders }) => {
-  const handleClickComplete = async () => {
+export const Reminder = ({ currentUser, singleReminder, getAndSetAllReminders }) => {
+  const [showModal, setShowModal] = useState(false);
+
+  const handleClickComplete = () => {
     const completedReminder = {
       id: singleReminder.id,
       userId: singleReminder.userId,
@@ -15,7 +22,7 @@ export const Reminder = ({ singleReminder, getAndSetAllReminders }) => {
       dueDate: singleReminder.dueDate,
       completed: !singleReminder.completed,
     };
-    await updateReminder(completedReminder);
+    updateReminder(completedReminder);
     getAndSetAllReminders();
   };
 
@@ -23,6 +30,14 @@ export const Reminder = ({ singleReminder, getAndSetAllReminders }) => {
     deleteReminder(singleReminder.id).then(() => {
       getAndSetAllReminders();
     });
+  };
+
+  const openModal = () => {
+    setShowModal(true);
+  };
+
+  const closeModal = () => {
+    setShowModal(false);
   };
 
   return (
@@ -43,9 +58,18 @@ export const Reminder = ({ singleReminder, getAndSetAllReminders }) => {
           <button className="button-delete" onClick={handleDelete}>
             Delete
           </button>
-          <Link to={`${singleReminder.id}/EditCurrentReminder/`}>
-            <button className="button-edit">Edit</button>
-          </Link>
+          {/* <Link to={`${singleReminder.id}/EditCurrentReminder/`}> */}
+          <button onClick={openModal} className="button-edit">
+            Edit
+          </button>
+          <Modal className="edit-modal-container" isOpen={showModal} onRequestClose={closeModal}>
+            <EditCurrentReminder
+              singleReminder={singleReminder}
+              closeModal={closeModal}
+              getAndSetAllReminders={getAndSetAllReminders}
+              currentUser={currentUser}
+            />
+          </Modal>
         </div>
       </div>
     </div>

@@ -145,6 +145,7 @@
   width: 85rem;
   background-repeat: no-repeat;
   margin-top: 8%;
+  margin-left: 48rem;
 }
 
 .edit-reminder-card {
@@ -159,6 +160,10 @@
   height: 22rem;
   width: 25rem;
   box-shadow: 2px 2px black;
+}
+
+.edit-modal-container {
+  background-color: #00b8f1;
 }
 
 /* ALL CREATE REMINDER CSS */
