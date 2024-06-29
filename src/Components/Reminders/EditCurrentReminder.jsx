@@ -56,15 +56,14 @@ export const EditCurrentReminder = ({
 
   //jsx to edit a current reminder from Reminder.jsx
   return (
-    <div id="edit-page" className="reminder-container">
+    <div className="reminder-edit-container">
       <header className="edit-reminder-header">
         <img src="src/Images/Headers/Edit-Reminder-header.png" />
       </header>
-
       <div className="edit-reminder-card">
+            <h2 className="edit-reminder-title">Edit Current Reminder</h2>
         <fieldset>
           <div>
-            <h2>Edit Current Reminder</h2>
             <input
               className="title-text-field"
               type="text"
