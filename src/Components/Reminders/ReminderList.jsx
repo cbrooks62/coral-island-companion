@@ -56,7 +56,7 @@ useEffect(() => {
       setFilteredReminders(closedReminders);
     }
   }, [showOpenOnly, allReminders]);
-
+  console.log(currentUser.id, currentUser.npc, currentUser.userName, currentUser.email)
   //jsx for all reminders to be displayed on DOM
   return (
     <div className="reminder-container">

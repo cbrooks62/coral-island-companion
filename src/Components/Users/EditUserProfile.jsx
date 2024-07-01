@@ -1,7 +1,7 @@
 import "./Users.css";
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router";
-import { deleteProfile, getUserById } from "../../Services/userServices.jsx";
+import { deleteProfile, getUserById, updateUserProfile  } from "../../Services/userServices.jsx";
 import { getAllNpcs } from "../../Services/npcServices.jsx";
 import {
   DropdownItem,
@@ -11,7 +11,7 @@ import {
 } from "reactstrap";
 import { Button, Modal, ModalBody, ModalFooter, ModalHeader } from 'reactstrap';
 
-export const EditUserProfile = ({ currentUser, updateUserProfile }) => {
+export const EditUserProfile = ({ currentUser }) => {
   const [myProfile, setMyProfile] = useState([]);
   const [npcs, setNpcs] = useState([]);
   const [modal, setModal] = useState(false);
@@ -92,7 +92,7 @@ export const EditUserProfile = ({ currentUser, updateUserProfile }) => {
             />
           </div>
         </fieldset>
-        <fieldset>
+        {/* <fieldset>
           <div>
             <input
               className="email-text-field"
@@ -106,14 +106,14 @@ export const EditUserProfile = ({ currentUser, updateUserProfile }) => {
               }}
             />
           </div>
-        </fieldset>
+        </fieldset> */}
         <fieldset>
           <div>
             <UncontrolledDropdown group>
               <DropdownToggle caret color="light">
                 {myProfile.character}
               </DropdownToggle>
-              <DropdownMenu>
+              <DropdownMenu className="npc-dropdown-scroll">
                 {npcs.map((singleNpc) => {
                   return (
                     <DropdownItem

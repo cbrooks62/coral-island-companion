@@ -99,7 +99,7 @@ export const EditCurrentReminder = ({
               <DropdownToggle caret color="light">
                 {toggleNpc}
               </DropdownToggle>
-              <DropdownMenu>
+              <DropdownMenu className="npc-dropdown-scroll">
                 {npcs.map((singleNpc) => {
                   return (
                     <DropdownItem

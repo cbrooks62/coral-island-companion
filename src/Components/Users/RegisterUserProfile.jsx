@@ -104,7 +104,7 @@ export const Register = (props) => {
               <DropdownToggle caret color="light">
                 {user.character}
               </DropdownToggle>
-              <DropdownMenu>
+              <DropdownMenu className="npc-dropdown-scroll">
                 {npcs.map((singleNpc) => {
                   {
                     console.log(typeof singleNpc.id);

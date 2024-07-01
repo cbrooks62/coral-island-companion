@@ -2,10 +2,10 @@
   "users": [
     {
       "id": 1,
-      "npcId": 71,
-      "character": "Suki",
+      "npcId": 18,
+      "character": "Denali",
       "email": "place@mail.com",
-      "userName": "Charlie"
+      "userName": "Charles"
     },
     {
       "id": 2,
@@ -57,7 +57,7 @@
       "title": "editted",
       "synopsis": "editted",
       "dueDate": "editted",
-      "completed": false
+      "completed": true
     },
     {
       "id": 8,
@@ -75,7 +75,7 @@
       "title": "Forage for Mushrooms",
       "synopsis": "Gather 20 Mushrooms",
       "dueDate": "N/A",
-      "completed": false
+      "completed": true
     },
     {
       "id": 10,
@@ -87,13 +87,13 @@
       "completed": true
     },
     {
+      "id": 11,
       "userId": 3,
-      "title": "Make Gourmet Salt ",
-      "dueDate": "N/A",
       "npcId": "1",
+      "title": "Make Gourmet Salt ",
       "synopsis": "Dive in ocean and harvest salt. Take salt to Mill and process into gourmet salt.",
-      "completed": false,
-      "id": 11
+      "dueDate": "N/A",
+      "completed": true
     },
     {
       "userId": 1,

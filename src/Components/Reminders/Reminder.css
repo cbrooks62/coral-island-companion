@@ -228,3 +228,10 @@
   padding-left: 1rem;
   width: 14rem;
 }
+
+.npc-dropdown-scroll {
+  max-height: 15rem;
+  overflow-y: scroll;
+  width: 14.1rem;
+  border-radius: 3%;
+}

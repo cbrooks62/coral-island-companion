@@ -14,10 +14,11 @@ export const ApplicationViews = () => {
 
   useEffect(() => {
     const localCompanionUser = localStorage.getItem("companion_user");
-    const companionUserObject = localCompanionUser ? JSON.parse(localCompanionUser) : null;
+    const companionUserObject = JSON.parse(localCompanionUser)
     setCurrentUser(companionUserObject);
   }, []);
 
+  console.log(currentUser)
   return (
     <Routes>
       <Route

@@ -3,16 +3,26 @@
 import { useEffect, useState } from "react";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
-import { getUserById } from "../../Services/userServices.jsx";
+import { getAllUsers, getUserById } from "../../Services/userServices.jsx";
 
+export const CompanionNavbar = ({currentUser, setCurrentUser}) => {
+  const [npc, setNpc] = useState([]);
+  // const [loggedInUser, setLoggedInUser] = useState({});
+  const userId = currentUser.id
 
-export const CompanionNavbar = ({ currentUser }) => {
-  const [npc, setNpc] = useState([])
+  // useEffect to get all NPCs from database
+  useEffect(() => { 
+    if (!currentUser) {
+      const localCompanionUser = localStorage.getItem("companion_user");
+      const companionUserObject = JSON.parse(localCompanionUser)
+      setCurrentUser(companionUserObject)
+    } try{ 
 
-  //useEffect to get all NPCs from database
-  useEffect(() => {
-    getUserById(currentUser).then((data) => setNpc(data));
+    getUserById(userId).then((data) => setNpc(data));
+  } catch (err) {console.log(err)}
   }, []);
+
+  // Add a filter to get the username by currentUser.id
 
   return (
     <div className="nav-container">
@@ -20,7 +30,7 @@ export const CompanionNavbar = ({ currentUser }) => {
         <li>
           <img
             alt="logo"
-            src="src/assets/Images/Navbar-Icon.png"
+            src="/src/Images/Navbar-Icon.png"
             style={{
               height: 75,
               width: 150,
@@ -43,16 +53,16 @@ export const CompanionNavbar = ({ currentUser }) => {
         <div className="logout-card">
           <li className="navbar-username">
             {" "}
-            Hi {currentUser.userName}!
+            Hi {npc?.userName}!
             <a>
-             <img
-            alt="profile-character"
-            src={npc?.npc?.urlImg} 
-            style={{
-              height: 50,
-              width: 50,
-            }}
-          />
+              <img
+                alt="profile-character"
+                src={npc?.npc?.urlImg}
+                style={{
+                  height: 50,
+                  width: 50,
+                }}
+              />
             </a>
           </li>
           <Link to="/Login" className="logout-link">

@@ -22,18 +22,17 @@ export const Login = ({currentUser}) => {
   const handleLogin = async (e) => {
     e.preventDefault();
 
+    // What if we tried to add NPC to this fetch?
     const foundUsers = await getUserByEmail(email);
       if (foundUsers.length === 1) {
           const user = foundUsers[0];
           localStorage.setItem(
               "companion_user",
               JSON.stringify({
-                  id: user.id,
-                  userName: user.userName,
-                  email: user.email
+                  id: user.id
               })
           );
-          navigate("/");
+          navigate(`/`);
           
       } else {
           window.alert("Invalid login");

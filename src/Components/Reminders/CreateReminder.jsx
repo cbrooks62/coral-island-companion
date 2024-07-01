@@ -84,11 +84,11 @@ useEffect(() => {
         />
       </div>
       <div className="npc-dropdown">
-        <UncontrolledDropdown group>
+        <UncontrolledDropdown group >
           <DropdownToggle caret color="light">
             {npcId.character}
           </DropdownToggle>
-          <DropdownMenu>
+          <DropdownMenu className="npc-dropdown-scroll">
             {npcs.map((singleNpc) => {
               return (
                 <DropdownItem
