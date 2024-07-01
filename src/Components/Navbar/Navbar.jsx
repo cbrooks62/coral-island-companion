@@ -20,7 +20,7 @@ export const CompanionNavbar = ({currentUser, setCurrentUser}) => {
 
     getUserById(userId).then((data) => setNpc(data));
   } catch (err) {console.log(err)}
-  }, []);
+  }, [userId]);
 
   // Add a filter to get the username by currentUser.id
 

@@ -1,7 +1,7 @@
 import "./Users.css";
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router";
-import { deleteProfile, getUserById, updateUserProfile  } from "../../Services/userServices.jsx";
+import { deleteProfile, getAllUsers, getUserById, updateUserProfile  } from "../../Services/userServices.jsx";
 import { getAllNpcs } from "../../Services/npcServices.jsx";
 import {
   DropdownItem,
@@ -36,6 +36,7 @@ export const EditUserProfile = ({ currentUser }) => {
       userName: myProfile.userName,
     };
     updateUserProfile(editProfile).then(() => {
+      getUserById(currentUser.id).then((data) => setMyProfile(data))
       navigate("/");
     });
   };

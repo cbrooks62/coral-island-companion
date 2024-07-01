@@ -2,10 +2,10 @@
   "users": [
     {
       "id": 1,
-      "npcId": 18,
-      "character": "Denali",
+      "npcId": 79,
+      "character": "Wataru",
       "email": "place@mail.com",
-      "userName": "Charles"
+      "userName": "AmandaLynn"
     },
     {
       "id": 2,
@@ -48,7 +48,7 @@
       "title": "new ",
       "synopsis": "please help",
       "dueDate": "winter 7",
-      "completed": false
+      "completed": true
     },
     {
       "id": 7,
@@ -69,22 +69,13 @@
       "completed": true
     },
     {
-      "id": 9,
-      "userId": 1,
-      "npcId": "3",
-      "title": "Forage for Mushrooms",
-      "synopsis": "Gather 20 Mushrooms",
-      "dueDate": "N/A",
-      "completed": true
-    },
-    {
       "id": 10,
       "userId": 1,
       "npcId": "1",
       "title": "Water Plants",
       "synopsis": "Water plants",
       "dueDate": "N/A",
-      "completed": true
+      "completed": false
     },
     {
       "id": 11,
@@ -96,13 +87,13 @@
       "completed": true
     },
     {
+      "id": 12,
       "userId": 1,
-      "title": "Fish for Arapaima",
-      "dueDate": "N/A",
       "npcId": "39",
+      "title": "Fish for Arapaima",
       "synopsis": "To find Arapaima, you'll need to wait until after sunset–which is around 5:00PM–in Fall or Winter in-game.",
-      "completed": false,
-      "id": 12
+      "dueDate": "N/A",
+      "completed": true
     }
   ],
   "days": [

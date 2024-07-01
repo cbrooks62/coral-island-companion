@@ -9,7 +9,11 @@ import {
 import { EditCurrentReminder } from "./EditCurrentReminder.jsx";
 import { Modal } from "reactstrap";
 
-export const Reminder = ({ currentUser, singleReminder, getAndSetAllReminders }) => {
+export const Reminder = ({
+  currentUser,
+  singleReminder,
+  getAndSetAllReminders,
+}) => {
   const [showModal, setShowModal] = useState(false);
 
   const handleClickComplete = () => {
@@ -50,19 +54,30 @@ export const Reminder = ({ currentUser, singleReminder, getAndSetAllReminders })
         <div className="reminder-npc">NPC: {singleReminder.npc.character}</div>
         <div className="reminder-synopsis">{singleReminder.synopsis}</div>
         <div className="reminder-buttons">
-          <div className="button-circle">
-            <button className="button-complete" onClick={handleClickComplete}>
-              Complete
-            </button>
-          </div>
+          {singleReminder.completed ? (
+            ""
+          ) : (
+            <div className="button-circle">
+              <button className="button-complete" onClick={handleClickComplete}>
+                Complete
+              </button>
+            </div>
+          )}
           <button className="button-delete" onClick={handleDelete}>
             Delete
           </button>
-          {/* <Link to={`${singleReminder.id}/EditCurrentReminder/`}> */}
+         {singleReminder.completed ? (
+          ""
+         ) : ( 
           <button onClick={openModal} className="button-edit">
             Edit
           </button>
-          <Modal className="edit-modal-container" isOpen={showModal} onRequestClose={closeModal}>
+        )}
+          <Modal
+            className="edit-modal-container"
+            isOpen={showModal}
+            onRequestClose={closeModal}
+          >
             <EditCurrentReminder
               singleReminder={singleReminder}
               closeModal={closeModal}
