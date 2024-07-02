@@ -1,3 +1,4 @@
+//PURPOSE: To Edit a current Reminder, it will pop-up in a modal inside of the ReminderList module
 import { useEffect, useState } from "react";
 import {
   getReminderById,
@@ -17,36 +18,39 @@ export const EditCurrentReminder = ({
   closeModal,
   getAndSetAllReminders,
 }) => {
-  const [myReminder, setMyReminder] = useState({});
+  const [npcId, setNpcId] = useState({ npcId: singleReminder.npcId, character: singleReminder.npc.character });
+  const [myReminder, setMyReminder] = useState({
+  
+    userId: currentUser.id,
+    npcId: npcId.character,
+    title: singleReminder.title,
+    synopsis: singleReminder.synopsis,
+    dueDate: singleReminder.dueDate,
+    completed: singleReminder.completed,
+  });
   const [npcs, setNpcs] = useState([]);
-  const [npcId, setNpcId] = useState({ character: myReminder.npcId });
+  
 
   useEffect(() => {
     getReminderById(singleReminder.id).then((reminderObj) => {
       setMyReminder(reminderObj);
     });
   }, []);
+  
 
   //useEffect to get all NPCs from database
   useEffect(() => {
     getAllNpcs().then((data) => setNpcs(data));
   }, []);
 
-  const handleSaveEdit = (e) => {
-    e.preventDefault();
-    const editSingleReminder = {
-      id: myReminder.id,
-      userId: currentUser.id,
-      npcId: npcId.npcId,
-      title: myReminder.title,
-      synopsis: myReminder.synopsis,
-      dueDate: myReminder.dueDate,
-      completed: myReminder.completed,
-    };
-    updateReminder(editSingleReminder)
-      .then(getAndSetAllReminders())
-      .then(closeModal());
-  };
+const handleSaveEdit = (e) => {
+    e.preventDefault()
+    const reminderData = { ...myReminder }
+    reminderData.id = myReminder.id
+    updateReminder(reminderData)
+    .then(() => closeModal())
+    .then(getAndSetAllReminders)
+}
 
   //Conditional to render the correct state of the character on dropdown. If the npcId state has a character (mean it returns true), change the name displayed to that.
   let toggleNpc = myReminder?.npc?.character;
@@ -68,7 +72,7 @@ export const EditCurrentReminder = ({
               className="title-text-field"
               type="text"
               text="text"
-              placeholder={myReminder.title}
+              defaultValue={myReminder.title}
               onChange={(e) => {
                 const reminderCopy = { ...myReminder };
                 reminderCopy.title = e.target.value;
@@ -79,12 +83,12 @@ export const EditCurrentReminder = ({
         </fieldset>
         <fieldset>
           <div>
-            {/* implement drop downs later for Season and Day*/}
             <input
               className="title-text-field"
               type="text"
               text="text"
-              placeholder={myReminder.dueDate}
+
+              defaultValue={myReminder.dueDate}
               onChange={(e) => {
                 const reminderCopy = { ...myReminder };
                 reminderCopy.dueDate = e.target.value;
@@ -126,7 +130,7 @@ export const EditCurrentReminder = ({
               className="synopsis-text-field "
               type="text"
               text="text"
-              placeholder={myReminder.synopsis}
+              defaultValue={myReminder.synopsis}
               onChange={(e) => {
                 const reminderCopy = { ...myReminder };
                 reminderCopy.synopsis = e.target.value;

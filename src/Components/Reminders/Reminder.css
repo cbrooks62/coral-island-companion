@@ -14,7 +14,7 @@
 .header-reminders {
   height: 12rem;
   width: 80rem;
-  margin-top: 25%;
+  /* margin-top: 8%; */
 }
 
 /* from RemindersFilter.jsx: reminder-search, button-complete, button-current */

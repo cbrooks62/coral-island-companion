@@ -16,6 +16,7 @@ export const EditUserProfile = ({ currentUser }) => {
   const [npcs, setNpcs] = useState([]);
   const [modal, setModal] = useState(false);
 
+
   const toggle = () => setModal(!modal);
 
   useEffect(() => {
@@ -36,8 +37,8 @@ export const EditUserProfile = ({ currentUser }) => {
       userName: myProfile.userName,
     };
     updateUserProfile(editProfile).then(() => {
-      getUserById(currentUser.id).then((data) => setMyProfile(data))
       navigate("/");
+      location.reload()
     });
   };
 

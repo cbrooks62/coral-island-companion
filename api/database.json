@@ -16,10 +16,17 @@
     },
     {
       "id": 3,
-      "npcId": 8,
-      "character": "Axel",
+      "npcId": 32,
+      "character": "Gong",
       "email": "cb@mail.com",
-      "userName": "Piper"
+      "userName": "Chelsea"
+    },
+    {
+      "id": 4,
+      "npcId": 4,
+      "character": "Alice",
+      "email": "ilovecake@mail.com",
+      "userName": "Luke"
     }
   ],
   "reminders": [
@@ -78,22 +85,31 @@
       "completed": false
     },
     {
-      "id": 11,
-      "userId": 3,
-      "npcId": "1",
-      "title": "Make Gourmet Salt ",
-      "synopsis": "Dive in ocean and harvest salt. Take salt to Mill and process into gourmet salt.",
-      "dueDate": "N/A",
-      "completed": true
-    },
-    {
       "id": 12,
       "userId": 1,
       "npcId": "39",
       "title": "Fish for Arapaima",
-      "synopsis": "To find Arapaima, you'll need to wait until after sunset–which is around 5:00PM–in Fall or Winter in-game.",
+      "synopsis": "To find Arapaima, you'll need to wait until after sunset in Fall or Winter in-game.",
       "dueDate": "N/A",
       "completed": true
+    },
+    {
+      "userId": 3,
+      "title": "Summer Blooms",
+      "dueDate": "Summer 11",
+      "npcId": "78",
+      "synopsis": "Walter wants a hibiscus and has promised you a tip.",
+      "completed": false,
+      "id": 13
+    },
+    {
+      "userId": 3,
+      "title": "Fish for Tuna",
+      "dueDate": "N/A",
+      "npcId": "1",
+      "synopsis": "Fish for Tuna to give for Offering",
+      "completed": false,
+      "id": 15
     }
   ],
   "days": [
