@@ -85,7 +85,7 @@ export const EditUserProfile = ({ currentUser }) => {
               className="username-text-field"
               type="text"
               text="text"
-              placeholder={myProfile.userName}
+              defaultValue={myProfile.userName}
               onChange={(e) => {
                 const profileCopy = { ...myProfile };
                 profileCopy.userName = e.target.value;

@@ -16,10 +16,10 @@
     },
     {
       "id": 3,
-      "npcId": 32,
-      "character": "Gong",
+      "npcId": 71,
+      "character": "Suki",
       "email": "cb@mail.com",
-      "userName": "Chelsea"
+      "userName": "Chelsea B"
     },
     {
       "id": 4,
@@ -110,6 +110,24 @@
       "synopsis": "Fish for Tuna to give for Offering",
       "completed": false,
       "id": 15
+    },
+    {
+      "userId": 3,
+      "title": " Mayor's Lost Hat ",
+      "dueDate": "Winter 2",
+      "npcId": "17",
+      "synopsis": "Mayor Conner has lost one his hats, keep your eyes open and help return it.",
+      "completed": false,
+      "id": 16
+    },
+    {
+      "id": 18,
+      "userId": 3,
+      "npcId": "39",
+      "title": "Night Fish",
+      "synopsis": "Fish for a Arapaima. Found in colder weather after sunset.",
+      "dueDate": "Any",
+      "completed": true
     }
   ],
   "days": [
