@@ -1,3 +1,13 @@
+# Demo
+### This app was built for my front-end capstone for [New Force](https://generationwv.org/programs/newforce/)
+### You can watch my recorded demo ->>here.
+---
+# Install
+1. Clone down the repository
+2. In the root folder of the project run npm install
+3. In a seperate terminal, open the api folder *coral-island-companion/api* run **json-server database.json -p 8088**
+4. In the root folder start the app by running **npm run dev**
+
 # Coral-Island-Companion
 ---
 I built this app to make playing the indie game Coral Island a more enjoyable experience. It allows users to store and keep track of in game events and reminders as well as personal tasks that need to be completed. The app also gives you the resources to stay in touch with the game's festivals and characters.
@@ -44,15 +54,7 @@ The Characters page showcases the island's Characters. You can scroll through th
 ---
 The Profile page will allow you to edit the username and character icon this is displayed on the navbar. You also have the option to delete the entire profile if needed. It will prompt you with a modal to comfirm your deletion beacuse it will be deleted from the databse once confirmed.
 
-# Demo
-### This app was built for my front-end capstone for [New Force](https://generationwv.org/programs/newforce/)
-### You can watch my recorded demo ->>here.
----
-# Install
-1. Clone down the repository
-2. In the root folder of the project run npm install
-3. In a seperate terminal, open the api folder *coral-island-companion/api* run **json-server database.json -p 8088**
-4. In the root folder start the app by running **npm run dev**
+
 
 
 
