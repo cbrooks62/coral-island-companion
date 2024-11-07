@@ -1,6 +1,6 @@
 # Demo
 ### This app was built for my front-end capstone for [New Force](https://generationwv.org/programs/newforce/)
-### You can watch my recorded demo ->>here.
+### You can watch my recorded demo ->>[here](https://www.loom.com/share/514e0cbfdfb74047aad8f7781e631862?sid=07bfd82b-19a5-4ba2-b000-dc05d7e3c2f0).
 ---
 # Install
 1. Clone down the repository
